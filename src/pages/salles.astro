@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+import { SALLES } from '../data/salles.js';
+import { normalise } from '../data/secteurs.js';
+import data from '../data/events.json';
+
+// Nombre de concerts à venir par salle (correspondance sur le champ `lieu`).
+function concertsDe(cle) {
+  const k = normalise(cle);
+  return data.events.filter((e) => normalise(e.lieu).includes(k));
+}
+const salles = SALLES.map((s) => ({ ...s, concerts: concertsDe(s.cle) }))
+  .sort((a, b) => b.concerts.length - a.concerts.length);
+---
+
+<Base
+  titre="Les salles de concert suivies — Concerts Morbihan"
+  description="Les salles de concert du Morbihan suivies par l'agenda : L'Échonova, l'Hydrophone, Le Coota, Palais des Arts… Programmation et liens billetterie."
+>
+  <section class="hero">
+    <p class="hero-eyebrow"><a href="/" class="hero-retour">← Tous les concerts</a> · Les lieux</p>
+    <h1 class="hero-title">Les <span class="accent">salles.</span></h1>
+    <p class="hero-sub">
+      Les salles du Morbihan dont nous suivons la programmation au plus près.
+      Le reste des concerts du département est couvert via l'agenda public OpenAgenda.
+    </p>
+  </section>
+
+  <section class="section">
+    <div class="salles-liste">
+      {salles.map((s) => (
+        <article class="salle">
+          <div class="salle-tete">
+            <h2 class="salle-nom">{s.nom}</h2>
+            <span class="salle-compte">{s.concerts.length} à venir</span>
+          </div>
+          <p class="salle-meta">{s.type} · {s.ville}</p>
+          <p class="salle-desc">{s.desc}</p>
+          <div class="salle-liens">
+            <a href={`/${s.secteur}`} class="salle-lien">Concerts du secteur →</a>
+            <a href={s.site} class="salle-lien-ext" target="_blank" rel="noopener">Site officiel ↗</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,59 @@
+---
+import Base from '../layouts/Base.astro';
+import data from '../data/events.json';
+const maj = new Date(data.genere_le).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+
+<Base
+  titre="À propos & sources — Concerts Morbihan"
+  description="Concerts Morbihan : un agenda local indépendant des concerts du Morbihan. D'où viennent les données, comment proposer un concert ou signaler une erreur."
+>
+  <section class="hero">
+    <p class="hero-eyebrow"><a href="/" class="hero-retour">← Tous les concerts</a> · À propos</p>
+    <h1 class="hero-title">Le <span class="accent">projet.</span></h1>
+    <p class="hero-sub">
+      Un agenda local et indépendant pour ne plus rater un concert près de chez soi,
+      de Lorient à Vannes.
+    </p>
+  </section>
+
+  <section class="section prose">
+    <h2>Pourquoi ce site</h2>
+    <p>
+      Trouver « quels concerts ce week-end autour de chez moi ? » dans le Morbihan
+      demandait de fouiller des dizaines de sites de salles, de billetteries et
+      d'agendas. <strong>Concerts Morbihan</strong> rassemble tout au même endroit :
+      les concerts à venir autour de Vannes, Auray, Lorient, Erdeven, Étel et
+      Quiberon, mis à jour automatiquement chaque jour.
+    </p>
+
+    <h2>D'où viennent les données</h2>
+    <p>Les concerts sont agrégés depuis plusieurs sources, en toute transparence :</p>
+    <ul>
+      <li><strong>OpenAgenda</strong> (agenda public, via Opendatasoft) — pour l'ensemble du département.</li>
+      <li><strong>Les sites des salles</strong> — L'Échonova, l'Hydrophone, Le Coota — lus directement à la source.</li>
+      <li><strong>Fnac Spectacles</strong> — via les données structurées publiques (schema.org) des pages de salles.</li>
+    </ul>
+    <p>
+      Les <strong>affiches</strong> restent la propriété de leurs ayants droit :
+      elles sont affichées depuis leur source d'origine, jamais ré-hébergées, et
+      chaque concert renvoie vers la billetterie de l'organisateur.
+    </p>
+
+    <h2>Fiabilité</h2>
+    <p>
+      Les données sont rafraîchies chaque jour, mais une erreur (date modifiée,
+      concert annulé…) est toujours possible. <strong>Vérifiez toujours la date et
+      la disponibilité auprès de l'organisateur</strong> avant de vous déplacer.
+      Ce site est indépendant et n'est affilié à aucune salle.
+    </p>
+
+    <h2>Proposer un concert ou signaler une erreur</h2>
+    <p>
+      Une salle manque, une info est fausse&nbsp;? Écrivez-moi&nbsp;:
+      <a href="mailto:contact@lajetee.fr?subject=Concerts%20Morbihan">contact@lajetee.fr</a>.
+    </p>
+
+    <p class="prose-maj">Dernière mise à jour des concerts : {maj}.</p>
+  </section>
+</Base>
