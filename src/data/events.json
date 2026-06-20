@@ -1,10 +1,10 @@
 {
-  "genere_le": "2026-06-20T09:26:07.282Z",
-  "total": 31,
+  "genere_le": "2026-06-20T10:04:57.651Z",
+  "total": 39,
   "par_secteur": {
-    "vannes": 18,
+    "vannes": 19,
     "auray": 0,
-    "lorient": 9,
+    "lorient": 16,
     "lorient-rade": 1,
     "erdeven": 2,
     "etel": 0,
@@ -155,6 +155,19 @@
       "source": "hydrophone"
     },
     {
+      "id": "fnac:maniatheabbatributetournee|2026-09-19",
+      "fin": "2026-09-19T20:30:00",
+      "titre": "Mania, The Abba Tribute - Tournée",
+      "debut": "2026-09-19T20:30:00",
+      "ville": "Lanester",
+      "lieu": "Parc des Expositions",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.fnacspectacles.com/obj/mam/france/44/7c/mania--the-abba-tribute-tickets_214574_1932931_222x222.jpg",
+      "url": "https://www.fnacspectacles.com/event/mania-the-abba-tribute-tournee-parc-des-expositions-lorient-lanester-20306073/",
+      "source": "fnac"
+    },
+    {
       "id": "echonova:hilighttribepremierepartie|2026-09-25",
       "fin": "2026-09-25T00:00:00",
       "titre": "HILIGHT TRIBE + première partie",
@@ -257,6 +270,19 @@
       "image": "https://lechonova.com/uploads/2025/10/site-bertrand-belin-watt-photo.jpg",
       "url": "https://lechonova.com/evenement/bertrand-belin-1ere-partie/",
       "source": "echonova"
+    },
+    {
+      "id": "fnac:festivalinsolentcollectionautomne2026|2026-10-24",
+      "fin": "2026-10-24T16:00:00",
+      "titre": "Festival Insolent - Collection Automne 2026",
+      "debut": "2026-10-24T16:00:00",
+      "ville": "Lanester",
+      "lieu": "Parc des Expositions",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.fnacspectacles.com/obj/mam/france/90/b0/festival-insolent-collection-automne-2026-tickets_546219_4264599_222x222.jpg",
+      "url": "https://www.fnacspectacles.com/event/festival-insolent-collection-automne-2026-parc-des-expositions-lorient-lanester-21625042/",
+      "source": "fnac"
     },
     {
       "id": "hydrophone:girlsinhawaii|2026-11-04",
@@ -363,6 +389,45 @@
       "source": "echonova"
     },
     {
+      "id": "fnac:uncourrierpournoel|2026-12-05",
+      "fin": "2026-12-05T14:00:00",
+      "titre": "Un Courrier pour Noël",
+      "debut": "2026-12-05T14:00:00",
+      "ville": "Lanester",
+      "lieu": "Parc des Expositions",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.fnacspectacles.com/obj/mam/france/ba/55/cno5d-tickets_570487_4400380_222x222.jpg",
+      "url": "https://www.fnacspectacles.com/event/un-courrier-pour-noel-parc-des-expositions-lorient-lanester-21518503/",
+      "source": "fnac"
+    },
+    {
+      "id": "fnac:uncourrierpournoel|2026-12-06",
+      "fin": "2026-12-06T11:00:00",
+      "titre": "Un Courrier pour Noël",
+      "debut": "2026-12-06T11:00:00",
+      "ville": "Lanester",
+      "lieu": "Parc des Expositions",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.fnacspectacles.com/obj/mam/france/ba/55/cno5d-tickets_570487_4400380_222x222.jpg",
+      "url": "https://www.fnacspectacles.com/event/un-courrier-pour-noel-parc-des-expositions-lorient-lanester-21518505/",
+      "source": "fnac"
+    },
+    {
+      "id": "fnac:claudiocapeotournee|2026-12-18",
+      "fin": "2026-12-18T20:00:00",
+      "titre": "Claudio Capéo - Tournée",
+      "debut": "2026-12-18T20:00:00",
+      "ville": "Lanester",
+      "lieu": "Parc des Expositions",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.fnacspectacles.com/obj/mam/france/86/85/claudio-capeo-tournee-des-zeniths-tickets_326526_2826509_222x222.jpg",
+      "url": "https://www.fnacspectacles.com/event/claudio-capeo-tournee-parc-des-expositions-lorient-lanester-19502808/",
+      "source": "fnac"
+    },
+    {
       "id": "echonova:leslouangesguests|2027-01-29",
       "fin": "2027-01-29T00:00:00",
       "titre": "LES LOUANGES + GUESTS",
@@ -389,6 +454,32 @@
       "source": "echonova"
     },
     {
+      "id": "fnac:marinetournee|2027-02-06",
+      "fin": "2027-02-06T20:00:00",
+      "titre": "Marine - Tournée",
+      "debut": "2027-02-06T20:00:00",
+      "ville": "Lanester",
+      "lieu": "Parc des Expositions",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.fnacspectacles.com/obj/mam/france/c5/c8/marine-new-visuel-tournee-tickets_486524_3871379_222x222.jpg",
+      "url": "https://www.fnacspectacles.com/event/marine-tournee-parc-des-expositions-lorient-lanester-21467658/",
+      "source": "fnac"
+    },
+    {
+      "id": "fnac:200voixpourgoldmantournee|2027-02-07",
+      "fin": "2027-02-07T15:00:00",
+      "titre": "200 Voix Pour Goldman - Tournée",
+      "debut": "2027-02-07T15:00:00",
+      "ville": "Vannes",
+      "lieu": "Palais des Arts (Salle Lesage)",
+      "secteur": "vannes",
+      "description": "",
+      "image": "https://www.fnacspectacles.com/obj/mam/france/82/56/goldman---200-voix-pour-une-l-gende---tourn-e-tickets_562088_4342649_222x222.jpg",
+      "url": "https://www.fnacspectacles.com/event/200-voix-pour-goldman-tournee-palais-des-arts-salle-lesage-vannes-21252976/",
+      "source": "fnac"
+    },
+    {
       "id": "hydrophone:revnoiricesealedeyes|2027-02-10",
       "fin": "2027-02-10T20:00:00",
       "titre": "REVNOIR + ICE SEALED EYES",
@@ -400,6 +491,19 @@
       "image": "https://www.hydrophone.fr/local/cache-gd2/d7/9dac549b10ee5e865c2eb9590ab436.png?1778053480",
       "url": "https://www.hydrophone.fr/REVNOIR-ICE-SEALED-EYES.html",
       "source": "hydrophone"
+    },
+    {
+      "id": "fnac:jeanbaptistegueganjohnnyleshowdunevietournee|2027-02-13",
+      "fin": "2027-02-13T20:30:00",
+      "titre": "Jean-Baptiste Guégan - Johnny, Le Show d'une Vie - Tournée",
+      "debut": "2027-02-13T20:30:00",
+      "ville": "Lanester",
+      "lieu": "Parc des Expositions",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.fnacspectacles.com/obj/mam/france/bf/04/jean-baptiste-guegan-tournee-2026-tickets_374226_3152064_222x222.jpg",
+      "url": "https://www.fnacspectacles.com/event/jean-baptiste-guegan-johnny-le-show-dune-vie-tournee-parc-des-expositions-lorient-lanester-21629371/",
+      "source": "fnac"
     },
     {
       "id": "echonova:zeliepremierepartie|2027-02-20",
