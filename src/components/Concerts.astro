@@ -41,7 +41,7 @@ function genres(desc?: string): string[] {
         <a class="carte" href={e.url ?? '#'} target="_blank" rel="noopener" data-secteur={e.secteur} data-debut={e.debut}>
           <div class="carte-media">
             {e.image ? (
-              <img src={e.image} alt={`Affiche : ${e.titre}`} loading="lazy" />
+              <img src={e.image} alt={`Affiche : ${e.titre}`} loading="lazy" decoding="async" width="600" height="800" />
             ) : (
               <div class="carte-vide">{e.titre}</div>
             )}

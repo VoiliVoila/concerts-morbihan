@@ -33,6 +33,13 @@ body {
 a { color: inherit; text-decoration: none; }
 ::selection { background: var(--accent); color: #fff; }
 
+/* Accessibilité clavier : anneau de focus visible et cohérent partout. */
+a:focus-visible, button:focus-visible, select:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; }
 
 /* ============ HEADER ============ */
@@ -123,8 +130,7 @@ main { display: block; }
   padding: calc(var(--header-h) + 4rem) 1.5rem 2.5rem;
 }
 @media (min-width: 900px) { .hero { padding-top: calc(var(--header-h) + 6rem); padding-bottom: 3rem; } }
-.hero-retour { color: var(--accent-2); }
-.hero-retour:hover { text-decoration: underline; }
+.hero-retour { color: var(--accent-2); text-decoration: underline; text-underline-offset: 3px; }
 
 .hero-eyebrow {
   display: inline-flex; align-items: center; gap: 0.5rem;
@@ -358,6 +364,8 @@ main { display: block; }
 .pied-secteurs a:hover { border-color: var(--accent); color: var(--accent-clair, var(--accent)); }
 .pied-secteurs a span { color: var(--muted); font-size: 0.78rem; }
 .pied a { color: var(--accent-2); }
+/* Liens en ligne dans du texte : soulignés (pas seulement la couleur) — WCAG. */
+.pied p a { text-decoration: underline; text-underline-offset: 2px; }
 .pied-sources { font-size: 0.82rem; margin-top: 0.9rem; }
 
 @media (prefers-reduced-motion: reduce) {
