@@ -4,8 +4,8 @@
 import { chargerHtml, dateISO, texte, numeroMois } from './_util.mjs';
 
 const URL_CONCERT = 'https://lecoota.fr/concert';
-const VILLE = 'Vannes';
-const SECTEUR = 'vannes';
+const VILLE = 'Erdeven'; // Kerhillio, 56410 Erdeven
+const SECTEUR = 'erdeven';
 
 export const meta = { id: 'coota', nom: 'Le Coota', url: URL_CONCERT };
 
