@@ -1,0 +1,138 @@
+:root {
+  --fond: #0d1b2a;
+  --fond-carte: #1b263b;
+  --fond-carte-survol: #243049;
+  --texte: #e0e6ef;
+  --texte-doux: #9fb0c8;
+  --accent: #e07a5f;
+  --accent-clair: #f2a98f;
+  --bordure: #2c3a52;
+  --rayon: 12px;
+  --largeur: 960px;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  line-height: 1.55;
+}
+
+a { color: var(--accent-clair); }
+
+.entete {
+  text-align: center;
+  padding: 2.5rem 1rem 1.5rem;
+  border-bottom: 1px solid var(--bordure);
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--texte);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+.accroche { color: var(--texte-doux); margin: 0.4rem 0 0; }
+
+.contenu {
+  max-width: var(--largeur);
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* Filtres par secteur */
+.secteurs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 2rem;
+}
+.secteur-lien {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--bordure);
+  border-radius: 999px;
+  background: var(--fond-carte);
+  color: var(--texte);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.15s, border-color 0.15s;
+}
+.secteur-lien:hover { background: var(--fond-carte-survol); }
+.secteur-lien[aria-current='true'] {
+  border-color: var(--accent);
+  color: var(--accent-clair);
+}
+.secteur-lien .compte {
+  color: var(--texte-doux);
+  font-variant-numeric: tabular-nums;
+}
+
+h1 { font-size: 1.9rem; letter-spacing: -0.02em; margin: 0.5rem 0; }
+.intro { color: var(--texte-doux); margin-top: 0; }
+
+/* Liste des concerts */
+.liste { display: grid; gap: 1rem; }
+@media (min-width: 620px) {
+  .liste { grid-template-columns: repeat(2, 1fr); }
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  background: var(--fond-carte);
+  border: 1px solid var(--bordure);
+  border-radius: var(--rayon);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s, border-color 0.15s;
+}
+.carte:hover { transform: translateY(-2px); border-color: var(--accent); }
+
+.carte .visuel {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  object-fit: cover;
+  background: var(--fond-carte-survol);
+}
+.carte .sans-visuel {
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, var(--fond-carte-survol), var(--fond));
+}
+
+.carte .corps { padding: 0.9rem 1rem 1.1rem; display: flex; flex-direction: column; gap: 0.3rem; }
+.carte .date {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent-clair);
+}
+.carte .titre { font-size: 1.05rem; font-weight: 700; margin: 0; }
+.carte .lieu { font-size: 0.88rem; color: var(--texte-doux); }
+
+.vide {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--texte-doux);
+}
+
+.pied {
+  max-width: var(--largeur);
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+  border-top: 1px solid var(--bordure);
+  color: var(--texte-doux);
+  font-size: 0.82rem;
+}
+.pied p { margin: 0.3rem 0; }

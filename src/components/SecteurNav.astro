@@ -1,0 +1,25 @@
+---
+import { SECTEURS } from '../data/secteurs.js';
+import events from '../data/events.json';
+
+interface Props {
+  actif: string | null; // slug du secteur actif, ou null pour « Tous »
+}
+const { actif } = Astro.props;
+const compte = events.par_secteur;
+---
+
+<nav class="secteurs" aria-label="Filtrer par secteur">
+  <a class="secteur-lien" href="/" aria-current={actif === null ? 'true' : 'false'}>
+    Tous <span class="compte">{events.total}</span>
+  </a>
+  {SECTEURS.map((s) => (
+    <a
+      class="secteur-lien"
+      href={`/${s.slug}`}
+      aria-current={actif === s.slug ? 'true' : 'false'}
+    >
+      {s.nom} <span class="compte">{compte[s.slug] ?? 0}</span>
+    </a>
+  ))}
+</nav>

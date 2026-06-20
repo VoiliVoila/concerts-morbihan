@@ -1,0 +1,41 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  titre: string;
+  description: string;
+}
+const { titre, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, '');
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{titre}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={titre} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0d1b2a" />
+  </head>
+  <body>
+    <header class="entete">
+      <a href="/" class="logo">🎸 Concerts Morbihan</a>
+      <p class="accroche">Les concerts à venir près de chez vous</p>
+    </header>
+    <main class="contenu">
+      <slot />
+    </main>
+    <footer class="pied">
+      <p>
+        Données issues de l'agenda public <a href="https://openagenda.com" rel="noopener">OpenAgenda</a>
+        (via Opendatasoft). Les affiches restent la propriété de leurs ayants droit.
+      </p>
+      <p>Site indépendant — vérifiez toujours dates et billetterie auprès de l'organisateur.</p>
+    </footer>
+  </body>
+</html>
