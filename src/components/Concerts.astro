@@ -15,6 +15,19 @@ interface Props {
   events: Concert[];
 }
 const { events } = Astro.props;
+
+// Palette de couleurs pour les pastilles de genre (déterministe par genre).
+const PALETTE = ['#ff5d3b', '#ffd166', '#5ad1c8', '#c08bff', '#ff8fab', '#7bd389'];
+function couleurGenre(g: string) {
+  let h = 0;
+  for (let i = 0; i < g.length; i++) h = (h * 31 + g.charCodeAt(i)) >>> 0;
+  return PALETTE[h % PALETTE.length];
+}
+// Extrait jusqu'à 3 genres courts depuis le champ description (ex. "electro, folk-rock, punk").
+function genres(desc?: string): string[] {
+  if (!desc || desc.length > 42 || desc.includes('.')) return [];
+  return desc.split(/[,/]/).map((s) => s.trim()).filter(Boolean).slice(0, 3);
+}
 ---
 
 {events.length === 0 ? (
@@ -23,6 +36,7 @@ const { events } = Astro.props;
   <div class="liste">
     {events.map((e) => {
       const heure = formatHeure(e.debut);
+      const tags = genres(e.description);
       return (
         <a class="carte" href={e.url ?? '#'} target="_blank" rel="noopener">
           <div class="carte-media">
@@ -31,16 +45,16 @@ const { events } = Astro.props;
             ) : (
               <div class="carte-vide">{e.titre}</div>
             )}
-            <span class="carte-date">
-              {formatBadge(e.debut)}{heure && <> · {heure}</>}
-            </span>
+            <span class="carte-date">{formatBadge(e.debut)}{heure && <> · {heure}</>}</span>
           </div>
           <div class="carte-corps">
+            {tags.length > 0 && (
+              <div class="carte-genres">
+                {tags.map((g) => <span class="pastille" style={`--g:${couleurGenre(g)}`}>{g}</span>)}
+              </div>
+            )}
             <p class="carte-titre">{e.titre}</p>
             <span class="carte-lieu">{e.lieu ? `${e.lieu} — ` : ''}{e.ville}</span>
-            {e.description && e.description.length <= 38 && !e.description.includes('.') && (
-              <span class="carte-genre">{e.description}</span>
-            )}
           </div>
         </a>
       );
