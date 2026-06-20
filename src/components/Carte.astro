@@ -1,0 +1,44 @@
+---
+import { viewBox, paths, pins } from '../data/carte-morbihan.js';
+import { SECTEURS } from '../data/secteurs.js';
+import data from '../data/events.json';
+
+interface Props {
+  actif?: string | null;
+}
+const { actif = null } = Astro.props;
+
+const nom = Object.fromEntries(SECTEURS.map((s) => [s.slug, s.nom]));
+const compte = data.par_secteur;
+
+// Placement des libellés par secteur (le SW est dense) + nom court si besoin.
+const label: Record<string, { dx: number; dy: number; anchor: string; court?: string }> = {
+  vannes: { dx: 16, dy: 5, anchor: 'start' },
+  auray: { dx: 0, dy: -16, anchor: 'middle' },
+  lorient: { dx: 0, dy: -16, anchor: 'middle' },
+  'lorient-rade': { dx: -14, dy: 4, anchor: 'end', court: 'Port-Louis' },
+  erdeven: { dx: -12, dy: 22, anchor: 'end' },
+  etel: { dx: -14, dy: -10, anchor: 'end' },
+  quiberon: { dx: 0, dy: 26, anchor: 'middle' },
+};
+---
+
+<svg class="carte-morbihan" viewBox={viewBox} role="img" aria-label="Carte du Morbihan — concerts par secteur" preserveAspectRatio="xMidYMid meet">
+  <g class="carte-terre">
+    {paths.map((d) => <path d={d} />)}
+  </g>
+  {pins.map((p) => {
+    const n = compte[p.slug] ?? 0;
+    const lab = label[p.slug];
+    const courant = actif === p.slug;
+    return (
+      <a href={`/${p.slug}`} class:list={['pin', { courant, vide: n === 0 }]} aria-label={`${nom[p.slug]} — ${n} concert${n > 1 ? 's' : ''}`}>
+        <circle class="pin-halo" cx={p.x} cy={p.y} r="16" />
+        <circle class="pin-pt" cx={p.x} cy={p.y} r="6" />
+        <text class="pin-nom" x={p.x + lab.dx} y={p.y + lab.dy} text-anchor={lab.anchor}>
+          {lab.court ?? nom[p.slug]} <tspan class="pin-nb">{n}</tspan>
+        </text>
+      </a>
+    );
+  })}
+</svg>

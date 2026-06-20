@@ -2,17 +2,13 @@
 import '@fontsource-variable/bricolage-grotesque';
 import '@fontsource-variable/inter';
 import '../styles/global.css';
-import { SECTEURS } from '../data/secteurs.js';
-import data from '../data/events.json';
 
 interface Props {
   titre: string;
   description: string;
-  secteurActif?: string | null;
 }
-const { titre, description, secteurActif = null } = Astro.props;
+const { titre, description } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, '');
-const compte = data.par_secteur;
 ---
 
 <!doctype html>
@@ -35,14 +31,7 @@ const compte = data.par_secteur;
           <span class="marque-pastille" aria-hidden="true"></span>
           Concerts&nbsp;<em>Morbihan</em>
         </a>
-        <nav class="nav" aria-label="Secteurs">
-          <a href="/" aria-current={secteurActif === null ? 'true' : 'false'}>Tous<sup>{data.total}</sup></a>
-          {SECTEURS.map((s) => (
-            <a href={`/${s.slug}`} aria-current={secteurActif === s.slug ? 'true' : 'false'}>
-              {s.nom}<sup>{compte[s.slug] ?? 0}</sup>
-            </a>
-          ))}
-        </nav>
+        <a href="/" class="masthead-lien">Tous les concerts</a>
       </div>
     </header>
 

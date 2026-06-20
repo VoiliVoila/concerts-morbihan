@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Concerts from '../components/Concerts.astro';
+import Carte from '../components/Carte.astro';
 import { SECTEURS } from '../data/secteurs.js';
 import data from '../data/events.json';
 
@@ -15,17 +16,20 @@ const events = data.events.filter((e) => e.secteur === secteur.slug);
 <Base
   titre={`Concerts à ${secteur.nom} — agenda Morbihan`}
   description={`Les concerts à venir sur le secteur de ${secteur.nom} (Morbihan) : dates, lieux et billetterie.`}
-  secteurActif={secteur.slug}
 >
   <section class="hero">
     <div>
-      <p class="hero-eyebrow"><span class="etoile">✦</span> Secteur</p>
+      <p class="hero-eyebrow"><span class="etoile">✦</span> Secteur · Morbihan</p>
       <h1 class="hero-title"><span class="accent">{secteur.nom}.</span></h1>
       <p class="hero-sub">
         {events.length > 0
           ? `${events.length} concert${events.length > 1 ? 's' : ''} à venir sur ce secteur du Morbihan.`
           : 'Aucun concert recensé sur ce secteur pour le moment — revenez bientôt.'}
       </p>
+    </div>
+    <div class="hero-carte">
+      <Carte actif={secteur.slug} />
+      <p class="hero-carte-aide"><a href="/">← Tous les secteurs</a></p>
     </div>
   </section>
 

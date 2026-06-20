@@ -79,6 +79,14 @@ body.scrolled .masthead { height: 60px; }
 @keyframes pulse { 50% { box-shadow: 0 0 0 7px rgba(255, 93, 59, 0); } }
 .marque em { color: var(--accent); font-style: normal; }
 
+.masthead-lien {
+  margin-left: auto;
+  font-size: 0.9rem; font-weight: 600; color: var(--muted);
+  padding: 0.4rem 0.9rem; border: 1px solid var(--line); border-radius: 999px;
+  transition: color 0.15s, border-color 0.15s;
+}
+.masthead-lien:hover { color: var(--text); border-color: var(--accent); }
+
 /* Nav secteurs horizontale dans le header */
 .nav {
   display: flex;
@@ -151,7 +159,14 @@ main { display: block; }
 }
 .hero-sub b { color: var(--text); font-weight: 600; }
 
-/* Carte vedette */
+/* Carte dans le hero */
+.hero-carte { align-self: center; }
+.hero-carte-aide {
+  text-align: center; color: var(--muted); font-size: 0.85rem;
+  margin: 0.75rem 0 0; letter-spacing: 0.02em;
+}
+
+/* Carte vedette (legacy, conservée) */
 .featured {
   position: relative;
   display: block;
@@ -182,6 +197,35 @@ main { display: block; }
 }
 .featured-meta { color: var(--text); font-size: 0.92rem; }
 .featured-meta b { color: var(--accent-2); }
+
+/* ============ CARTE MORBIHAN ============ */
+.carte-morbihan {
+  width: 100%; height: auto; display: block;
+  overflow: visible;
+}
+.carte-terre path {
+  fill: var(--surface-2);
+  stroke: rgba(255, 93, 59, 0.35);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+.carte-terre path:first-child { filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.5)); }
+.pin { cursor: pointer; }
+.pin-halo { fill: var(--accent); opacity: 0; transition: opacity 0.2s; }
+.pin-pt { fill: var(--accent); stroke: var(--ink); stroke-width: 2; transition: r 0.2s, fill 0.2s; }
+.pin-nom {
+  font-family: var(--display); font-weight: 700; font-size: 25px;
+  fill: var(--text); paint-order: stroke; stroke: var(--ink); stroke-width: 4px; stroke-linejoin: round;
+}
+.pin-nb { fill: var(--accent-2); }
+.pin:hover .pin-halo, .pin.courant .pin-halo { opacity: 0.22; }
+.pin:hover .pin-pt, .pin.courant .pin-pt { r: 8.5; fill: var(--accent-2); }
+.pin.courant .pin-nom { fill: var(--accent-2); }
+.pin.vide .pin-pt { fill: var(--muted); }
+.pin.vide .pin-nom { fill: var(--muted); }
+.pin.vide .pin-nb { fill: var(--muted); }
+.pin:focus-visible { outline: none; }
+.pin:focus-visible .pin-pt { r: 9; stroke: var(--accent-2); }
 
 /* ============ MARQUEE ============ */
 .marquee {
