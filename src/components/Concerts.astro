@@ -1,0 +1,38 @@
+---
+import { formatDate } from '../data/format.js';
+
+interface Concert {
+  id: string;
+  titre: string;
+  debut: string;
+  ville: string;
+  lieu: string;
+  image: string | null;
+  url: string | null;
+}
+interface Props {
+  events: Concert[];
+}
+const { events } = Astro.props;
+---
+
+{events.length === 0 ? (
+  <p class="vide">Aucun concert à venir recensé pour le moment. Revenez bientôt !</p>
+) : (
+  <div class="liste">
+    {events.map((e) => (
+      <a class="carte" href={e.url ?? '#'} target="_blank" rel="noopener">
+        {e.image ? (
+          <img class="visuel" src={e.image} alt={`Affiche : ${e.titre}`} loading="lazy" />
+        ) : (
+          <div class="sans-visuel" aria-hidden="true">🎵</div>
+        )}
+        <div class="corps">
+          <span class="date">{formatDate(e.debut)}</span>
+          <p class="titre">{e.titre}</p>
+          <span class="lieu">{e.lieu ? `${e.lieu} — ` : ''}{e.ville}</span>
+        </div>
+      </a>
+    ))}
+  </div>
+)}

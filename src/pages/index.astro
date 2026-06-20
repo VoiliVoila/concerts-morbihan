@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+import SecteurNav from '../components/SecteurNav.astro';
+import Concerts from '../components/Concerts.astro';
+import data from '../data/events.json';
+---
+
+<Base
+  titre="Concerts Morbihan — agenda des concerts à venir"
+  description="Tous les concerts à venir dans le Morbihan : Vannes, Auray, Lorient, Erdeven, Étel, Quiberon. Dates, lieux et liens billetterie."
+>
+  <h1>Concerts à venir dans le Morbihan</h1>
+  <p class="intro">
+    {data.total} concert{data.total > 1 ? 's' : ''} recensé{data.total > 1 ? 's' : ''}
+    autour de Vannes, Auray, Lorient, Erdeven, Étel et Quiberon.
+  </p>
+
+  <SecteurNav actif={null} />
+  <Concerts events={data.events} />
+</Base>
