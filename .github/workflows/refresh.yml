@@ -1,0 +1,40 @@
+name: Rafraîchissement quotidien des concerts
+
+# Relance la récupération des concerts chaque jour, met à jour src/data/events.json
+# et le pousse. Le push déclenche le rebuild Cloudflare Pages (intégration Git),
+# qui régénère le site avec les dates fraîches. Aucun secret requis.
+
+on:
+  schedule:
+    - cron: '0 5 * * *' # 05:00 UTC ≈ 07:00 (heure de Paris l'été)
+  workflow_dispatch: {} # permet aussi un déclenchement manuel depuis l'onglet Actions
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # pour committer/pusher events.json
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Récupérer les concerts
+        run: npm run fetch
+
+      - name: Committer si les données ont changé
+        run: |
+          git config user.name "concerts-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git diff --quiet -- src/data/events.json; then
+            echo "Aucun changement dans events.json — rien à faire."
+          else
+            git add src/data/events.json
+            git commit -m "chore: rafraîchissement quotidien des concerts [skip ci]"
+            git push
+          fi
