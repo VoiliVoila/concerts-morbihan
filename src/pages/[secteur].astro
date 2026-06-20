@@ -1,15 +1,11 @@
 ---
 import Base from '../layouts/Base.astro';
-import SecteurNav from '../components/SecteurNav.astro';
 import Concerts from '../components/Concerts.astro';
 import { SECTEURS } from '../data/secteurs.js';
 import data from '../data/events.json';
 
 export function getStaticPaths() {
-  return SECTEURS.map((s) => ({
-    params: { secteur: s.slug },
-    props: { secteur: s },
-  }));
+  return SECTEURS.map((s) => ({ params: { secteur: s.slug }, props: { secteur: s } }));
 }
 
 const { secteur } = Astro.props;
@@ -19,18 +15,25 @@ const events = data.events.filter((e) => e.secteur === secteur.slug);
 <Base
   titre={`Concerts à ${secteur.nom} — agenda Morbihan`}
   description={`Les concerts à venir sur le secteur de ${secteur.nom} (Morbihan) : dates, lieux et billetterie.`}
+  secteurActif={secteur.slug}
 >
   <section class="hero">
-    <h1 class="hero-titre">Concerts à <em>{secteur.nom}</em>.</h1>
-    <p class="hero-sous">
-      {events.length > 0
-        ? `${events.length} concert${events.length > 1 ? 's' : ''} à venir sur ce secteur.`
-        : 'Aucun concert recensé sur ce secteur pour le moment.'}
-    </p>
+    <div>
+      <p class="hero-eyebrow"><span class="etoile">✦</span> Secteur</p>
+      <h1 class="hero-title"><span class="accent">{secteur.nom}.</span></h1>
+      <p class="hero-sub">
+        {events.length > 0
+          ? `${events.length} concert${events.length > 1 ? 's' : ''} à venir sur ce secteur du Morbihan.`
+          : 'Aucun concert recensé sur ce secteur pour le moment — revenez bientôt.'}
+      </p>
+    </div>
   </section>
 
-  <SecteurNav actif={secteur.slug} />
-
-  <h2 class="section-titre">À venir</h2>
-  <Concerts events={events} />
+  <section class="section">
+    <div class="section-head">
+      <h2 class="section-title">À venir</h2>
+      <span class="section-count">{events.length} date{events.length > 1 ? 's' : ''}</span>
+    </div>
+    <Concerts events={events} />
+  </section>
 </Base>
