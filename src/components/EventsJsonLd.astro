@@ -1,0 +1,43 @@
+---
+// Émet une liste de MusicEvent en JSON-LD (schema.org) pour le SEO sémantique :
+// les moteurs comprennent qu'il s'agit d'un agenda de concerts datés et localisés.
+interface Concert {
+  titre: string;
+  debut: string;
+  ville: string;
+  lieu: string;
+  image: string | null;
+  url: string | null;
+}
+interface Props { events: Concert[] }
+const { events } = Astro.props;
+
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: events.slice(0, 60).map((e, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'MusicEvent',
+      name: e.titre,
+      startDate: e.debut,
+      eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+      ...(e.url ? { url: e.url } : {}),
+      ...(e.image ? { image: e.image } : {}),
+      location: {
+        '@type': 'Place',
+        name: e.lieu || e.ville,
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: e.ville,
+          addressRegion: 'Morbihan',
+          addressCountry: 'FR',
+        },
+      },
+    },
+  })),
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(ld)} />
