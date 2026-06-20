@@ -2,13 +2,17 @@
 import '@fontsource-variable/bricolage-grotesque';
 import '@fontsource-variable/inter';
 import '../styles/global.css';
+import { SECTEURS } from '../data/secteurs.js';
+import data from '../data/events.json';
 
 interface Props {
   titre: string;
   description: string;
+  secteurActif?: string | null;
 }
-const { titre, description } = Astro.props;
+const { titre, description, secteurActif = null } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, '');
+const compte = data.par_secteur;
 ---
 
 <!doctype html>
@@ -22,14 +26,24 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, ''
     <meta property="og:title" content={titre} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#0b0f1a" />
+    <meta name="theme-color" content="#0a0c14" />
   </head>
   <body>
-    <header class="entete">
-      <a href="/" class="marque">
-        <span class="marque-pastille" aria-hidden="true"></span>
-        Concerts <span class="marque-lieu">Morbihan</span>
-      </a>
+    <header class="site-header">
+      <div class="masthead">
+        <a href="/" class="marque">
+          <span class="marque-pastille" aria-hidden="true"></span>
+          Concerts&nbsp;<em>Morbihan</em>
+        </a>
+        <nav class="nav" aria-label="Secteurs">
+          <a href="/" aria-current={secteurActif === null ? 'true' : 'false'}>Tous<sup>{data.total}</sup></a>
+          {SECTEURS.map((s) => (
+            <a href={`/${s.slug}`} aria-current={secteurActif === s.slug ? 'true' : 'false'}>
+              {s.nom}<sup>{compte[s.slug] ?? 0}</sup>
+            </a>
+          ))}
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -40,15 +54,24 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, ''
       <div class="pied-inner">
         <p class="pied-titre">Concerts Morbihan</p>
         <p>
-          Agenda indépendant des concerts à venir autour de Vannes, Auray,
-          Lorient, Erdeven, Étel et Quiberon.
+          L'agenda indépendant des concerts à venir autour de Vannes, Auray,
+          Lorient, Erdeven, Étel et Quiberon. Mis à jour chaque jour.
         </p>
         <p class="pied-sources">
-          Données : agenda public <a href="https://openagenda.com" rel="noopener">OpenAgenda</a>,
+          Données : <a href="https://openagenda.com" rel="noopener">OpenAgenda</a>,
           sites des salles &amp; <a href="https://www.fnacspectacles.com" rel="noopener">Fnac Spectacles</a>.
           Affiches © leurs ayants droit. Vérifiez dates &amp; billetterie auprès de l'organisateur.
         </p>
       </div>
     </footer>
+
+    <script is:inline>
+      (() => {
+        const onScroll = () =>
+          document.body.classList.toggle('scrolled', window.scrollY > 60);
+        onScroll();
+        addEventListener('scroll', onScroll, { passive: true });
+      })();
+    </script>
   </body>
 </html>
