@@ -120,12 +120,11 @@ main { display: block; }
 .hero {
   max-width: var(--max);
   margin: 0 auto;
-  padding: calc(var(--header-h) + 3.5rem) 1.5rem 2.5rem;
-  display: grid;
-  gap: 2rem;
-  align-items: end;
+  padding: calc(var(--header-h) + 4rem) 1.5rem 2.5rem;
 }
-@media (min-width: 900px) { .hero { grid-template-columns: 1fr 1.05fr; gap: 2.5rem; padding-top: calc(var(--header-h) + 4.5rem); } }
+@media (min-width: 900px) { .hero { padding-top: calc(var(--header-h) + 6rem); padding-bottom: 3rem; } }
+.hero-retour { color: var(--accent-2); }
+.hero-retour:hover { text-decoration: underline; }
 
 .hero-eyebrow {
   display: inline-flex; align-items: center; gap: 0.5rem;
@@ -139,12 +138,13 @@ main { display: block; }
 .hero-title {
   font-family: var(--display);
   font-weight: 800;
-  font-size: clamp(3rem, 11vw, 7rem);
-  line-height: 0.86;
-  letter-spacing: -0.045em;
+  font-size: clamp(3.2rem, 13vw, 9rem);
+  line-height: 0.84;
+  letter-spacing: -0.05em;
   margin: 0;
   text-transform: uppercase;
 }
+.hero-sub { max-width: 54ch; }
 .hero-title .trait {
   color: transparent;
   -webkit-text-stroke: 2px var(--text);
@@ -348,6 +348,15 @@ main { display: block; }
 .pied-inner { max-width: var(--max); margin: 0 auto; padding: 3rem 1.5rem 4rem; color: var(--muted); font-size: 0.9rem; }
 .pied-titre { font-family: var(--display); font-weight: 800; color: var(--text); font-size: 1.5rem; letter-spacing: -0.02em; margin: 0 0 0.5rem; text-transform: uppercase; }
 .pied p { margin: 0.4rem 0; max-width: 62ch; }
+.pied-secteurs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.25rem 0; }
+.pied-secteurs a {
+  display: inline-flex; gap: 0.35rem; align-items: baseline;
+  padding: 0.4rem 0.85rem; border: 1px solid var(--line); border-radius: 999px;
+  font-size: 0.88rem; font-weight: 500; color: var(--text);
+  transition: border-color 0.15s, color 0.15s;
+}
+.pied-secteurs a:hover { border-color: var(--accent); color: var(--accent-clair, var(--accent)); }
+.pied-secteurs a span { color: var(--muted); font-size: 0.78rem; }
 .pied a { color: var(--accent-2); }
 .pied-sources { font-size: 0.82rem; margin-top: 0.9rem; }
 
