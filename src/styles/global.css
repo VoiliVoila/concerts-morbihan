@@ -238,12 +238,11 @@ main { display: block; }
   color: var(--muted); background: radial-gradient(circle at 30% 20%, var(--surface-2), var(--ink-2));
 }
 .carte-date {
-  position: absolute; top: 0.7rem; left: 0.7rem;
-  background: var(--accent); color: var(--ink);
-  font-weight: 700; font-size: 0.76rem; padding: 0.28rem 0.55rem;
-  border-radius: 8px; letter-spacing: 0.01em;
-  box-shadow: 0 6px 16px -6px rgba(0,0,0,0.6);
+  display: inline-block; margin-bottom: 0.5rem;
+  color: var(--accent); font-weight: 700; font-size: 0.8rem;
+  letter-spacing: 0.04em; text-transform: uppercase;
 }
+.carte-heure { color: var(--accent-2); }
 .carte-corps { padding: 0.85rem 0.95rem 1.05rem; }
 .carte-genres { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.55rem; }
 .pastille {
