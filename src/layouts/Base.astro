@@ -1,4 +1,6 @@
 ---
+import '@fontsource-variable/bricolage-grotesque';
+import '@fontsource-variable/inter';
 import '../styles/global.css';
 
 interface Props {
@@ -20,22 +22,33 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, ''
     <meta property="og:title" content={titre} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#0d1b2a" />
+    <meta name="theme-color" content="#0b0f1a" />
   </head>
   <body>
     <header class="entete">
-      <a href="/" class="logo">🎸 Concerts Morbihan</a>
-      <p class="accroche">Les concerts à venir près de chez vous</p>
+      <a href="/" class="marque">
+        <span class="marque-pastille" aria-hidden="true"></span>
+        Concerts <span class="marque-lieu">Morbihan</span>
+      </a>
     </header>
-    <main class="contenu">
+
+    <main>
       <slot />
     </main>
+
     <footer class="pied">
-      <p>
-        Données issues de l'agenda public <a href="https://openagenda.com" rel="noopener">OpenAgenda</a>
-        (via Opendatasoft). Les affiches restent la propriété de leurs ayants droit.
-      </p>
-      <p>Site indépendant — vérifiez toujours dates et billetterie auprès de l'organisateur.</p>
+      <div class="pied-inner">
+        <p class="pied-titre">Concerts Morbihan</p>
+        <p>
+          Agenda indépendant des concerts à venir autour de Vannes, Auray,
+          Lorient, Erdeven, Étel et Quiberon.
+        </p>
+        <p class="pied-sources">
+          Données : agenda public <a href="https://openagenda.com" rel="noopener">OpenAgenda</a>,
+          sites des salles &amp; <a href="https://www.fnacspectacles.com" rel="noopener">Fnac Spectacles</a>.
+          Affiches © leurs ayants droit. Vérifiez dates &amp; billetterie auprès de l'organisateur.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

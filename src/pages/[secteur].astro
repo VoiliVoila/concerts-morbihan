@@ -20,11 +20,17 @@ const events = data.events.filter((e) => e.secteur === secteur.slug);
   titre={`Concerts à ${secteur.nom} — agenda Morbihan`}
   description={`Les concerts à venir sur le secteur de ${secteur.nom} (Morbihan) : dates, lieux et billetterie.`}
 >
-  <h1>Concerts — secteur {secteur.nom}</h1>
-  <p class="intro">
-    {events.length} concert{events.length > 1 ? 's' : ''} à venir sur ce secteur.
-  </p>
+  <section class="hero">
+    <h1 class="hero-titre">Concerts à <em>{secteur.nom}</em>.</h1>
+    <p class="hero-sous">
+      {events.length > 0
+        ? `${events.length} concert${events.length > 1 ? 's' : ''} à venir sur ce secteur.`
+        : 'Aucun concert recensé sur ce secteur pour le moment.'}
+    </p>
+  </section>
 
   <SecteurNav actif={secteur.slug} />
+
+  <h2 class="section-titre">À venir</h2>
   <Concerts events={events} />
 </Base>
