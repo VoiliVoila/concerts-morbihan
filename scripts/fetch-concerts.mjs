@@ -16,8 +16,9 @@ import * as opendatasoft from '../src/sources/opendatasoft.mjs';
 import * as echonova from '../src/sources/echonova.mjs';
 import * as hydrophone from '../src/sources/hydrophone.mjs';
 import * as coota from '../src/sources/coota.mjs';
+import * as fnac from '../src/sources/fnac.mjs';
 
-const SOURCES = [opendatasoft, echonova, hydrophone, coota];
+const SOURCES = [opendatasoft, echonova, hydrophone, coota, fnac];
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, '..', 'src', 'data', 'events.json');
