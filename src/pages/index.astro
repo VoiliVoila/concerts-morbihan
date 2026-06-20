@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Concerts from '../components/Concerts.astro';
-import Carte from '../components/Carte.astro';
+import EventsJsonLd from '../components/EventsJsonLd.astro';
 import { SECTEURS } from '../data/secteurs.js';
 import data from '../data/events.json';
 
@@ -17,25 +17,18 @@ const cetteSemaine = data.events.filter((e) => e.debut.slice(0, 10) <= dans7).le
   titre="Concerts Morbihan — l'agenda des concerts à venir"
   description="Tous les concerts à venir dans le Morbihan : Vannes, Auray, Lorient, Erdeven, Étel, Quiberon. Dates, lieux et billetterie, mis à jour chaque jour."
 >
+  <EventsJsonLd events={data.events} />
   <section class="hero">
-    <div>
-      <p class="hero-eyebrow"><span class="etoile">✦</span> Concerts à venir · Morbihan</p>
-      <h1 class="hero-title">
-        Ce qui va<br />
-        <span class="trait">faire</span> du<br />
-        <span class="accent">bruit.</span>
-      </h1>
-      <p class="hero-sub">
-        L'agenda des concerts du Morbihan — de Lorient à Vannes, en passant par
-        Auray, Erdeven, Étel et Quiberon. <b>{data.total} dates</b> à venir,
-        dont <b>{cetteSemaine} cette semaine</b>. Mis à jour chaque jour.
-      </p>
-    </div>
-
-    <div class="hero-carte">
-      <Carte actif={null} />
-      <p class="hero-carte-aide">Choisissez un secteur sur la carte</p>
-    </div>
+    <p class="hero-eyebrow"><span class="etoile">✦</span> Agenda des concerts · Morbihan</p>
+    <h1 class="hero-title">
+      Ce qui va <span class="trait">faire</span><br />
+      du <span class="accent">bruit.</span>
+    </h1>
+    <p class="hero-sub">
+      Tous les concerts à venir dans le Morbihan — de Lorient à Vannes, en
+      passant par Auray, Erdeven, Étel et Quiberon. <b>{data.total} dates</b>
+      à venir, dont <b>{cetteSemaine} cette semaine</b>. Mis à jour chaque jour.
+    </p>
   </section>
 
   {noms.length > 0 && (
@@ -80,12 +73,15 @@ const cetteSemaine = data.events.filter((e) => e.debut.slice(0, 10) <= dans7).le
   </section>
 
   <script is:inline>
-    (() => {
+    // Initialise les filtres. Rebranché à chaque navigation via astro:page-load
+    // (sinon le script inline ne se relance pas après une View Transition).
+    function initFiltres() {
       const secteur = document.getElementById('f-secteur');
       const quand = document.getElementById('f-quand');
       const reset = document.getElementById('f-reset');
       const count = document.getElementById('f-count');
       const vide = document.getElementById('f-vide');
+      if (!secteur || !quand) return; // pas sur la page d'accueil
       const cartes = [...document.querySelectorAll('.section .carte')];
 
       const jour = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate());
@@ -125,6 +121,11 @@ const cetteSemaine = data.events.filter((e) => e.debut.slice(0, 10) <= dans7).le
       secteur.addEventListener('change', appliquer);
       quand.addEventListener('change', appliquer);
       reset.addEventListener('click', () => { secteur.value = ''; quand.value = ''; appliquer(); });
-    })();
+    }
+
+    if (!window.__filtresBound) {
+      window.__filtresBound = true;
+      document.addEventListener('astro:page-load', initFiltres);
+    }
   </script>
 </Base>

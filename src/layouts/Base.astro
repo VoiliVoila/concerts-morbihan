@@ -2,13 +2,18 @@
 import '@fontsource-variable/bricolage-grotesque';
 import '@fontsource-variable/inter';
 import '../styles/global.css';
+import { ClientRouter } from 'astro:transitions';
+import { SECTEURS } from '../data/secteurs.js';
+import data from '../data/events.json';
 
 interface Props {
   titre: string;
   description: string;
 }
 const { titre, description } = Astro.props;
+const compte = data.par_secteur;
 const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, '');
+const ogImage = new URL('/og.png', Astro.site).href;
 ---
 
 <!doctype html>
@@ -19,13 +24,18 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, ''
     <title>{titre}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta property="og:title" content={titre} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#0a0c14" />
+    <ClientRouter />
   </head>
   <body>
-    <header class="site-header">
+    <header class="site-header" transition:persist>
       <div class="masthead">
         <a href="/" class="marque">
           <span class="marque-pastille" aria-hidden="true"></span>
@@ -46,6 +56,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, ''
           L'agenda indépendant des concerts à venir autour de Vannes, Auray,
           Lorient, Erdeven, Étel et Quiberon. Mis à jour chaque jour.
         </p>
+        <nav class="pied-secteurs" aria-label="Concerts par secteur">
+          {SECTEURS.filter((s) => (compte[s.slug] ?? 0) > 0).map((s) => (
+            <a href={`/${s.slug}`}>{s.nom} <span>{compte[s.slug]}</span></a>
+          ))}
+        </nav>
         <p class="pied-sources">
           Données : <a href="https://openagenda.com" rel="noopener">OpenAgenda</a>,
           sites des salles &amp; <a href="https://www.fnacspectacles.com" rel="noopener">Fnac Spectacles</a>.
@@ -55,12 +70,16 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, ''
     </footer>
 
     <script is:inline>
-      (() => {
+      // Header compact au scroll. Robuste aux View Transitions : on n'attache
+      // le listener qu'une fois, et on réévalue après chaque navigation.
+      if (!window.__scrollHdr) {
+        window.__scrollHdr = true;
         const onScroll = () =>
           document.body.classList.toggle('scrolled', window.scrollY > 60);
-        onScroll();
         addEventListener('scroll', onScroll, { passive: true });
-      })();
+        document.addEventListener('astro:after-swap', onScroll);
+        onScroll();
+      }
     </script>
   </body>
 </html>
