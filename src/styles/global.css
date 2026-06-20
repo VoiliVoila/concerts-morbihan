@@ -86,13 +86,17 @@ body.scrolled .masthead { height: 60px; }
 @keyframes pulse { 50% { box-shadow: 0 0 0 7px rgba(255, 93, 59, 0); } }
 .marque em { color: var(--accent); font-style: normal; }
 
-.masthead-lien {
+.masthead-nav {
   margin-left: auto;
-  font-size: 0.9rem; font-weight: 600; color: var(--muted);
-  padding: 0.4rem 0.9rem; border: 1px solid var(--line); border-radius: 999px;
-  transition: color 0.15s, border-color 0.15s;
+  display: flex; align-items: center; gap: 0.4rem;
 }
-.masthead-lien:hover { color: var(--text); border-color: var(--accent); }
+.masthead-nav a {
+  font-size: 0.92rem; font-weight: 600; color: var(--muted);
+  padding: 0.4rem 0.85rem; border-radius: 999px;
+  transition: color 0.15s, background 0.15s;
+}
+.masthead-nav a:hover { color: var(--text); background: var(--surface); }
+.masthead-nav a[aria-current='page'] { color: var(--text); background: var(--surface); }
 
 /* Nav secteurs horizontale dans le header */
 .nav {
@@ -348,6 +352,43 @@ main { display: block; }
   grid-column: 1 / -1; text-align: center; padding: 4rem 1rem;
   color: var(--muted); border: 1px dashed var(--line); border-radius: var(--radius);
 }
+
+/* ============ PAGE SALLES ============ */
+.salles-liste {
+  display: grid; gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.salle {
+  display: flex; flex-direction: column; gap: 0.5rem;
+  padding: 1.4rem; border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--surface); transition: border-color 0.18s, transform 0.18s;
+}
+.salle:hover { border-color: var(--accent); transform: translateY(-3px); }
+.salle-tete { display: flex; align-items: baseline; justify-content: space-between; gap: 0.75rem; }
+.salle-nom { font-family: var(--display); font-weight: 700; font-size: 1.3rem; letter-spacing: -0.02em; margin: 0; }
+.salle-compte {
+  flex-shrink: 0; font-size: 0.78rem; font-weight: 700; color: var(--accent);
+  border: 1px solid var(--accent); border-radius: 999px; padding: 0.15rem 0.6rem; white-space: nowrap;
+}
+.salle-meta { color: var(--accent-2); font-size: 0.82rem; font-weight: 600; margin: 0; text-transform: uppercase; letter-spacing: 0.04em; }
+.salle-desc { color: var(--muted); font-size: 0.95rem; margin: 0.2rem 0 0.6rem; flex-grow: 1; }
+.salle-liens { display: flex; flex-wrap: wrap; gap: 0.5rem 1.2rem; align-items: center; }
+.salle-lien { font-weight: 600; color: var(--text); }
+.salle-lien:hover { color: var(--accent); }
+.salle-lien-ext { font-weight: 600; color: var(--accent-2); }
+
+/* ============ PAGES PROSE ============ */
+.prose { max-width: 68ch; }
+.prose h2 {
+  font-family: var(--display); font-weight: 700; font-size: 1.5rem;
+  letter-spacing: -0.02em; margin: 2.25rem 0 0.75rem;
+}
+.prose p { margin: 0 0 1rem; color: #d7dcea; }
+.prose strong { color: var(--text); }
+.prose ul { margin: 0 0 1.25rem; padding-left: 1.2rem; color: #d7dcea; }
+.prose li { margin: 0.35rem 0; }
+.prose a { color: var(--accent-2); text-decoration: underline; text-underline-offset: 2px; }
+.prose-maj { color: var(--muted); font-size: 0.85rem; margin-top: 2rem; }
 
 /* ============ PIED ============ */
 .pied { border-top: 1px solid var(--line); }
