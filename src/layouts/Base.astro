@@ -12,6 +12,8 @@ interface Props {
 }
 const { titre, description } = Astro.props;
 const compte = data.par_secteur;
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const estActif = (href) => (href === '/' ? path === '/' : path.startsWith(href));
 const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, '');
 const ogImage = new URL('/og.png', Astro.site).href;
 ---
@@ -41,7 +43,11 @@ const ogImage = new URL('/og.png', Astro.site).href;
           <span class="marque-pastille" aria-hidden="true"></span>
           Concerts&nbsp;<em>Morbihan</em>
         </a>
-        <a href="/" class="masthead-lien">Tous les concerts</a>
+        <nav class="masthead-nav" aria-label="Navigation principale">
+          <a href="/" aria-current={path === '/' ? 'page' : undefined}>Concerts</a>
+          <a href="/salles" aria-current={estActif('/salles') ? 'page' : undefined}>Salles</a>
+          <a href="/a-propos" aria-current={estActif('/a-propos') ? 'page' : undefined}>À propos</a>
+        </nav>
       </div>
     </header>
 
