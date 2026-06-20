@@ -2,19 +2,55 @@
 import Base from '../layouts/Base.astro';
 import SecteurNav from '../components/SecteurNav.astro';
 import Concerts from '../components/Concerts.astro';
+import { formatDate, formatHeure } from '../data/format.js';
 import data from '../data/events.json';
+
+// Mise en avant : prochain concert disposant d'un visuel.
+const featured = data.events.find((e) => e.image) ?? data.events[0];
+const reste = data.events.filter((e) => e.id !== featured?.id);
+
+// Stat « cette semaine » (7 prochains jours).
+const auj = new Date();
+const dans7 = new Date(auj.getTime() + 7 * 864e5).toISOString().slice(0, 10);
+const cetteSemaine = data.events.filter((e) => e.debut.slice(0, 10) <= dans7).length;
+const nbSecteurs = Object.values(data.par_secteur).filter((n) => n > 0).length;
 ---
 
 <Base
-  titre="Concerts Morbihan — agenda des concerts à venir"
-  description="Tous les concerts à venir dans le Morbihan : Vannes, Auray, Lorient, Erdeven, Étel, Quiberon. Dates, lieux et liens billetterie."
+  titre="Concerts Morbihan — l'agenda des concerts à venir"
+  description="Tous les concerts à venir dans le Morbihan : Vannes, Auray, Lorient, Erdeven, Étel, Quiberon. Dates, lieux et liens billetterie, mis à jour chaque jour."
 >
-  <h1>Concerts à venir dans le Morbihan</h1>
-  <p class="intro">
-    {data.total} concert{data.total > 1 ? 's' : ''} recensé{data.total > 1 ? 's' : ''}
-    autour de Vannes, Auray, Lorient, Erdeven, Étel et Quiberon.
-  </p>
+  <section class="hero">
+    <h1 class="hero-titre">Des concerts<br />près de <em>chez vous</em>.</h1>
+    <p class="hero-sous">
+      L'agenda des concerts à venir dans le Morbihan — de Lorient à Vannes,
+      en passant par Auray, Erdeven, Étel et Quiberon. Mis à jour chaque jour.
+    </p>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-nombre">{data.total}</span><span class="stat-label">concerts à venir</span></div>
+      <div class="stat"><span class="stat-nombre">{cetteSemaine}</span><span class="stat-label">cette semaine</span></div>
+      <div class="stat"><span class="stat-nombre">{nbSecteurs}</span><span class="stat-label">secteurs animés</span></div>
+    </div>
+  </section>
+
+  {featured && (
+    <a class="affiche" href={featured.url ?? '#'} target="_blank" rel="noopener">
+      {featured.image
+        ? <img class="affiche-visuel" src={featured.image} alt={`Affiche : ${featured.titre}`} />
+        : <div class="affiche-visuel" />}
+      <div class="affiche-corps">
+        <span class="affiche-eyebrow">À l'affiche · prochaine date</span>
+        <h2 class="affiche-titre">{featured.titre}</h2>
+        <p class="affiche-meta">
+          <strong>{formatDate(featured.debut)}</strong><br />
+          {featured.lieu ? `${featured.lieu} — ` : ''}{featured.ville}
+        </p>
+      </div>
+    </a>
+  )}
 
   <SecteurNav actif={null} />
-  <Concerts events={data.events} />
+
+  <h2 class="section-titre">Tous les concerts à venir</h2>
+  <Concerts events={reste} />
 </Base>

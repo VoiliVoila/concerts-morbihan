@@ -1,138 +1,276 @@
 :root {
-  --fond: #0d1b2a;
-  --fond-carte: #1b263b;
-  --fond-carte-survol: #243049;
-  --texte: #e0e6ef;
-  --texte-doux: #9fb0c8;
-  --accent: #e07a5f;
-  --accent-clair: #f2a98f;
-  --bordure: #2c3a52;
-  --rayon: 12px;
-  --largeur: 960px;
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  /* Palette — nuit éditoriale chaude */
+  --ink: #0b0f1a;
+  --ink-2: #121829;
+  --surface: #161d31;
+  --surface-2: #1e273f;
+  --line: #283353;
+  --text: #f4f2ec;
+  --muted: #9aa6c2;
+  --accent: #ff6a45;
+  --accent-2: #ffd166;
+
+  --display: 'Bricolage Grotesque Variable', system-ui, sans-serif;
+  --body: 'Inter Variable', system-ui, -apple-system, sans-serif;
+
+  --max: 1080px;
+  --radius: 16px;
+  --radius-s: 10px;
 }
 
 * { box-sizing: border-box; }
 
+html { scroll-behavior: smooth; }
+
 body {
   margin: 0;
-  background: var(--fond);
-  color: var(--texte);
+  font-family: var(--body);
+  color: var(--text);
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(255, 106, 69, 0.10), transparent 60%),
+    radial-gradient(900px 500px at -10% 0%, rgba(255, 209, 102, 0.06), transparent 55%),
+    var(--ink);
   line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
 }
 
-a { color: var(--accent-clair); }
+a { color: inherit; }
 
+::selection { background: var(--accent); color: #fff; }
+
+/* ---------- En-tête ---------- */
 .entete {
-  text-align: center;
-  padding: 2.5rem 1rem 1.5rem;
-  border-bottom: 1px solid var(--bordure);
-}
-.logo {
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: var(--texte);
-  text-decoration: none;
-  letter-spacing: -0.02em;
-}
-.accroche { color: var(--texte-doux); margin: 0.4rem 0 0; }
-
-.contenu {
-  max-width: var(--largeur);
+  max-width: var(--max);
   margin: 0 auto;
-  padding: 1.5rem 1rem 3rem;
+  padding: 1.5rem 1.25rem;
+}
+.marque {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+.marque-lieu { color: var(--accent); }
+.marque-pastille {
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(255, 106, 69, 0.18);
 }
 
-/* Filtres par secteur */
+main { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem 4rem; }
+
+/* ---------- Hero ---------- */
+.hero { padding: 1.5rem 0 2.25rem; }
+.hero-titre {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(2.4rem, 7vw, 4.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  margin: 0 0 1rem;
+  max-width: 14ch;
+}
+.hero-titre em { color: var(--accent); font-style: normal; }
+.hero-sous {
+  font-size: 1.1rem;
+  color: var(--muted);
+  max-width: 52ch;
+  margin: 0;
+}
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.75rem;
+}
+.stat { display: flex; flex-direction: column; }
+.stat-nombre {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 1;
+}
+.stat-label { color: var(--muted); font-size: 0.85rem; }
+
+/* ---------- À l'affiche (mise en avant) ---------- */
+.affiche {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin: 0 0 2.5rem;
+  padding: 1rem;
+  background: linear-gradient(180deg, var(--surface), var(--ink-2));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-decoration: none;
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.affiche:hover { border-color: var(--accent); transform: translateY(-2px); }
+@media (min-width: 640px) { .affiche { grid-template-columns: 280px 1fr; align-items: center; } }
+.affiche-visuel {
+  /* En mono-colonne (mobile) : bandeau paysage, pour ne pas écraser la page.
+     En 2 colonnes (≥640px) : portrait façon affiche dans la colonne de 280px. */
+  aspect-ratio: 16 / 10;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-s);
+  background: var(--surface-2);
+}
+@media (min-width: 640px) { .affiche-visuel { aspect-ratio: 3 / 4; } }
+.affiche-corps { padding: 0.5rem 0.75rem 0.75rem; }
+.affiche-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+  margin-bottom: 0.6rem;
+}
+.affiche-titre {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.6rem;
+}
+.affiche-meta { color: var(--muted); font-size: 1rem; }
+.affiche-meta strong { color: var(--text); font-weight: 600; }
+
+/* ---------- Filtres secteur ---------- */
 .secteurs {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin: 1rem 0 2rem;
+  margin: 0 0 1.75rem;
+  position: sticky;
+  top: 0;
+  padding: 0.75rem 0;
+  background: linear-gradient(var(--ink) 70%, transparent);
+  z-index: 5;
 }
 .secteur-lien {
   display: inline-flex;
-  align-items: center;
+  align-items: baseline;
   gap: 0.4rem;
-  padding: 0.45rem 0.9rem;
-  border: 1px solid var(--bordure);
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--line);
   border-radius: 999px;
-  background: var(--fond-carte);
-  color: var(--texte);
+  background: var(--surface);
   text-decoration: none;
   font-size: 0.9rem;
-  transition: background 0.15s, border-color 0.15s;
+  font-weight: 500;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
 }
-.secteur-lien:hover { background: var(--fond-carte-survol); }
+.secteur-lien:hover { background: var(--surface-2); }
+.secteur-lien .compte { color: var(--muted); font-size: 0.8rem; font-variant-numeric: tabular-nums; }
 .secteur-lien[aria-current='true'] {
+  background: var(--accent);
   border-color: var(--accent);
-  color: var(--accent-clair);
+  color: #1a0d08;
 }
-.secteur-lien .compte {
-  color: var(--texte-doux);
-  font-variant-numeric: tabular-nums;
+.secteur-lien[aria-current='true'] .compte { color: rgba(26, 13, 8, 0.7); }
+
+/* ---------- Titre de section ---------- */
+.section-titre {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.25rem;
 }
 
-h1 { font-size: 1.9rem; letter-spacing: -0.02em; margin: 0.5rem 0; }
-.intro { color: var(--texte-doux); margin-top: 0; }
-
-/* Liste des concerts */
-.liste { display: grid; gap: 1rem; }
-@media (min-width: 620px) {
-  .liste { grid-template-columns: repeat(2, 1fr); }
+/* ---------- Grille de concerts ---------- */
+.liste {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.25rem;
 }
 
 .carte {
-  display: flex;
-  flex-direction: column;
-  background: var(--fond-carte);
-  border: 1px solid var(--bordure);
-  border-radius: var(--rayon);
+  position: relative;
+  display: block;
+  border-radius: var(--radius);
   overflow: hidden;
   text-decoration: none;
-  color: inherit;
-  transition: transform 0.15s, border-color 0.15s;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  transition: transform 0.18s, border-color 0.18s, box-shadow 0.18s;
 }
-.carte:hover { transform: translateY(-2px); border-color: var(--accent); }
+.carte:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 18px 40px -20px rgba(0, 0, 0, 0.7);
+}
+.carte:focus-visible { outline: 3px solid var(--accent-2); outline-offset: 3px; }
 
-.carte .visuel {
-  aspect-ratio: 16 / 9;
-  width: 100%;
-  object-fit: cover;
-  background: var(--fond-carte-survol);
+.carte-media { position: relative; aspect-ratio: 3 / 4; overflow: hidden; background: var(--surface-2); }
+.carte-media img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.4s ease;
 }
-.carte .sans-visuel {
-  aspect-ratio: 16 / 9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-  background: linear-gradient(135deg, var(--fond-carte-survol), var(--fond));
+.carte:hover .carte-media img { transform: scale(1.05); }
+.carte-vide {
+  width: 100%; height: 100%;
+  display: grid; place-items: center;
+  font-family: var(--display); font-weight: 700;
+  font-size: 1.05rem; color: var(--muted);
+  text-align: center; padding: 1rem;
+  background: linear-gradient(135deg, var(--surface-2), var(--ink-2));
+}
+.carte-date {
+  position: absolute; top: 0.7rem; left: 0.7rem;
+  display: inline-flex; gap: 0.35rem; align-items: baseline;
+  background: var(--accent); color: #1a0d08;
+  font-weight: 700; font-size: 0.78rem;
+  padding: 0.28rem 0.55rem; border-radius: 999px;
+  letter-spacing: 0.01em;
+}
+.carte-corps { padding: 0.85rem 0.9rem 1rem; }
+.carte-titre {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.02rem;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.3rem;
+  /* 2 lignes max */
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.carte-lieu { color: var(--muted); font-size: 0.85rem; display: block; }
+.carte-genre {
+  margin-top: 0.5rem; display: inline-block;
+  font-size: 0.72rem; color: var(--muted);
+  border: 1px solid var(--line); border-radius: 999px;
+  padding: 0.1rem 0.5rem;
 }
 
-.carte .corps { padding: 0.9rem 1rem 1.1rem; display: flex; flex-direction: column; gap: 0.3rem; }
-.carte .date {
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--accent-clair);
-}
-.carte .titre { font-size: 1.05rem; font-weight: 700; margin: 0; }
-.carte .lieu { font-size: 0.88rem; color: var(--texte-doux); }
-
+/* ---------- Vide ---------- */
 .vide {
+  grid-column: 1 / -1;
   text-align: center;
-  padding: 3rem 1rem;
-  color: var(--texte-doux);
+  padding: 4rem 1rem;
+  color: var(--muted);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
 }
 
-.pied {
-  max-width: var(--largeur);
-  margin: 0 auto;
-  padding: 2rem 1rem 3rem;
-  border-top: 1px solid var(--bordure);
-  color: var(--texte-doux);
-  font-size: 0.82rem;
+/* ---------- Pied ---------- */
+.pied { border-top: 1px solid var(--line); margin-top: 2rem; }
+.pied-inner { max-width: var(--max); margin: 0 auto; padding: 2.5rem 1.25rem 3.5rem; color: var(--muted); font-size: 0.9rem; }
+.pied-titre { font-family: var(--display); font-weight: 700; color: var(--text); font-size: 1.1rem; margin: 0 0 0.4rem; }
+.pied p { margin: 0.4rem 0; max-width: 60ch; }
+.pied a { color: var(--accent-2); }
+.pied-sources { font-size: 0.82rem; margin-top: 0.8rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto; }
+  .carte:hover { transform: none; }
 }
-.pied p { margin: 0.3rem 0; }
