@@ -1,5 +1,5 @@
 ---
-import { formatDate } from '../data/format.js';
+import { formatBadge, formatHeure } from '../data/format.js';
 
 interface Concert {
   id: string;
@@ -7,6 +7,7 @@ interface Concert {
   debut: string;
   ville: string;
   lieu: string;
+  description?: string;
   image: string | null;
   url: string | null;
 }
@@ -17,22 +18,32 @@ const { events } = Astro.props;
 ---
 
 {events.length === 0 ? (
-  <p class="vide">Aucun concert à venir recensé pour le moment. Revenez bientôt !</p>
+  <p class="vide">Aucun concert à venir recensé ici pour le moment. Revenez bientôt !</p>
 ) : (
   <div class="liste">
-    {events.map((e) => (
-      <a class="carte" href={e.url ?? '#'} target="_blank" rel="noopener">
-        {e.image ? (
-          <img class="visuel" src={e.image} alt={`Affiche : ${e.titre}`} loading="lazy" />
-        ) : (
-          <div class="sans-visuel" aria-hidden="true">🎵</div>
-        )}
-        <div class="corps">
-          <span class="date">{formatDate(e.debut)}</span>
-          <p class="titre">{e.titre}</p>
-          <span class="lieu">{e.lieu ? `${e.lieu} — ` : ''}{e.ville}</span>
-        </div>
-      </a>
-    ))}
+    {events.map((e) => {
+      const heure = formatHeure(e.debut);
+      return (
+        <a class="carte" href={e.url ?? '#'} target="_blank" rel="noopener">
+          <div class="carte-media">
+            {e.image ? (
+              <img src={e.image} alt={`Affiche : ${e.titre}`} loading="lazy" />
+            ) : (
+              <div class="carte-vide">{e.titre}</div>
+            )}
+            <span class="carte-date">
+              {formatBadge(e.debut)}{heure && <> · {heure}</>}
+            </span>
+          </div>
+          <div class="carte-corps">
+            <p class="carte-titre">{e.titre}</p>
+            <span class="carte-lieu">{e.lieu ? `${e.lieu} — ` : ''}{e.ville}</span>
+            {e.description && e.description.length <= 38 && !e.description.includes('.') && (
+              <span class="carte-genre">{e.description}</span>
+            )}
+          </div>
+        </a>
+      );
+    })}
   </div>
 )}
