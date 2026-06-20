@@ -1,11 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
 import Concerts from '../components/Concerts.astro';
-import { formatDate } from '../data/format.js';
+import Carte from '../components/Carte.astro';
 import data from '../data/events.json';
-
-const featured = data.events.find((e) => e.image) ?? data.events[0];
-const reste = data.events.filter((e) => e.id !== featured?.id);
 
 // Bandeau défilant : noms d'artistes/concerts à venir.
 const noms = data.events.slice(0, 16).map((e) => e.titre.split(/[:(]/)[0].trim().slice(0, 40));
@@ -34,19 +31,10 @@ const cetteSemaine = data.events.filter((e) => e.debut.slice(0, 10) <= dans7).le
       </p>
     </div>
 
-    {featured && (
-      <a class="featured" href={featured.url ?? '#'} target="_blank" rel="noopener">
-        {featured.image && <img src={featured.image} alt={`Affiche : ${featured.titre}`} />}
-        <div class="featured-grad"></div>
-        <div class="featured-body">
-          <span class="featured-eyebrow">★ À l'affiche</span>
-          <h2 class="featured-title">{featured.titre}</h2>
-          <p class="featured-meta">
-            <b>{formatDate(featured.debut)}</b> · {featured.lieu || featured.ville}
-          </p>
-        </div>
-      </a>
-    )}
+    <div class="hero-carte">
+      <Carte actif={null} />
+      <p class="hero-carte-aide">Choisissez un secteur sur la carte</p>
+    </div>
   </section>
 
   {noms.length > 0 && (
@@ -63,6 +51,6 @@ const cetteSemaine = data.events.filter((e) => e.debut.slice(0, 10) <= dans7).le
       <h2 class="section-title">Tous les concerts</h2>
       <span class="section-count">{data.total} dates à venir</span>
     </div>
-    <Concerts events={reste} />
+    <Concerts events={data.events} />
   </section>
 </Base>
