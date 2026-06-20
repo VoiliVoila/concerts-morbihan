@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import SecteurNav from '../components/SecteurNav.astro';
+import Concerts from '../components/Concerts.astro';
+import { SECTEURS } from '../data/secteurs.js';
+import data from '../data/events.json';
+
+export function getStaticPaths() {
+  return SECTEURS.map((s) => ({
+    params: { secteur: s.slug },
+    props: { secteur: s },
+  }));
+}
+
+const { secteur } = Astro.props;
+const events = data.events.filter((e) => e.secteur === secteur.slug);
+---
+
+<Base
+  titre={`Concerts à ${secteur.nom} — agenda Morbihan`}
+  description={`Les concerts à venir sur le secteur de ${secteur.nom} (Morbihan) : dates, lieux et billetterie.`}
+>
+  <h1>Concerts — secteur {secteur.nom}</h1>
+  <p class="intro">
+    {events.length} concert{events.length > 1 ? 's' : ''} à venir sur ce secteur.
+  </p>
+
+  <SecteurNav actif={secteur.slug} />
+  <Concerts events={events} />
+</Base>
