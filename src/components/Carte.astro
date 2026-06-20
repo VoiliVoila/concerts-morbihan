@@ -11,16 +11,35 @@ const { actif = null } = Astro.props;
 const nom = Object.fromEntries(SECTEURS.map((s) => [s.slug, s.nom]));
 const compte = data.par_secteur;
 
-// Placement des libellés par secteur (le SW est dense) + nom court si besoin.
-const label: Record<string, { dx: number; dy: number; anchor: string; court?: string }> = {
-  vannes: { dx: 16, dy: 5, anchor: 'start' },
-  auray: { dx: 0, dy: -16, anchor: 'middle' },
-  lorient: { dx: 0, dy: -16, anchor: 'middle' },
-  'lorient-rade': { dx: -14, dy: 4, anchor: 'end', court: 'Port-Louis' },
-  erdeven: { dx: -12, dy: 22, anchor: 'end' },
-  etel: { dx: -14, dy: -10, anchor: 'end' },
-  quiberon: { dx: 0, dy: 26, anchor: 'middle' },
+// Placement des libellés (le sud-ouest est dense → on les écarte) + nom court.
+const cfg: Record<string, { dx: number; dy: number; anchor: 'start' | 'middle' | 'end'; court?: string }> = {
+  vannes: { dx: 18, dy: 7, anchor: 'start' },
+  auray: { dx: 0, dy: -20, anchor: 'middle' },
+  lorient: { dx: 0, dy: -20, anchor: 'middle' },
+  'lorient-rade': { dx: -18, dy: 6, anchor: 'end', court: 'Port-Louis' },
+  etel: { dx: -16, dy: -16, anchor: 'end' },
+  erdeven: { dx: 8, dy: 26, anchor: 'start' },
+  quiberon: { dx: 0, dy: 30, anchor: 'middle' },
 };
+
+const FS = 26; // taille de police des libellés (unités SVG)
+const CW = 13; // largeur moyenne d'un caractère
+const PAD = 11;
+
+// Géométrie du badge derrière chaque libellé selon l'ancrage du texte.
+function badge(p: { x: number; y: number; slug: string }) {
+  const n = compte[p.slug] ?? 0;
+  const c = cfg[p.slug];
+  const txt = `${c.court ?? nom[p.slug]} ${n}`;
+  const w = txt.length * CW + PAD * 2;
+  const h = FS + PAD;
+  const tx = p.x + c.dx;
+  const ty = p.y + c.dy;
+  let rx = tx - PAD;
+  if (c.anchor === 'middle') rx = tx - w / 2;
+  else if (c.anchor === 'end') rx = tx - w + PAD;
+  return { n, c, txt, tx, ty, rx, ry: ty - FS * 0.72, w, h };
+}
 ---
 
 <svg class="carte-morbihan" viewBox={viewBox} role="img" aria-label="Carte du Morbihan — concerts par secteur" preserveAspectRatio="xMidYMid meet">
@@ -28,16 +47,18 @@ const label: Record<string, { dx: number; dy: number; anchor: string; court?: st
     {paths.map((d) => <path d={d} />)}
   </g>
   {pins.map((p) => {
-    const n = compte[p.slug] ?? 0;
-    const lab = label[p.slug];
+    const b = badge(p);
     const courant = actif === p.slug;
     return (
-      <a href={`/${p.slug}`} class:list={['pin', { courant, vide: n === 0 }]} aria-label={`${nom[p.slug]} — ${n} concert${n > 1 ? 's' : ''}`}>
-        <circle class="pin-halo" cx={p.x} cy={p.y} r="16" />
-        <circle class="pin-pt" cx={p.x} cy={p.y} r="6" />
-        <text class="pin-nom" x={p.x + lab.dx} y={p.y + lab.dy} text-anchor={lab.anchor}>
-          {lab.court ?? nom[p.slug]} <tspan class="pin-nb">{n}</tspan>
-        </text>
+      <a href={`/${p.slug}`} class:list={['pin', { courant, vide: b.n === 0 }]} aria-label={`${nom[p.slug]} — ${b.n} concert${b.n > 1 ? 's' : ''}`}>
+        <circle class="pin-halo" cx={p.x} cy={p.y} r="20" />
+        <circle class="pin-pt" cx={p.x} cy={p.y} r="7" />
+        <g class="pin-label">
+          <rect class="pin-badge" x={b.rx} y={b.ry} width={b.w} height={b.h} rx="9" />
+          <text class="pin-nom" x={b.tx} y={b.ty} text-anchor={b.c.anchor} font-size={FS}>
+            {b.c.court ?? nom[p.slug]} <tspan class="pin-nb">{b.n}</tspan>
+          </text>
+        </g>
       </a>
     );
   })}

@@ -125,7 +125,7 @@ main { display: block; }
   gap: 2rem;
   align-items: end;
 }
-@media (min-width: 900px) { .hero { grid-template-columns: 1.25fr 0.85fr; gap: 3rem; padding-top: calc(var(--header-h) + 5rem); } }
+@media (min-width: 900px) { .hero { grid-template-columns: 1fr 1.05fr; gap: 2.5rem; padding-top: calc(var(--header-h) + 4.5rem); } }
 
 .hero-eyebrow {
   display: inline-flex; align-items: center; gap: 0.5rem;
@@ -211,21 +211,30 @@ main { display: block; }
 }
 .carte-terre path:first-child { filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.5)); }
 .pin { cursor: pointer; }
-.pin-halo { fill: var(--accent); opacity: 0; transition: opacity 0.2s; }
-.pin-pt { fill: var(--accent); stroke: var(--ink); stroke-width: 2; transition: r 0.2s, fill 0.2s; }
-.pin-nom {
-  font-family: var(--display); font-weight: 700; font-size: 25px;
-  fill: var(--text); paint-order: stroke; stroke: var(--ink); stroke-width: 4px; stroke-linejoin: round;
+.pin-halo { fill: var(--accent); opacity: 0.12; transform-box: fill-box; transform-origin: center; animation: pinpulse 3s ease-in-out infinite; }
+@keyframes pinpulse { 50% { opacity: 0.04; transform: scale(1.5); } }
+.pin-pt { fill: var(--accent); stroke: var(--ink); stroke-width: 2.5; transition: r 0.2s, fill 0.2s; }
+.pin-badge {
+  fill: rgba(10, 12, 20, 0.72); stroke: var(--line); stroke-width: 1;
+  transition: fill 0.2s, stroke 0.2s;
 }
+.pin-nom { font-family: var(--display); font-weight: 700; fill: var(--text); }
 .pin-nb { fill: var(--accent-2); }
-.pin:hover .pin-halo, .pin.courant .pin-halo { opacity: 0.22; }
-.pin:hover .pin-pt, .pin.courant .pin-pt { r: 8.5; fill: var(--accent-2); }
-.pin.courant .pin-nom { fill: var(--accent-2); }
+.pin-label { transition: transform 0.2s ease; transform-box: fill-box; transform-origin: center; }
+
+.pin:hover .pin-pt, .pin.courant .pin-pt { r: 9.5; fill: var(--accent-2); }
+.pin:hover .pin-badge, .pin.courant .pin-badge { fill: var(--accent); stroke: var(--accent); }
+.pin:hover .pin-nom, .pin.courant .pin-nom { fill: var(--ink); }
+.pin:hover .pin-nb, .pin.courant .pin-nb { fill: var(--ink); }
+.pin:hover .pin-label { transform: scale(1.06); }
+.pin.courant .pin-halo { opacity: 0.25; }
+
+.pin.vide { opacity: 0.5; }
 .pin.vide .pin-pt { fill: var(--muted); }
-.pin.vide .pin-nom { fill: var(--muted); }
-.pin.vide .pin-nb { fill: var(--muted); }
+.pin.vide .pin-halo { display: none; }
+
 .pin:focus-visible { outline: none; }
-.pin:focus-visible .pin-pt { r: 9; stroke: var(--accent-2); }
+.pin:focus-visible .pin-pt { r: 10; stroke: var(--accent-2); }
 
 /* ============ MARQUEE ============ */
 .marquee {
@@ -257,6 +266,34 @@ main { display: block; }
   text-transform: uppercase;
 }
 .section-count { color: var(--muted); font-size: 0.95rem; }
+
+/* ============ FILTRES ============ */
+.filtres {
+  display: flex; flex-wrap: wrap; align-items: flex-end; gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+.filtre { display: flex; flex-direction: column; gap: 0.35rem; }
+.filtre > span {
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--muted);
+}
+.filtre select {
+  appearance: none;
+  font-family: var(--body); font-size: 0.95rem; font-weight: 500;
+  color: var(--text); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 999px;
+  padding: 0.55rem 2.4rem 0.55rem 1rem; cursor: pointer;
+  background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%), linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position: calc(100% - 18px) center, calc(100% - 13px) center;
+  background-size: 5px 5px, 5px 5px; background-repeat: no-repeat;
+  transition: border-color 0.15s;
+}
+.filtre select:hover, .filtre select:focus { border-color: var(--accent); outline: none; }
+.filtre-reset {
+  font-family: var(--body); font-size: 0.9rem; font-weight: 600;
+  color: var(--accent); background: transparent; border: 0; cursor: pointer;
+  padding: 0.6rem 0.4rem; text-decoration: underline; text-underline-offset: 3px;
+}
 
 /* ============ GRILLE CARTES ============ */
 .liste {

@@ -6,7 +6,7 @@
 // Tolérant aux pannes : si une source échoue, on log et on continue avec les
 // autres (un site de salle en maintenance ne doit pas casser tout le build).
 
-import { writeFile } from 'node:fs/promises';
+import { writeFile, readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import process from 'node:process';
@@ -61,6 +61,20 @@ async function main() {
   const parSecteur = Object.fromEntries(
     SECTEURS.map((s) => [s.slug, events.filter((e) => e.secteur === s.slug).length]),
   );
+
+  // Garde-fou : si des sources se font bloquer/throttler (typiquement dans un
+  // environnement CI), on peut récupérer beaucoup moins de concerts qu'avant.
+  // Dans ce cas, on n'écrase PAS le fichier existant (on garde les bonnes
+  // données du dernier run réussi) plutôt que d'appauvrir le site.
+  try {
+    const ancien = JSON.parse(await readFile(OUT, 'utf8'));
+    if (ancien.total >= 8 && events.length < ancien.total * 0.6) {
+      console.error(`✗ Résultat suspect : ${events.length} concerts vs ${ancien.total} précédents (` +
+        `≥40% de perte). Probable throttling d'une source. Fichier conservé, pas de réécriture.`);
+      console.log('Sources :\n' + rapport.join('\n'));
+      process.exit(1);
+    }
+  } catch { /* pas de fichier existant : premier run, on écrit normalement */ }
 
   await writeFile(
     OUT,
