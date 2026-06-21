@@ -4,34 +4,46 @@ import '@fontsource-variable/inter';
 import '../styles/global.css';
 import { ClientRouter } from 'astro:transitions';
 import { SECTEURS } from '../data/secteurs.js';
+import { t, prefix, otherLangPath } from '../i18n.js';
 import data from '../data/events.json';
 
 interface Props {
   titre: string;
   description: string;
+  lang?: string;
 }
-const { titre, description } = Astro.props;
+const { titre, description, lang = 'fr' } = Astro.props;
 const compte = data.par_secteur;
+const px = prefix(lang);
+
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
-const estActif = (href) => (href === '/' ? path === '/' : path.startsWith(href));
+const rel = (path.startsWith('/en') ? path.slice(3) : path) || '/'; // chemin sans préfixe langue
+const estActif = (sec) => (sec === '/' ? rel === '/' : rel.startsWith(sec));
+
 const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, '');
 const ogImage = new URL('/og.png', Astro.site).href;
+const autreLang = lang === 'fr' ? 'en' : 'fr';
+const autreHref = otherLangPath(Astro.url.pathname);
+const autreCanon = new URL(autreHref, Astro.site).href.replace(/\/$/, '');
 ---
 
 <!doctype html>
-<html lang="fr">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{titre}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang={lang} href={canonical} />
+    <link rel="alternate" hreflang={autreLang} href={autreCanon} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta property="og:title" content={titre} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:image" content={ogImage} />
     <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={lang === 'fr' ? 'fr_FR' : 'en_GB'} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#0a0c14" />
     <ClientRouter />
@@ -39,14 +51,15 @@ const ogImage = new URL('/og.png', Astro.site).href;
   <body>
     <header class="site-header" transition:persist>
       <div class="masthead">
-        <a href="/" class="marque">
+        <a href={px || '/'} class="marque">
           <span class="marque-pastille" aria-hidden="true"></span>
           Concerts&nbsp;<em>Morbihan</em>
         </a>
-        <nav class="masthead-nav" aria-label="Navigation principale">
-          <a href="/" aria-current={path === '/' ? 'page' : undefined}>Concerts</a>
-          <a href="/salles" aria-current={estActif('/salles') ? 'page' : undefined}>Salles</a>
-          <a href="/a-propos" aria-current={estActif('/a-propos') ? 'page' : undefined}>À propos</a>
+        <nav class="masthead-nav" aria-label="Navigation">
+          <a href={px || '/'} aria-current={estActif('/') ? 'page' : undefined}>{t(lang, 'nav.concerts')}</a>
+          <a href={`${px}/salles`} aria-current={estActif('/salles') ? 'page' : undefined}>{t(lang, 'nav.venues')}</a>
+          <a href={`${px}/a-propos`} aria-current={estActif('/a-propos') ? 'page' : undefined}>{t(lang, 'nav.about')}</a>
+          <a href={autreHref} class="lang-bascule" aria-label={lang === 'fr' ? 'Switch to English' : 'Passer en français'}>{autreLang.toUpperCase()}</a>
         </nav>
       </div>
     </header>
@@ -58,26 +71,25 @@ const ogImage = new URL('/og.png', Astro.site).href;
     <footer class="pied">
       <div class="pied-inner">
         <p class="pied-titre">Concerts Morbihan</p>
-        <p>
-          L'agenda indépendant des concerts à venir autour de Vannes, Auray,
-          Lorient, Erdeven, Étel et Quiberon. Mis à jour chaque jour.
-        </p>
-        <nav class="pied-secteurs" aria-label="Concerts par secteur">
+        <p>{t(lang, 'foot.tagline')}</p>
+        <nav class="pied-secteurs" aria-label={t(lang, 'foot.byArea')}>
           {SECTEURS.filter((s) => (compte[s.slug] ?? 0) > 0).map((s) => (
-            <a href={`/${s.slug}`}>{s.nom} <span>{compte[s.slug]}</span></a>
+            <a href={`${px}/${s.slug}`}>{s.nom} <span>{compte[s.slug]}</span></a>
           ))}
         </nav>
         <p class="pied-sources">
-          Données : <a href="https://openagenda.com" rel="noopener">OpenAgenda</a>,
-          sites des salles &amp; <a href="https://www.fnacspectacles.com" rel="noopener">Fnac Spectacles</a>.
-          Affiches © leurs ayants droit. Vérifiez dates &amp; billetterie auprès de l'organisateur.
+          {lang === 'fr' ? 'Données : ' : 'Data: '}
+          <a href="https://openagenda.com" rel="noopener">OpenAgenda</a>,
+          {lang === 'fr' ? ' sites des salles & ' : ' venue sites & '}
+          <a href="https://www.fnacspectacles.com" rel="noopener">Fnac Spectacles</a>.
+          {lang === 'fr'
+            ? ' Affiches © leurs ayants droit. Vérifiez dates & billetterie auprès de l\'organisateur.'
+            : ' Posters © their respective owners. Always check dates & tickets with the organiser.'}
         </p>
       </div>
     </footer>
 
     <script is:inline>
-      // Header compact au scroll. Robuste aux View Transitions : on n'attache
-      // le listener qu'une fois, et on réévalue après chaque navigation.
       if (!window.__scrollHdr) {
         window.__scrollHdr = true;
         const onScroll = () =>
