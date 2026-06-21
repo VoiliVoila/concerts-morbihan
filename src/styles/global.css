@@ -97,6 +97,12 @@ body.scrolled .masthead { height: 60px; }
 }
 .masthead-nav a:hover { color: var(--text); background: var(--surface); }
 .masthead-nav a[aria-current='page'] { color: var(--text); background: var(--surface); }
+.lang-bascule {
+  margin-left: 0.3rem; font-weight: 700 !important; font-size: 0.82rem !important;
+  letter-spacing: 0.04em; color: var(--text) !important;
+  border: 1px solid var(--line); padding: 0.35rem 0.7rem !important;
+}
+.lang-bascule:hover { border-color: var(--accent); background: transparent !important; color: var(--accent) !important; }
 
 /* Nav secteurs horizontale dans le header */
 .nav {

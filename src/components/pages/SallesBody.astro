@@ -1,0 +1,49 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SALLES } from '../../data/salles.js';
+import { normalise } from '../../data/secteurs.js';
+import { t, prefix } from '../../i18n.js';
+import data from '../../data/events.json';
+
+interface Props { lang?: string }
+const { lang = 'fr' } = Astro.props;
+const px = prefix(lang);
+
+function nbConcerts(cle) {
+  const k = normalise(cle);
+  return data.events.filter((e) => normalise(e.lieu).includes(k)).length;
+}
+const salles = SALLES.map((s) => ({ ...s, n: nbConcerts(s.cle) })).sort((a, b) => b.n - a.n);
+
+const titre = lang === 'fr' ? 'Les salles de concert suivies — Concerts Morbihan' : 'Tracked concert venues — Gigs in Morbihan';
+const description = lang === 'fr'
+  ? "Les salles de concert du Morbihan suivies par l'agenda : L'Échonova, l'Hydrophone, Le Coota, Palais des Arts…"
+  : 'The Morbihan concert venues we track: L\'Échonova, Hydrophone, Le Coota, Palais des Arts and more.';
+---
+
+<Base titre={titre} description={description} lang={lang}>
+  <section class="hero">
+    <p class="hero-eyebrow"><a href={px || '/'} class="hero-retour">{t(lang, 'back')}</a> · {t(lang, 'venues.eyebrow')}</p>
+    <h1 class="hero-title">{t(lang, 'venues.title')} <span class="accent">{t(lang, 'venues.titleAccent')}</span></h1>
+    <p class="hero-sub">{t(lang, 'venues.sub')}</p>
+  </section>
+
+  <section class="section">
+    <div class="salles-liste">
+      {salles.map((s) => (
+        <article class="salle">
+          <div class="salle-tete">
+            <h2 class="salle-nom">{s.nom}</h2>
+            <span class="salle-compte">{s.n} {t(lang, 'venues.upcoming')}</span>
+          </div>
+          <p class="salle-meta">{s.type[lang]} · {s.ville}</p>
+          <p class="salle-desc">{s.desc[lang]}</p>
+          <div class="salle-liens">
+            <a href={`${px}/${s.secteur}`} class="salle-lien">{t(lang, 'venues.areaGigs')}</a>
+            <a href={s.site} class="salle-lien-ext" target="_blank" rel="noopener">{t(lang, 'venues.site')}</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</Base>
