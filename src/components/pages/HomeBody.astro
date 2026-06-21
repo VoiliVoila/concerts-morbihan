@@ -1,0 +1,129 @@
+---
+import Base from '../../layouts/Base.astro';
+import Concerts from '../Concerts.astro';
+import EventsJsonLd from '../EventsJsonLd.astro';
+import { SECTEURS } from '../../data/secteurs.js';
+import { t, prefix } from '../../i18n.js';
+import data from '../../data/events.json';
+
+interface Props { lang?: string }
+const { lang = 'fr' } = Astro.props;
+const px = prefix(lang);
+
+const noms = data.events.slice(0, 16).map((e) => e.titre.split(/[:(]/)[0].trim().slice(0, 40));
+const auj = new Date();
+const dans7 = new Date(auj.getTime() + 7 * 864e5).toISOString().slice(0, 10);
+const cetteSemaine = data.events.filter((e) => e.debut.slice(0, 10) <= dans7).length;
+
+const titre = lang === 'fr'
+  ? "Concerts Morbihan — l'agenda des concerts à venir"
+  : 'Gigs in Morbihan — upcoming live music guide';
+const description = lang === 'fr'
+  ? 'Tous les concerts à venir dans le Morbihan : Vannes, Auray, Lorient, Erdeven, Étel, Quiberon. Dates, lieux et billetterie, mis à jour chaque jour.'
+  : 'Every upcoming gig in Morbihan: Vannes, Auray, Lorient, Erdeven, Étel, Quiberon. Dates, venues and tickets, updated daily.';
+---
+
+<Base titre={titre} description={description} lang={lang}>
+  <EventsJsonLd events={data.events} />
+
+  <section class="hero">
+    <p class="hero-eyebrow"><span class="etoile">✦</span> {t(lang, 'home.eyebrow')}</p>
+    <h1 class="hero-title">
+      {t(lang, 'home.title1')} <span class="trait">{t(lang, 'home.titleTrait')}</span><br />
+      {t(lang, 'home.title2') && <>{t(lang, 'home.title2')} </>}<span class="accent">{t(lang, 'home.titleAccent')}</span>
+    </h1>
+    <p class="hero-sub">
+      {t(lang, 'home.sub')} <Fragment set:html={t(lang, 'home.subStats', data.total, cetteSemaine)} />
+    </p>
+  </section>
+
+  {noms.length > 0 && (
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>{noms.map((n) => <>{n}&nbsp;&nbsp;✦&nbsp;&nbsp;</>)}</span>
+        <span>{noms.map((n) => <>{n}&nbsp;&nbsp;✦&nbsp;&nbsp;</>)}</span>
+      </div>
+    </div>
+  )}
+
+  <section class="section">
+    <div class="section-head">
+      <h2 class="section-title">{t(lang, 'home.allTitle')}</h2>
+      <span class="section-count"><b id="f-count">{data.total}</b> {lang === 'fr' ? 'dates affichées' : 'dates shown'}</span>
+    </div>
+
+    <div class="filtres">
+      <label class="filtre">
+        <span>{t(lang, 'filter.area')}</span>
+        <select id="f-secteur">
+          <option value="">{t(lang, 'filter.allAreas')}</option>
+          {SECTEURS.filter((s) => (data.par_secteur[s.slug] ?? 0) > 0).map((s) => (
+            <option value={s.slug}>{s.nom} ({data.par_secteur[s.slug]})</option>
+          ))}
+        </select>
+      </label>
+      <label class="filtre">
+        <span>{t(lang, 'filter.when')}</span>
+        <select id="f-quand">
+          <option value="">{t(lang, 'filter.anytime')}</option>
+          <option value="weekend">{t(lang, 'filter.weekend')}</option>
+          <option value="semaine">{t(lang, 'filter.week')}</option>
+          <option value="mois">{t(lang, 'filter.month')}</option>
+        </select>
+      </label>
+      <button id="f-reset" type="button" class="filtre-reset" hidden>{t(lang, 'filter.reset')}</button>
+    </div>
+
+    <Concerts events={data.events} lang={lang} />
+    <p class="vide" id="f-vide" hidden>{t(lang, 'filter.empty')}</p>
+  </section>
+
+  <script is:inline>
+    function initFiltres() {
+      const secteur = document.getElementById('f-secteur');
+      const quand = document.getElementById('f-quand');
+      const reset = document.getElementById('f-reset');
+      const count = document.getElementById('f-count');
+      const vide = document.getElementById('f-vide');
+      if (!secteur || !quand) return;
+      const cartes = [...document.querySelectorAll('.section .carte')];
+      const jour = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate());
+      const now = new Date();
+      const auj = jour(now);
+      function bornesQuand(v) {
+        if (v === 'semaine') return [auj, new Date(auj.getTime() + 7 * 864e5)];
+        if (v === 'mois') return [auj, new Date(now.getFullYear(), now.getMonth() + 1, 1)];
+        if (v === 'weekend') {
+          const d = auj.getDay();
+          const versSam = (6 - d + 7) % 7;
+          const sam = new Date(auj.getTime() + versSam * 864e5);
+          return [sam, new Date(sam.getTime() + 2 * 864e5)];
+        }
+        return null;
+      }
+      function appliquer() {
+        const s = secteur.value;
+        const b = bornesQuand(quand.value);
+        let n = 0;
+        for (const c of cartes) {
+          const okS = !s || c.dataset.secteur === s;
+          let okD = true;
+          if (b) { const tt = new Date(c.dataset.debut); okD = tt >= b[0] && tt < b[1]; }
+          const visible = okS && okD;
+          c.style.display = visible ? '' : 'none';
+          if (visible) n++;
+        }
+        count.textContent = n;
+        vide.hidden = n > 0;
+        reset.hidden = !s && !quand.value;
+      }
+      secteur.addEventListener('change', appliquer);
+      quand.addEventListener('change', appliquer);
+      reset.addEventListener('click', () => { secteur.value = ''; quand.value = ''; appliquer(); });
+    }
+    if (!window.__filtresBound) {
+      window.__filtresBound = true;
+      document.addEventListener('astro:page-load', initFiltres);
+    }
+  </script>
+</Base>

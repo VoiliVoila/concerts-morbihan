@@ -1,10 +1,10 @@
 ---
-import SecteurBody from '../components/pages/SecteurBody.astro';
-import { SECTEURS } from '../data/secteurs.js';
+import SecteurBody from '../../components/pages/SecteurBody.astro';
+import { SECTEURS } from '../../data/secteurs.js';
 
 export function getStaticPaths() {
   return SECTEURS.map((s) => ({ params: { secteur: s.slug }, props: { secteur: s } }));
 }
 const { secteur } = Astro.props;
 ---
-<SecteurBody lang="fr" secteur={secteur} />
+<SecteurBody lang="en" secteur={secteur} />

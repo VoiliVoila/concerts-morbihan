@@ -1,0 +1,93 @@
+---
+import Base from '../../layouts/Base.astro';
+import { t, prefix } from '../../i18n.js';
+import data from '../../data/events.json';
+
+interface Props { lang?: string }
+const { lang = 'fr' } = Astro.props;
+const px = prefix(lang);
+const maj = new Date(data.genere_le).toLocaleDateString(lang === 'fr' ? 'fr-FR' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+
+const titre = lang === 'fr' ? 'À propos & sources — Concerts Morbihan' : 'About & sources — Gigs in Morbihan';
+const description = lang === 'fr'
+  ? 'Concerts Morbihan : un agenda local indépendant. D\'où viennent les données, comment proposer un concert ou signaler une erreur.'
+  : 'Gigs in Morbihan: an independent local guide. Where the data comes from, how to suggest a gig or report an error.';
+const mailto = 'mailto:contact@lajetee.fr?subject=Concerts%20Morbihan';
+---
+
+<Base titre={titre} description={description} lang={lang}>
+  <section class="hero">
+    <p class="hero-eyebrow"><a href={px || '/'} class="hero-retour">{t(lang, 'back')}</a> · {t(lang, 'about.eyebrow')}</p>
+    <h1 class="hero-title">{t(lang, 'about.title')} <span class="accent">{t(lang, 'about.titleAccent')}</span></h1>
+    <p class="hero-sub">{t(lang, 'about.sub')}</p>
+  </section>
+
+  <section class="section prose">
+    {lang === 'fr' ? (
+      <>
+        <h2>Pourquoi ce site</h2>
+        <p>
+          Trouver « quels concerts ce week-end autour de chez moi ? » dans le Morbihan
+          demandait de fouiller des dizaines de sites de salles, de billetteries et
+          d'agendas. <strong>Concerts Morbihan</strong> rassemble tout au même endroit :
+          les concerts à venir autour de Vannes, Auray, Lorient, Erdeven, Étel et
+          Quiberon, mis à jour automatiquement chaque jour.
+        </p>
+        <h2>D'où viennent les données</h2>
+        <p>Les concerts sont agrégés depuis plusieurs sources, en toute transparence :</p>
+        <ul>
+          <li><strong>OpenAgenda</strong> (agenda public, via Opendatasoft) — pour l'ensemble du département.</li>
+          <li><strong>Les sites des salles</strong> — L'Échonova, l'Hydrophone, Le Coota — lus directement à la source.</li>
+          <li><strong>Fnac Spectacles</strong> — via les données structurées publiques (schema.org) des pages de salles.</li>
+        </ul>
+        <p>
+          Les <strong>affiches</strong> restent la propriété de leurs ayants droit :
+          affichées depuis leur source d'origine, jamais ré-hébergées, et chaque
+          concert renvoie vers la billetterie de l'organisateur.
+        </p>
+        <h2>Fiabilité</h2>
+        <p>
+          Les données sont rafraîchies chaque jour, mais une erreur (date modifiée,
+          concert annulé…) est toujours possible. <strong>Vérifiez toujours la date et
+          la disponibilité auprès de l'organisateur</strong> avant de vous déplacer.
+          Ce site est indépendant et n'est affilié à aucune salle.
+        </p>
+        <h2>Proposer un concert ou signaler une erreur</h2>
+        <p>Une salle manque, une info est fausse&nbsp;? Écrivez-moi&nbsp;: <a href={mailto}>contact@lajetee.fr</a>.</p>
+        <p class="prose-maj">Dernière mise à jour des concerts : {maj}.</p>
+      </>
+    ) : (
+      <>
+        <h2>Why this site</h2>
+        <p>
+          Answering “what gigs are on near me this weekend?” in Morbihan used to mean
+          digging through dozens of venue sites, ticketing platforms and listings.
+          <strong>Gigs in Morbihan</strong> brings it all together: upcoming concerts
+          around Vannes, Auray, Lorient, Erdeven, Étel and Quiberon, refreshed
+          automatically every day.
+        </p>
+        <h2>Where the data comes from</h2>
+        <p>Gigs are aggregated from several sources, transparently:</p>
+        <ul>
+          <li><strong>OpenAgenda</strong> (public listings, via Opendatasoft) — for the whole county.</li>
+          <li><strong>Venue websites</strong> — L'Échonova, Hydrophone, Le Coota — read directly at the source.</li>
+          <li><strong>Fnac Spectacles</strong> — via the public structured data (schema.org) on venue pages.</li>
+        </ul>
+        <p>
+          <strong>Posters</strong> remain the property of their owners: shown from their
+          original source, never re-hosted, and every gig links back to the organiser's
+          ticketing.
+        </p>
+        <h2>Reliability</h2>
+        <p>
+          Data is refreshed daily, but errors (rescheduled dates, cancellations…) can
+          happen. <strong>Always confirm the date and availability with the organiser</strong>
+          before heading out. This site is independent and not affiliated with any venue.
+        </p>
+        <h2>Suggest a gig or report an error</h2>
+        <p>A venue missing, something wrong? Drop me a line: <a href={mailto}>contact@lajetee.fr</a>.</p>
+        <p class="prose-maj">Gigs last updated: {maj}.</p>
+      </>
+    )}
+  </section>
+</Base>

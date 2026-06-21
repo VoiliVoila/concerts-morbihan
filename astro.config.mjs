@@ -7,6 +7,11 @@ export default defineConfig({
   site: 'https://concerts-morbihan.pages.dev',
   integrations: [sitemap()],
   trailingSlash: 'never',
+  i18n: {
+    locales: ['fr', 'en'],
+    defaultLocale: 'fr',
+    routing: { prefixDefaultLocale: false },
+  },
   build: {
     // /vannes.html plutôt que /vannes/index.html : Cloudflare Pages sert alors
     // /vannes en 200 direct, sans redirection 308. Cohérent avec trailingSlash.

@@ -1,0 +1,36 @@
+---
+import Base from '../../layouts/Base.astro';
+import Concerts from '../Concerts.astro';
+import EventsJsonLd from '../EventsJsonLd.astro';
+import { t, prefix } from '../../i18n.js';
+import data from '../../data/events.json';
+
+interface Props { lang?: string; secteur: { slug: string; nom: string } }
+const { lang = 'fr', secteur } = Astro.props;
+const px = prefix(lang);
+const events = data.events.filter((e) => e.secteur === secteur.slug);
+
+const titre = lang === 'fr'
+  ? `Concerts à ${secteur.nom} — agenda Morbihan`
+  : `Gigs in ${secteur.nom} — Morbihan guide`;
+const description = lang === 'fr'
+  ? `Les concerts à venir sur le secteur de ${secteur.nom} (Morbihan) : dates, lieux et billetterie.`
+  : `Upcoming gigs in the ${secteur.nom} area (Morbihan): dates, venues and tickets.`;
+---
+
+<Base titre={titre} description={description} lang={lang}>
+  {events.length > 0 && <EventsJsonLd events={events} />}
+  <section class="hero">
+    <p class="hero-eyebrow"><a href={px || '/'} class="hero-retour">{t(lang, 'back')}</a> · {t(lang, 'sector.eyebrow')}</p>
+    <h1 class="hero-title"><span class="accent">{secteur.nom}.</span></h1>
+    <p class="hero-sub">{t(lang, 'sector.sub', events.length)}</p>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2 class="section-title">{t(lang, 'sector.upcoming')}</h2>
+      <span class="section-count">{t(lang, 'sector.count', events.length)}</span>
+    </div>
+    <Concerts events={events} lang={lang} />
+  </section>
+</Base>
