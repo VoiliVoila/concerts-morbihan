@@ -1,68 +1,16 @@
 {
-  "genere_le": "2026-06-21T08:56:43.290Z",
-  "total": 29,
+  "genere_le": "2026-06-22T10:36:20.849Z",
+  "total": 25,
   "par_secteur": {
-    "vannes": 16,
+    "vannes": 13,
     "auray": 0,
     "lorient": 9,
-    "lorient-rade": 1,
+    "lorient-rade": 0,
     "erdeven": 2,
     "etel": 0,
     "quiberon": 1
   },
   "events": [
-    {
-      "id": "echonova:echopark4etape8brogealsonsofoflahertymanoamairandklorbensemblecrd|2026-06-21",
-      "fin": "2026-06-21T00:00:00",
-      "titre": "ECHOPARK #4 : Étape 8 : BRÓGEAL + SON’S OF O’FLAHERTY + MANOA MAIRAND + KLORB (ENSEMBLE CRD)",
-      "debut": "2026-06-21T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "electro, folk-rock, punk, rock",
-      "image": "https://lechonova.com/uploads/2026/04/fond-ile-2.png",
-      "url": "https://lechonova.com/evenement/echopark-4-etape-8-plantec-brogeal-guests/",
-      "source": "echonova"
-    },
-    {
-      "id": "opendatasoft:faitesdelamusiqueautrementasaintave|2026-06-21",
-      "fin": "2026-06-21T11:00:00",
-      "titre": "Faites de la musique autrement à Saint Avé",
-      "debut": "2026-06-21T11:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "Bar PMU Le Vincennes",
-      "secteur": "vannes",
-      "description": "L'association Vivre Saint Avé autrement nouvellement créée organise sa première animation populaire et festive intitulée \"Faites de la musique autrement\" ce dimanche 21 juin de 11h00 à minuit au bar …",
-      "image": "https://cdn.openagenda.com/main/a583fdd332694735ace177c426bdf9fd.base.image.jpg",
-      "url": "https://openagenda.com/fetedelamusique2026/events/faites-de-la-musique-autrement-a-saint-ave",
-      "source": "opendatasoft"
-    },
-    {
-      "id": "opendatasoft:sceneouverteaarradon|2026-06-21",
-      "fin": "2026-06-21T12:00:00",
-      "titre": "Scène ouverte à Arradon",
-      "debut": "2026-06-21T12:00:00",
-      "ville": "Arradon",
-      "lieu": "Place de l'église 56610 ARRADON",
-      "secteur": "vannes",
-      "description": "Fête de la musique à ARRADON dimanche 21 juin !",
-      "image": "https://cdn.openagenda.com/main/aaba2651008341a880d1ae8af3c5a3a7.base.image.jpg",
-      "url": "https://openagenda.com/fetedelamusique2026/events/scene-ouverte-3142783",
-      "source": "opendatasoft"
-    },
-    {
-      "id": "opendatasoft:portlouisenmusique|2026-06-21",
-      "fin": "2026-06-21T17:30:00",
-      "titre": "Port-Louis en musique !",
-      "debut": "2026-06-21T17:30:00",
-      "ville": "Port-Louis",
-      "lieu": "Médiathèque Pondichéry, 56290 Port-Louis",
-      "secteur": "lorient-rade",
-      "description": "Fête de la musique, du chant et de la danse à Port-Louis.",
-      "image": "https://cdn.openagenda.com/main/e1df3711a1e2433b8d3927918e07cecd.base.image.jpg",
-      "url": "https://openagenda.com/fetedelamusique2026/events/port-louis-en-musique",
-      "source": "opendatasoft"
-    },
     {
       "id": "coota:iki8|2026-06-26",
       "fin": "2026-06-26T00:00:00",
