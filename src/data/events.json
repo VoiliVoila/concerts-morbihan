@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-06-25T08:21:52.880Z",
-  "total": 29,
+  "genere_le": "2026-06-26T08:29:14.940Z",
+  "total": 30,
   "par_secteur": {
-    "vannes": 13,
+    "vannes": 14,
     "auray": 0,
     "lorient": 9,
     "lorient-rade": 0,
@@ -51,17 +51,17 @@
       "source": "coota"
     },
     {
-      "id": "coota:restingale|2026-07-03",
-      "fin": "2026-07-03T00:00:00",
-      "titre": "Rest In Gale",
-      "debut": "2026-07-03T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Pub-Rock",
-      "image": "https://lecoota.fr/images/thumb/1782293229.jpg",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
+      "id": "opendatasoft:fetedusolsticealafermedubonole27juin|2026-06-27",
+      "fin": "2026-06-27T17:00:00",
+      "titre": "Fête du solstice à la ferme du Bono le 27 Juin",
+      "debut": "2026-06-27T17:00:00",
+      "ville": "Le Bono",
+      "lieu": "La Ferme du Bono",
+      "secteur": "vannes",
+      "description": "Fête locale dans un champ avec ateliers dans les champs, visite de la ferme, musique brésilienne, DJ set et bien sûr restauration et buvette",
+      "image": "https://cdn.openagenda.com/main/401fe5425ed741cbaddef06abee41016.base.image.jpg",
+      "url": "https://openagenda.com/transitions-vannes-auray/events/fete-du-solstice-a-la-ferme-du-bono-le-27-juin",
+      "source": "opendatasoft"
     },
     {
       "id": "coota:dragunov|2026-07-04",
@@ -99,6 +99,19 @@
       "secteur": "erdeven",
       "description": "Techno Guitare Chant",
       "image": "https://lecoota.fr/images/thumb/1782295153.jpg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
+    },
+    {
+      "id": "coota:villafantome|2026-07-09",
+      "fin": "2026-07-09T00:00:00",
+      "titre": "Villa Fantôme",
+      "debut": "2026-07-09T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "Ska Rock",
+      "image": "https://lecoota.fr/images/thumb/1782295892.jpg",
       "url": "https://lecoota.fr/concert",
       "source": "coota"
     },
