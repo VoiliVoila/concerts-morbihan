@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-06-26T08:29:14.940Z",
-  "total": 30,
+  "genere_le": "2026-06-27T07:48:33.783Z",
+  "total": 29,
   "par_secteur": {
-    "vannes": 14,
+    "vannes": 13,
     "auray": 0,
     "lorient": 9,
     "lorient-rade": 0,
@@ -11,32 +11,6 @@
     "quiberon": 1
   },
   "events": [
-    {
-      "id": "coota:adjame|2026-06-26",
-      "fin": "2026-06-26T00:00:00",
-      "titre": "Adjamé",
-      "debut": "2026-06-26T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Afro",
-      "image": "https://lecoota.fr/images/thumb/1782292805.jpeg",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
-    {
-      "id": "opendatasoft:fetedelamusiqueaploeren|2026-06-26",
-      "fin": "2026-06-26T18:00:00",
-      "titre": "Fête de la musique à Ploeren",
-      "debut": "2026-06-26T18:00:00",
-      "ville": "Ploeren",
-      "lieu": "Espace culturel Le Triskell - Ploeren",
-      "secteur": "vannes",
-      "description": "Fête de la musique à Ploeren ! Une soirée conviviale avec de nombreux artistes (rock, breton, brésilien) et une scène ouverte amateurs (inscription sur www.plozren.bzh).",
-      "image": "https://cdn.openagenda.com/main/99dbaf6b69c84327873f487cfe034060.base.image.jpg",
-      "url": "https://openagenda.com/unidivers-oui-sortir/events/fete-de-la-musique-a-ploeren",
-      "source": "opendatasoft"
-    },
     {
       "id": "coota:ciphered|2026-06-27",
       "fin": "2026-06-27T00:00:00",
@@ -112,6 +86,19 @@
       "secteur": "erdeven",
       "description": "Ska Rock",
       "image": "https://lecoota.fr/images/thumb/1782295892.jpg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
+    },
+    {
+      "id": "coota:thenucleonsproject|2026-07-10",
+      "fin": "2026-07-10T00:00:00",
+      "titre": "THE NUCLEONS PROJECT",
+      "debut": "2026-07-10T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "Pachas Dirty Psycho Rock'n'Roll",
+      "image": "https://lecoota.fr/images/thumb/1782296388.png",
       "url": "https://lecoota.fr/concert",
       "source": "coota"
     },
