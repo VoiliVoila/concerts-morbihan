@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-07-01T08:48:43.491Z",
-  "total": 35,
+  "genere_le": "2026-07-02T08:10:55.825Z",
+  "total": 39,
   "par_secteur": {
-    "vannes": 14,
+    "vannes": 18,
     "auray": 0,
     "lorient": 13,
     "lorient-rade": 1,
@@ -88,6 +88,19 @@
       "image": "https://lecoota.fr/images/thumb/1782296388.png",
       "url": "https://lecoota.fr/concert",
       "source": "coota"
+    },
+    {
+      "id": "opendatasoft:concertalaferme|2026-07-13",
+      "fin": "2026-07-13T19:00:00",
+      "titre": "Concert à la Ferme",
+      "debut": "2026-07-13T19:00:00",
+      "ville": "Séné",
+      "lieu": "Ferme de Dolan",
+      "secteur": "vannes",
+      "description": "Venez découvrir un concert inédit dans un cadre différent",
+      "image": "https://cdn.openagenda.com/main/0397c8bdaa56470e86c9695fa3e15b42.base.image.jpg",
+      "url": "https://openagenda.com/transitions-vannes-auray/events/concert-a-la-ferme-7952775",
+      "source": "opendatasoft"
     },
     {
       "id": "opendatasoft:ecumefestivalles5ans|2026-08-07",
@@ -233,6 +246,19 @@
       "source": "hydrophone"
     },
     {
+      "id": "echonova:bondimanchecheveux|2026-10-11",
+      "fin": "2026-10-11T00:00:00",
+      "titre": "BON DIMANCHE : CHEVEUX",
+      "debut": "2026-10-11T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "en-famille",
+      "image": "https://lechonova.com/uploads/2026/07/design-sans-titre-2.jpg",
+      "url": "https://lechonova.com/evenement/bon-dimanche-cheveux/",
+      "source": "echonova"
+    },
+    {
       "id": "echonova:yvnnis1erepartie|2026-10-23",
       "fin": "2026-10-23T00:00:00",
       "titre": "YVNNIS + 1ère partie",
@@ -246,9 +272,9 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:bertrandbelin1erepartie|2026-10-24",
+      "id": "echonova:bertrandbelinlouisepapier|2026-10-24",
       "fin": "2026-10-24T00:00:00",
-      "titre": "BERTRAND BELIN + 1ÈRE PARTIE",
+      "titre": "BERTRAND BELIN + LOUÏSE PAPIER",
       "debut": "2026-10-24T00:00:00",
       "ville": "Saint-Avé",
       "lieu": "L'Échonova",
@@ -286,9 +312,9 @@
     },
     {
       "id": "hydrophone:merylstreekchestlibrarycard|2026-11-06",
-      "fin": "2026-11-06T19:30:00",
+      "fin": "2026-11-06T20:30:00",
       "titre": "MERYL STREEK + CHEST. + LIBRARY CARD",
-      "debut": "2026-11-06T19:30:00",
+      "debut": "2026-11-06T20:30:00",
       "ville": "Lorient",
       "lieu": "Hydrophone",
       "secteur": "lorient",
@@ -332,7 +358,7 @@
       "lieu": "Hydrophone",
       "secteur": "lorient",
       "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/40/7a0a64937513aef52251665537d8a3.png?1782895728",
+      "image": "https://www.hydrophone.fr/local/cache-gd2/40/7a0a64937513aef52251665537d8a3.png?1782895732",
       "url": "https://www.hydrophone.fr/Projection-You-ll-never-walk-alone.html",
       "source": "hydrophone"
     },
@@ -345,7 +371,7 @@
       "lieu": "Hydrophone",
       "secteur": "lorient",
       "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/31/d08a000daf599864e64a35b62bddf1.png?1782895729",
+      "image": "https://www.hydrophone.fr/local/cache-gd2/31/d08a000daf599864e64a35b62bddf1.png?1782895756",
       "url": "https://www.hydrophone.fr/Solann.html",
       "source": "hydrophone"
     },
@@ -376,9 +402,9 @@
       "source": "hydrophone"
     },
     {
-      "id": "echonova:meryljahlys|2026-11-27",
+      "id": "echonova:meryljahlysdjpablosca|2026-11-27",
       "fin": "2026-11-27T00:00:00",
-      "titre": "MERYL + JAHLYS",
+      "titre": "MERYL + JAHLYS + DJ PABLOSCA",
       "debut": "2026-11-27T00:00:00",
       "ville": "Saint-Avé",
       "lieu": "L'Échonova",
@@ -386,6 +412,19 @@
       "description": "rap",
       "image": "https://lechonova.com/uploads/2025/12/site-3.jpg",
       "url": "https://lechonova.com/evenement/meryl-premiere-partie/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:foireauxdisques|2026-11-29",
+      "fin": "2026-11-29T00:00:00",
+      "titre": "FOIRE AUX DISQUES",
+      "debut": "2026-11-29T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "foire",
+      "image": "https://lechonova.com/uploads/2026/07/site.jpg",
+      "url": "https://lechonova.com/evenement/foire-aux-disques-2/",
       "source": "echonova"
     },
     {
@@ -412,6 +451,19 @@
       "description": "bouyon, dancehall, shatta",
       "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
       "url": "https://lechonova.com/evenement/bamby-guests/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:vannesallstar16|2026-12-19",
+      "fin": "2026-12-19T00:00:00",
+      "titre": "VANNES ALL STAR #16",
+      "debut": "2026-12-19T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "a-vous-de-jouer",
+      "image": "https://lechonova.com/uploads/2025/06/477577698-1312028209903896-8190957387047402375-n.jpg",
+      "url": "https://lechonova.com/evenement/vannes-all-star-16/",
       "source": "echonova"
     },
     {
