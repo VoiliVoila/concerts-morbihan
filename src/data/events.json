@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-07-02T08:10:55.825Z",
-  "total": 39,
+  "genere_le": "2026-07-03T08:07:51.330Z",
+  "total": 40,
   "par_secteur": {
-    "vannes": 18,
+    "vannes": 19,
     "auray": 0,
     "lorient": 13,
     "lorient-rade": 1,
@@ -400,6 +400,19 @@
       "image": "https://www.hydrophone.fr/local/cache-gd2/39/5f98982a6c1e9e3d84c3df86ea125a.jpg?1779785719",
       "url": "https://www.hydrophone.fr/MARGUERITE.html",
       "source": "hydrophone"
+    },
+    {
+      "id": "echonova:mknkmanu|2026-11-21",
+      "fin": "2026-11-21T00:00:00",
+      "titre": "MKNK : MANU",
+      "debut": "2026-11-21T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "hardcore, techno",
+      "image": "https://lechonova.com/uploads/2026/07/ban-site.jpg",
+      "url": "https://lechonova.com/evenement/mknk-manu-le-malin-somniac-one-rabbeat-midnight-totem/",
+      "source": "echonova"
     },
     {
       "id": "echonova:meryljahlysdjpablosca|2026-11-27",
