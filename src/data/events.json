@@ -1,29 +1,16 @@
 {
-  "genere_le": "2026-07-03T08:07:51.330Z",
-  "total": 40,
+  "genere_le": "2026-07-04T07:44:58.456Z",
+  "total": 41,
   "par_secteur": {
     "vannes": 19,
     "auray": 0,
-    "lorient": 13,
+    "lorient": 14,
     "lorient-rade": 1,
     "erdeven": 6,
     "etel": 0,
     "quiberon": 1
   },
   "events": [
-    {
-      "id": "coota:keepinred|2026-07-03",
-      "fin": "2026-07-03T00:00:00",
-      "titre": "KEEPIN'RED",
-      "debut": "2026-07-03T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "FUNK",
-      "image": "https://lecoota.fr/images/thumb/1782730291.JPG",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
     {
       "id": "coota:dragunov|2026-07-04",
       "fin": "2026-07-04T00:00:00",
@@ -86,6 +73,19 @@
       "secteur": "erdeven",
       "description": "Pachas Dirty Psycho Rock'n'Roll",
       "image": "https://lecoota.fr/images/thumb/1782296388.png",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
+    },
+    {
+      "id": "coota:bloodflower|2026-07-11",
+      "fin": "2026-07-11T00:00:00",
+      "titre": "BLOODFLOWER",
+      "debut": "2026-07-11T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "Blues/Soul/Rap",
+      "image": "https://lecoota.fr/images/thumb/1782297978.JPG",
       "url": "https://lecoota.fr/concert",
       "source": "coota"
     },
@@ -179,6 +179,19 @@
       "image": "https://lechonova.com/uploads/2026/04/site.jpg",
       "url": "https://lechonova.com/evenement/hilight-tribe-premiere-partie/",
       "source": "echonova"
+    },
+    {
+      "id": "hydrophone:trotrobienfestival|2026-09-26",
+      "fin": "2026-09-26T19:00:00",
+      "titre": "Tro Tro Bien Festival",
+      "debut": "2026-09-26T19:00:00",
+      "ville": "Lorient",
+      "lieu": "Hydrophone",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.hydrophone.fr/local/cache-gd2/da/262594f6145321b359d7a287164607.jpg?1783076355",
+      "url": "https://www.hydrophone.fr/Tro-Tro-Bien-Festiva.html",
+      "source": "hydrophone"
     },
     {
       "id": "hydrophone:lamaisontellier|2026-10-01",
@@ -402,9 +415,9 @@
       "source": "hydrophone"
     },
     {
-      "id": "echonova:mknkmanu|2026-11-21",
+      "id": "echonova:mknkclubmanu|2026-11-21",
       "fin": "2026-11-21T00:00:00",
-      "titre": "MKNK : MANU",
+      "titre": "MKNK CLUB : MANU",
       "debut": "2026-11-21T00:00:00",
       "ville": "Saint-Avé",
       "lieu": "L'Échonova",
