@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-07-04T07:44:58.456Z",
+  "genere_le": "2026-07-05T07:55:45.217Z",
   "total": 41,
   "par_secteur": {
     "vannes": 19,
@@ -11,19 +11,6 @@
     "quiberon": 1
   },
   "events": [
-    {
-      "id": "coota:dragunov|2026-07-04",
-      "fin": "2026-07-04T00:00:00",
-      "titre": "Dragunov",
-      "debut": "2026-07-04T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Post-Metal Instrumental",
-      "image": "https://lecoota.fr/images/thumb/1782293960.jpeg",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
     {
       "id": "coota:burkinaazza|2026-07-08",
       "fin": "2026-07-08T00:00:00",
@@ -101,6 +88,19 @@
       "image": "https://cdn.openagenda.com/main/0397c8bdaa56470e86c9695fa3e15b42.base.image.jpg",
       "url": "https://openagenda.com/transitions-vannes-auray/events/concert-a-la-ferme-7952775",
       "source": "opendatasoft"
+    },
+    {
+      "id": "coota:thebloyetbrothers|2026-07-16",
+      "fin": "2026-07-16T00:00:00",
+      "titre": "THE BLOYET BROTHERS",
+      "debut": "2026-07-16T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "Rock organique familial",
+      "image": "https://lecoota.fr/images/thumb/1782298731.jpg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
     },
     {
       "id": "opendatasoft:ecumefestivalles5ans|2026-08-07",
