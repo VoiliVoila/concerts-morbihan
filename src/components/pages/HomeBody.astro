@@ -93,7 +93,7 @@ const siteLd = {
 
     {mois.map((g) => (
       <section class="groupe-mois">
-        <h3 class="mois-titre"><span>{formatMois(g.ym, lang)}</span><em>{g.events.length}</em></h3>
+        <h3 class="mois-titre"><span>{formatMois(g.ym, lang)}</span><em class="mois-nb">{g.events.length} {g.events.length > 1 ? 'dates' : 'date'}</em></h3>
         <Concerts events={g.events} lang={lang} />
       </section>
     ))}
@@ -142,10 +142,13 @@ const siteLd = {
           c.style.display = visible ? '' : 'none';
           if (visible) n++;
         }
-        // Masque les en-têtes de mois dont toutes les cartes sont filtrées.
+        // Compteur de chaque mois recalculé sur les cartes visibles ;
+        // les mois vidés par le filtre sont masqués entièrement.
         for (const g of groupes) {
-          const resteVisible = [...g.querySelectorAll('.carte')].some((c) => c.style.display !== 'none');
-          g.style.display = resteVisible ? '' : 'none';
+          const nMois = [...g.querySelectorAll('.carte')].filter((c) => c.style.display !== 'none').length;
+          const em = g.querySelector('.mois-nb');
+          if (em) em.textContent = `${nMois} ${nMois > 1 ? 'dates' : 'date'}`;
+          g.style.display = nMois > 0 ? '' : 'none';
         }
         count.textContent = n;
         vide.hidden = n > 0;
