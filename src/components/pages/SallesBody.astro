@@ -33,13 +33,13 @@ const description = lang === 'fr'
       {salles.map((s) => (
         <article class="salle">
           <div class="salle-tete">
-            <h2 class="salle-nom">{s.nom}</h2>
+            <h2 class="salle-nom"><a href={`${px}/salles/${s.id}`}>{s.nom}</a></h2>
             <span class="salle-compte">{s.n} {t(lang, 'venues.upcoming')}</span>
           </div>
           <p class="salle-meta">{s.type[lang]} · {s.ville}</p>
           <p class="salle-desc">{s.desc[lang]}</p>
           <div class="salle-liens">
-            <a href={`${px}/${s.secteur}`} class="salle-lien">{t(lang, 'venues.areaGigs')}</a>
+            <a href={`${px}/salles/${s.id}`} class="salle-lien">{t(lang, 'venues.prog')}</a>
             <a href={s.site} class="salle-lien-ext" target="_blank" rel="noopener">{t(lang, 'venues.site')}</a>
           </div>
         </article>
