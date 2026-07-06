@@ -57,6 +57,18 @@ export const SECTEURS = [
   },
 ];
 
+// Secteurs voisins (du plus proche au plus lointain) : sert à suggérer des
+// concerts « pas loin » quand un secteur n'a aucune date recensée.
+export const VOISINS = {
+  vannes: ['auray', 'lorient'],
+  auray: ['vannes', 'quiberon', 'erdeven', 'etel'],
+  lorient: ['lorient-rade', 'etel'],
+  'lorient-rade': ['lorient', 'etel', 'erdeven'],
+  erdeven: ['etel', 'quiberon', 'auray', 'lorient-rade'],
+  etel: ['erdeven', 'lorient-rade', 'auray'],
+  quiberon: ['erdeven', 'auray'],
+};
+
 // Normalise une chaîne pour comparaison : minuscule, sans accent, espaces nettoyés.
 export function normalise(str) {
   return (str || '')

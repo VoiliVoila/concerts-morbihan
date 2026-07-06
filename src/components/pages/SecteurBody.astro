@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Concerts from '../Concerts.astro';
 import EventsJsonLd from '../EventsJsonLd.astro';
+import { SECTEURS, VOISINS } from '../../data/secteurs.js';
 import { t, prefix } from '../../i18n.js';
 import data from '../../data/events.json';
 
@@ -9,6 +10,13 @@ interface Props { lang?: string; secteur: { slug: string; nom: string } }
 const { lang = 'fr', secteur } = Astro.props;
 const px = prefix(lang);
 const events = data.events.filter((e) => e.secteur === secteur.slug);
+
+// Secteur sans date : on propose les concerts des secteurs voisins plutôt
+// qu'une page vide (les données sont triées par date, on garde l'ordre).
+const voisins = events.length === 0 ? (VOISINS[secteur.slug] ?? []) : [];
+const proches = voisins.length
+  ? data.events.filter((e) => voisins.includes(e.secteur)).slice(0, 8)
+  : [];
 
 const titre = lang === 'fr'
   ? `Concerts à ${secteur.nom} — agenda Morbihan`
@@ -32,5 +40,12 @@ const description = lang === 'fr'
       <span class="section-count">{t(lang, 'sector.count', events.length)}</span>
     </div>
     <Concerts events={events} lang={lang} />
+
+    {proches.length > 0 && (
+      <div class="proches">
+        <h2 class="section-title">{t(lang, 'sector.nearby')}</h2>
+        <Concerts events={proches} lang={lang} />
+      </div>
+    )}
   </section>
 </Base>

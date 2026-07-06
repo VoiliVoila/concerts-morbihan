@@ -3,6 +3,8 @@ import Base from '../../layouts/Base.astro';
 import Concerts from '../Concerts.astro';
 import EventsJsonLd from '../EventsJsonLd.astro';
 import { SECTEURS } from '../../data/secteurs.js';
+import { groupesParMois } from '../../data/agenda.js';
+import { formatMois } from '../../data/format.js';
 import { t, prefix } from '../../i18n.js';
 import data from '../../data/events.json';
 
@@ -14,6 +16,7 @@ const noms = data.events.slice(0, 16).map((e) => e.titre.split(/[:(]/)[0].trim()
 const auj = new Date();
 const dans7 = new Date(auj.getTime() + 7 * 864e5).toISOString().slice(0, 10);
 const cetteSemaine = data.events.filter((e) => e.debut.slice(0, 10) <= dans7).length;
+const mois = groupesParMois(data.events);
 
 const titre = lang === 'fr'
   ? "Concerts Morbihan — l'agenda des concerts à venir"
@@ -21,16 +24,26 @@ const titre = lang === 'fr'
 const description = lang === 'fr'
   ? 'Tous les concerts à venir dans le Morbihan : Vannes, Auray, Lorient, Erdeven, Étel, Quiberon. Dates, lieux et billetterie, mis à jour chaque jour.'
   : 'Every upcoming gig in Morbihan: Vannes, Auray, Lorient, Erdeven, Étel, Quiberon. Dates, venues and tickets, updated daily.';
+
+// JSON-LD WebSite (une seule fois, sur l'accueil) : nomme le site pour les moteurs.
+const siteLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Concerts Morbihan',
+  url: new URL(px || '/', Astro.site).href,
+  inLanguage: lang,
+};
 ---
 
 <Base titre={titre} description={description} lang={lang}>
   <EventsJsonLd events={data.events} />
+  <script type="application/ld+json" set:html={JSON.stringify(siteLd)} />
 
   <section class="hero">
     <p class="hero-eyebrow"><span class="etoile">✦</span> {t(lang, 'home.eyebrow')}</p>
     <h1 class="hero-title">
       {t(lang, 'home.title1')} <span class="trait">{t(lang, 'home.titleTrait')}</span><br />
-      {t(lang, 'home.title2') && <>{t(lang, 'home.title2')} </>}<span class="accent">{t(lang, 'home.titleAccent')}</span>
+      {t(lang, 'home.title2') ? t(lang, 'home.title2') + ' ' : ''}<span class="accent">{t(lang, 'home.titleAccent')}</span>
     </h1>
     <p class="hero-sub">
       {t(lang, 'home.sub')} <Fragment set:html={t(lang, 'home.subStats', data.total, cetteSemaine)} />
@@ -46,13 +59,17 @@ const description = lang === 'fr'
     </div>
   )}
 
-  <section class="section">
+  <section class="section" id="agenda">
     <div class="section-head">
       <h2 class="section-title">{t(lang, 'home.allTitle')}</h2>
       <span class="section-count"><b id="f-count">{data.total}</b> {lang === 'fr' ? 'dates affichées' : 'dates shown'}</span>
     </div>
 
     <div class="filtres">
+      <label class="filtre filtre-q">
+        <span>{t(lang, 'filter.search')}</span>
+        <input type="search" id="f-q" placeholder={t(lang, 'filter.searchPh')} autocomplete="off" />
+      </label>
       <label class="filtre">
         <span>{t(lang, 'filter.area')}</span>
         <select id="f-secteur">
@@ -74,12 +91,18 @@ const description = lang === 'fr'
       <button id="f-reset" type="button" class="filtre-reset" hidden>{t(lang, 'filter.reset')}</button>
     </div>
 
-    <Concerts events={data.events} lang={lang} />
+    {mois.map((g) => (
+      <section class="groupe-mois">
+        <h3 class="mois-titre"><span>{formatMois(g.ym, lang)}</span><em>{g.events.length}</em></h3>
+        <Concerts events={g.events} lang={lang} />
+      </section>
+    ))}
     <p class="vide" id="f-vide" hidden>{t(lang, 'filter.empty')}</p>
   </section>
 
   <script is:inline>
     function initFiltres() {
+      const q = document.getElementById('f-q');
       const secteur = document.getElementById('f-secteur');
       const quand = document.getElementById('f-quand');
       const reset = document.getElementById('f-reset');
@@ -87,6 +110,10 @@ const description = lang === 'fr'
       const vide = document.getElementById('f-vide');
       if (!secteur || !quand) return;
       const cartes = [...document.querySelectorAll('.section .carte')];
+      const groupes = [...document.querySelectorAll('.groupe-mois')];
+      const norm = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+      // Texte cherchable de chaque carte, précalculé (titre + lieu + ville + genres).
+      for (const c of cartes) c.dataset.q = norm(c.textContent);
       const jour = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate());
       const now = new Date();
       const auj = jour(now);
@@ -103,23 +130,31 @@ const description = lang === 'fr'
       }
       function appliquer() {
         const s = secteur.value;
+        const texte = norm(q ? q.value.trim() : '');
         const b = bornesQuand(quand.value);
         let n = 0;
         for (const c of cartes) {
           const okS = !s || c.dataset.secteur === s;
+          const okQ = !texte || c.dataset.q.includes(texte);
           let okD = true;
           if (b) { const tt = new Date(c.dataset.debut); okD = tt >= b[0] && tt < b[1]; }
-          const visible = okS && okD;
+          const visible = okS && okD && okQ;
           c.style.display = visible ? '' : 'none';
           if (visible) n++;
         }
+        // Masque les en-têtes de mois dont toutes les cartes sont filtrées.
+        for (const g of groupes) {
+          const resteVisible = [...g.querySelectorAll('.carte')].some((c) => c.style.display !== 'none');
+          g.style.display = resteVisible ? '' : 'none';
+        }
         count.textContent = n;
         vide.hidden = n > 0;
-        reset.hidden = !s && !quand.value;
+        reset.hidden = !s && !quand.value && !texte;
       }
+      q && q.addEventListener('input', appliquer);
       secteur.addEventListener('change', appliquer);
       quand.addEventListener('change', appliquer);
-      reset.addEventListener('click', () => { secteur.value = ''; quand.value = ''; appliquer(); });
+      reset.addEventListener('click', () => { if (q) q.value = ''; secteur.value = ''; quand.value = ''; appliquer(); });
     }
     if (!window.__filtresBound) {
       window.__filtresBound = true;

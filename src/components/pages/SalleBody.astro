@@ -1,0 +1,66 @@
+---
+import Base from '../../layouts/Base.astro';
+import Concerts from '../Concerts.astro';
+import EventsJsonLd from '../EventsJsonLd.astro';
+import { SECTEURS } from '../../data/secteurs.js';
+import { concertsDeSalle } from '../../data/agenda.js';
+import { t, prefix } from '../../i18n.js';
+import data from '../../data/events.json';
+
+interface Props {
+  lang?: string;
+  salle: {
+    id: string; nom: string; cle: string; ville: string; secteur: string;
+    type: { fr: string; en: string }; site: string; desc: { fr: string; en: string };
+  };
+}
+const { lang = 'fr', salle } = Astro.props;
+const px = prefix(lang);
+const events = concertsDeSalle(data.events, salle.cle);
+const secteur = SECTEURS.find((s) => s.slug === salle.secteur);
+
+const titre = lang === 'fr'
+  ? `${salle.nom} (${salle.ville}) — concerts à venir`
+  : `${salle.nom} (${salle.ville}) — upcoming gigs`;
+const description = lang === 'fr'
+  ? `La programmation à venir de ${salle.nom} à ${salle.ville} : dates, affiches et billetterie.`
+  : `Upcoming programme at ${salle.nom} in ${salle.ville}: dates, posters and tickets.`;
+
+// JSON-LD MusicVenue : la salle elle-même, en plus de la liste d'événements.
+const venueLd = {
+  '@context': 'https://schema.org',
+  '@type': 'MusicVenue',
+  name: salle.nom,
+  url: salle.site,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: salle.ville,
+    addressRegion: 'Morbihan',
+    addressCountry: 'FR',
+  },
+};
+---
+
+<Base titre={titre} description={description} lang={lang}>
+  {events.length > 0 && <EventsJsonLd events={events} />}
+  <script type="application/ld+json" set:html={JSON.stringify(venueLd)} />
+
+  <section class="hero">
+    <p class="hero-eyebrow"><a href={`${px}/salles`} class="hero-retour">{t(lang, 'venue.allVenues')}</a> · {t(lang, 'venue.eyebrow')}</p>
+    <h1 class="hero-title hero-title-salle"><span class="accent">{salle.nom}.</span></h1>
+    <p class="salle-meta">{salle.type[lang]} · {salle.ville}</p>
+    <p class="hero-sub">{salle.desc[lang]} {t(lang, 'venue.dates', events.length)}</p>
+    <p class="salle-liens">
+      <a href={salle.site} class="salle-lien-ext" target="_blank" rel="noopener">{t(lang, 'venues.site')}</a>
+      {secteur && <a href={`${px}/${secteur.slug}`} class="salle-lien">{t(lang, 'venues.areaGigs')}</a>}
+    </p>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2 class="section-title">{t(lang, 'venue.upcoming')}</h2>
+      <span class="section-count">{t(lang, 'sector.count', events.length)}</span>
+    </div>
+    <Concerts events={events} lang={lang} />
+  </section>
+</Base>

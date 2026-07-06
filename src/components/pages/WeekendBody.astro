@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro';
+import Concerts from '../Concerts.astro';
+import EventsJsonLd from '../EventsJsonLd.astro';
+import { bornesWeekend, concertsDuWeekend } from '../../data/agenda.js';
+import { formatBadge } from '../../data/format.js';
+import { t, prefix } from '../../i18n.js';
+import data from '../../data/events.json';
+
+interface Props { lang?: string }
+const { lang = 'fr' } = Astro.props;
+const px = prefix(lang);
+
+const [debut, fin] = bornesWeekend();
+const events = concertsDuWeekend(data.events);
+const meme = debut === fin;
+const plage = lang === 'fr'
+  ? (meme ? `ce ${formatBadge(debut + 'T00:00', 'fr')}` : `du ${formatBadge(debut + 'T00:00', 'fr')} au ${formatBadge(fin + 'T00:00', 'fr')}`)
+  : (meme ? `on ${formatBadge(debut + 'T00:00', 'en')}` : `from ${formatBadge(debut + 'T00:00', 'en')} to ${formatBadge(fin + 'T00:00', 'en')}`);
+
+const titre = lang === 'fr'
+  ? 'Concerts ce week-end dans le Morbihan — dates et billetterie'
+  : 'Gigs this weekend in Morbihan — dates and tickets';
+const description = lang === 'fr'
+  ? `Que faire ce week-end dans le Morbihan ? Les concerts ${plage} à Vannes, Lorient, Auray et alentours, mis à jour chaque jour.`
+  : `What's on this weekend in Morbihan? Gigs ${plage} in Vannes, Lorient, Auray and around, updated daily.`;
+---
+
+<Base titre={titre} description={description} lang={lang}>
+  {events.length > 0 && <EventsJsonLd events={events} />}
+
+  <section class="hero">
+    <p class="hero-eyebrow"><a href={px || '/'} class="hero-retour">{t(lang, 'back')}</a> · {t(lang, 'wk.eyebrow')}</p>
+    <h1 class="hero-title">{t(lang, 'wk.title')} <span class="accent">{t(lang, 'wk.titleAccent')}</span></h1>
+    <p class="hero-sub">{t(lang, 'wk.sub', events.length, plage)}</p>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2 class="section-title">{t(lang, 'wk.upcoming')}</h2>
+      <span class="section-count">{t(lang, 'sector.count', events.length)}</span>
+    </div>
+    <Concerts events={events} lang={lang} />
+  </section>
+</Base>
