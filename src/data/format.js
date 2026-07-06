@@ -42,6 +42,15 @@ export function formatBadge(iso, lang = 'fr') {
   return `${n.jours[p.dow]} ${p.d} ${n.mois[p.mo - 1].slice(0, lang === 'en' ? 3 : 4)}${lang === 'en' ? '' : '.'}`;
 }
 
+// Nom de mois pour les en-têtes de groupe : "Juillet 2026" (ym = "2026-07").
+export function formatMois(ym, lang = 'fr') {
+  const m = String(ym).match(/^(\d{4})-(\d{2})/);
+  if (!m) return '';
+  const n = NOMS[lang] || NOMS.fr;
+  const nom = n.mois[Number(m[2]) - 1];
+  return `${nom.charAt(0).toUpperCase()}${nom.slice(1)} ${m[1]}`;
+}
+
 // Heure seule "20:30", ou null si minuit (heure non renseignée).
 export function formatHeure(iso) {
   const p = parts(iso);

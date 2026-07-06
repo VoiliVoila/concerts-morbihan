@@ -1,0 +1,10 @@
+---
+import SalleBody from '../../components/pages/SalleBody.astro';
+import { SALLES } from '../../data/salles.js';
+
+export function getStaticPaths() {
+  return SALLES.map((s) => ({ params: { salle: s.id }, props: { salle: s } }));
+}
+const { salle } = Astro.props;
+---
+<SalleBody lang="fr" salle={salle} />

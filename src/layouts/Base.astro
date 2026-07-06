@@ -25,6 +25,7 @@ const ogImage = new URL('/og.png', Astro.site).href;
 const autreLang = lang === 'fr' ? 'en' : 'fr';
 const autreHref = otherLangPath(Astro.url.pathname);
 const autreCanon = new URL(autreHref, Astro.site).href.replace(/\/$/, '');
+const xDefault = lang === 'fr' ? canonical : autreCanon; // le FR fait foi
 ---
 
 <!doctype html>
@@ -37,6 +38,8 @@ const autreCanon = new URL(autreHref, Astro.site).href.replace(/\/$/, '');
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang={lang} href={canonical} />
     <link rel="alternate" hreflang={autreLang} href={autreCanon} />
+    <link rel="alternate" hreflang="x-default" href={xDefault} />
+    <link rel="alternate" type="application/rss+xml" title="Concerts Morbihan" href="/flux.xml" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta property="og:title" content={titre} />
     <meta property="og:description" content={description} />
@@ -49,6 +52,7 @@ const autreCanon = new URL(autreHref, Astro.site).href.replace(/\/$/, '');
     <ClientRouter />
   </head>
   <body>
+    <a class="skip" href="#contenu">{lang === 'fr' ? 'Aller au contenu' : 'Skip to content'}</a>
     <header class="site-header" transition:persist>
       <div class="masthead">
         <a href={px || '/'} class="marque">
@@ -57,6 +61,7 @@ const autreCanon = new URL(autreHref, Astro.site).href.replace(/\/$/, '');
         </a>
         <nav class="masthead-nav" aria-label="Navigation">
           <a href={px || '/'} aria-current={estActif('/') ? 'page' : undefined}>{t(lang, 'nav.concerts')}</a>
+          <a href={`${px}/ce-week-end`} aria-current={estActif('/ce-week-end') ? 'page' : undefined}>{t(lang, 'nav.weekend')}</a>
           <a href={`${px}/salles`} aria-current={estActif('/salles') ? 'page' : undefined}>{t(lang, 'nav.venues')}</a>
           <a href={`${px}/a-propos`} aria-current={estActif('/a-propos') ? 'page' : undefined}>{t(lang, 'nav.about')}</a>
           <a href={autreHref} class="lang-bascule" aria-label={lang === 'fr' ? 'Switch to English' : 'Passer en français'}>{autreLang.toUpperCase()}</a>
@@ -64,7 +69,7 @@ const autreCanon = new URL(autreHref, Astro.site).href.replace(/\/$/, '');
       </div>
     </header>
 
-    <main>
+    <main id="contenu">
       <slot />
     </main>
 
@@ -77,6 +82,11 @@ const autreCanon = new URL(autreHref, Astro.site).href.replace(/\/$/, '');
             <a href={`${px}/${s.slug}`}>{s.nom} <span>{compte[s.slug]}</span></a>
           ))}
         </nav>
+        <p class="pied-suivre">
+          {t(lang, 'foot.follow')}
+          <a href="/flux.xml">{t(lang, 'foot.rss')}</a> ·
+          <a href="/concerts.ics">{t(lang, 'foot.ics')}</a>
+        </p>
         <p class="pied-sources">
           {lang === 'fr' ? 'Données : ' : 'Data: '}
           <a href="https://openagenda.com" rel="noopener">OpenAgenda</a>,
