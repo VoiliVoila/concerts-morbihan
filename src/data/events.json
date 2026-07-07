@@ -1,10 +1,10 @@
 {
-  "genere_le": "2026-07-06T08:59:03.475Z",
-  "total": 41,
+  "genere_le": "2026-07-07T08:22:28.130Z",
+  "total": 42,
   "par_secteur": {
     "vannes": 19,
     "auray": 0,
-    "lorient": 14,
+    "lorient": 15,
     "lorient-rade": 1,
     "erdeven": 6,
     "etel": 0,
@@ -126,6 +126,19 @@
       "description": "",
       "image": "https://www.hydrophone.fr/local/cache-gd2/5f/78178088e6c4a1737cb19e794cde53.jpg?1768899553",
       "url": "https://www.hydrophone.fr/CIEL.html",
+      "source": "hydrophone"
+    },
+    {
+      "id": "hydrophone:cqwrestling|2026-09-17",
+      "fin": "2026-09-17T20:00:00",
+      "titre": "CQ WRESTLING",
+      "debut": "2026-09-17T20:00:00",
+      "ville": "Lorient",
+      "lieu": "Hydrophone",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.hydrophone.fr/local/cache-gd2/8a/3638f782b531371c7f64fb7c38f752.jpg?1783411534",
+      "url": "https://www.hydrophone.fr/CQ-WRESTLING.html",
       "source": "hydrophone"
     },
     {
