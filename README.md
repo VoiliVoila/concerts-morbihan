@@ -6,7 +6,7 @@ Lorient, Rade de Lorient, Erdeven, Étel, Quiberon). Site statique généré ave
 sont récupérées au build, agrégées, dédoublonnées, puis figées dans un JSON
 statique.
 
-**→ [concerts-morbihan.pages.dev](https://concerts-morbihan.pages.dev)**
+**→ [concerts.lajetee.fr](https://concerts.lajetee.fr)**
 
 ## Fonctionnalités
 
