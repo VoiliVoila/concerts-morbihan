@@ -2,9 +2,9 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
-// Site statique servi par Cloudflare Pages.
+// Site statique servi par Cloudflare Pages, sous le sous-domaine concerts.lajetee.fr.
 export default defineConfig({
-  site: 'https://concerts-morbihan.pages.dev',
+  site: 'https://concerts.lajetee.fr',
   integrations: [sitemap()],
   trailingSlash: 'never',
   i18n: {
