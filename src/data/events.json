@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-07-08T07:27:56.890Z",
+  "genere_le": "2026-07-09T19:42:51.928Z",
   "total": 42,
   "par_secteur": {
     "vannes": 19,
@@ -11,32 +11,6 @@
     "quiberon": 1
   },
   "events": [
-    {
-      "id": "coota:burkinaazza|2026-07-08",
-      "fin": "2026-07-08T00:00:00",
-      "titre": "Burkina Azza",
-      "debut": "2026-07-08T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Musique traditionnelle",
-      "image": "https://lecoota.fr/images/thumb/1782294640.jpg",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
-    {
-      "id": "coota:mitchell|2026-07-09",
-      "fin": "2026-07-09T00:00:00",
-      "titre": "Mitchell",
-      "debut": "2026-07-09T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Techno Guitare Chant",
-      "image": "https://lecoota.fr/images/thumb/1782295153.jpg",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
     {
       "id": "coota:villafantome|2026-07-09",
       "fin": "2026-07-09T00:00:00",
@@ -101,6 +75,32 @@
       "image": "https://cdn.openagenda.com/main/0397c8bdaa56470e86c9695fa3e15b42.base.image.jpg",
       "url": "https://openagenda.com/transitions-vannes-auray/events/concert-a-la-ferme-7952775",
       "source": "opendatasoft"
+    },
+    {
+      "id": "coota:thebloyetbrothers|2026-07-16",
+      "fin": "2026-07-16T00:00:00",
+      "titre": "THE BLOYET BROTHERS",
+      "debut": "2026-07-16T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "Rock organique familial",
+      "image": "https://lecoota.fr/images/thumb/1782298731.jpg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
+    },
+    {
+      "id": "coota:saladedebruit|2026-07-17",
+      "fin": "2026-07-17T00:00:00",
+      "titre": "SALADE DE BRUIT",
+      "debut": "2026-07-17T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "FUNK",
+      "image": "https://lecoota.fr/images/thumb/1782298986.png",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
     },
     {
       "id": "opendatasoft:ecumefestivalles5ans|2026-08-07",
