@@ -20,10 +20,17 @@ const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const rel = (path.startsWith('/en') ? path.slice(3) : path) || '/'; // chemin sans préfixe langue
 const estActif = (sec) => (sec === '/' ? rel === '/' : rel.startsWith(sec));
 
-const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, '');
+// format: 'file' fait remonter des chemins en .html (ex. /vannes.html), mais
+// Cloudflare Pages sert la version sans extension (/vannes) en 200 direct et
+// redirige .html en 308 : le canonical doit viser l'URL finale, pas celle qui
+// redirige. /index.html devient /.
+const pathnamePropre = Astro.url.pathname
+  .replace(/\/index\.html$/, '/')
+  .replace(/\.html$/, '');
+const canonical = new URL(pathnamePropre, Astro.site).href.replace(/\/$/, '') || new URL(Astro.site).href;
 const ogImage = new URL('/og.png', Astro.site).href;
 const autreLang = lang === 'fr' ? 'en' : 'fr';
-const autreHref = otherLangPath(Astro.url.pathname);
+const autreHref = otherLangPath(pathnamePropre);
 const autreCanon = new URL(autreHref, Astro.site).href.replace(/\/$/, '');
 const xDefault = lang === 'fr' ? canonical : autreCanon; // le FR fait foi
 ---
@@ -95,6 +102,9 @@ const xDefault = lang === 'fr' ? canonical : autreCanon; // le FR fait foi
           {lang === 'fr'
             ? ' Affiches © leurs ayants droit. Vérifiez dates & billetterie auprès de l\'organisateur.'
             : ' Posters © their respective owners. Always check dates & tickets with the organiser.'}
+        </p>
+        <p class="pied-credit">
+          {t(lang, 'foot.credit')} <a href="https://lajetee.fr" rel="noopener">La Jetée</a>
         </p>
       </div>
     </footer>

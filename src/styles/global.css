@@ -471,6 +471,8 @@ main { display: block; }
 .pied p a { text-decoration: underline; text-underline-offset: 2px; }
 .pied-suivre { font-weight: 500; }
 .pied-sources { font-size: 0.82rem; margin-top: 0.9rem; }
+.pied-credit { font-size: 0.82rem; margin-top: 1.5rem; color: var(--muted); }
+.pied-credit a { font-weight: 600; }
 
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after { animation: none !important; transition: none !important; scroll-behavior: auto; }
