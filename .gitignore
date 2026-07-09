@@ -4,3 +4,9 @@ dist/
 .DS_Store
 .env
 .env.local
+
+# Doc de travail interne (repo public) : source de vérité dans notes/projects/concerts-doc
+CLAUDE.md
+DEPLOY.md
+docs/
+.claude/
