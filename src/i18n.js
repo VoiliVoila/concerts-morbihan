@@ -59,6 +59,7 @@ const STR = {
     'foot.tagline': "L'agenda indépendant des concerts à venir autour de Vannes, Auray, Lorient, Erdeven, Étel et Quiberon. Mis à jour chaque jour.",
     'foot.byArea': 'Concerts par secteur',
     'foot.follow': 'Suivre l\'agenda :', 'foot.rss': 'flux RSS', 'foot.ics': 'calendrier (.ics)',
+    'foot.credit': 'Conçu par',
   },
   en: {
     'nav.concerts': 'Gigs',
@@ -99,6 +100,7 @@ const STR = {
     'foot.tagline': 'The independent guide to upcoming gigs around Vannes, Auray, Lorient, Erdeven, Étel and Quiberon. Updated daily.',
     'foot.byArea': 'Gigs by area',
     'foot.follow': 'Follow the guide:', 'foot.rss': 'RSS feed', 'foot.ics': 'calendar (.ics)',
+    'foot.credit': 'Designed by',
   },
 };
 
