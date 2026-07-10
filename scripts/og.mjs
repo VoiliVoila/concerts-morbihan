@@ -1,16 +1,16 @@
-// Génère public/og.png (1200x630) — image de partage social brandée.
-// Rasterise un SVG avec @resvg/resvg-js + la police Bricolage (fontsource).
+// Generates public/og.png (1200x630) — branded social sharing image.
+// Rasterizes an SVG using @resvg/resvg-js + the Bricolage font (fontsource).
 import { Resvg } from '@resvg/resvg-js';
 import { writeFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const FDIR = 'node_modules/@fontsource-variable/bricolage-grotesque/files';
 const files = await readdir(FDIR);
-// resvg gère mieux le woff (pas woff2) ; on prend un woff latin si dispo, sinon woff2.
+// resvg handles woff better than woff2; prefer a latin woff if available, else woff2.
 const pick = files.find(f => /latin-wght-normal\.woff$/.test(f))
   || files.find(f => /latin-standard-normal\.woff$/.test(f))
   || files.find(f => /latin-wght-normal\.woff2$/.test(f));
-console.log('police utilisée:', pick);
+console.log('font used:', pick);
 const fontBuf = await import('node:fs').then(m => m.promises.readFile(join(FDIR, pick)));
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
@@ -32,4 +32,4 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" v
 
 const r = new Resvg(svg, { font: { fontBuffers: [fontBuf], defaultFontFamily: 'Bricolage Grotesque Variable' }, fitTo: { mode: 'width', value: 1200 } });
 await writeFile('public/og.png', r.render().asPng());
-console.log('✓ public/og.png généré');
+console.log('✓ public/og.png generated');

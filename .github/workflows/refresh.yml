@@ -1,19 +1,19 @@
-name: Rafraîchissement quotidien des concerts
+name: Daily concert refresh
 
-# Relance la récupération des concerts chaque jour, met à jour src/data/events.json
-# et le pousse. Le push déclenche le rebuild Cloudflare Pages (intégration Git),
-# qui régénère le site avec les dates fraîches. Aucun secret requis.
+# Reruns the concert fetch every day, updates src/data/events.json and
+# pushes it. The push triggers a Cloudflare Pages rebuild (Git integration),
+# which regenerates the site with fresh dates. No secrets required.
 
 on:
   schedule:
-    - cron: '0 5 * * *' # 05:00 UTC ≈ 07:00 (heure de Paris l'été)
-  workflow_dispatch: {} # permet aussi un déclenchement manuel depuis l'onglet Actions
+    - cron: '0 5 * * *' # 05:00 UTC ≈ 07:00 Paris time in summer
+  workflow_dispatch: {} # also allows a manual trigger from the Actions tab
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # pour committer/pusher events.json
+      contents: write # to commit/push events.json
     steps:
       - uses: actions/checkout@v6
 
@@ -24,17 +24,17 @@ jobs:
 
       - run: npm ci
 
-      - name: Récupérer les concerts
+      - name: Fetch concerts
         run: npm run fetch
 
-      - name: Committer si les données ont changé
+      - name: Commit if data changed
         run: |
           git config user.name "concerts-bot"
           git config user.email "actions@users.noreply.github.com"
           if git diff --quiet -- src/data/events.json; then
-            echo "Aucun changement dans events.json — rien à faire."
+            echo "No change in events.json — nothing to do."
           else
             git add src/data/events.json
-            git commit -m "chore: rafraîchissement quotidien des concerts [skip ci]"
+            git commit -m "chore: daily concert refresh [skip ci]"
             git push
           fi

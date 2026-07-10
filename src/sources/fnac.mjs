@@ -1,14 +1,13 @@
-// Source : Fnac Spectacles (billetterie). Les pages « salle » exposent du
-// JSON-LD schema.org `MusicEvent` (données publiques destinées aux moteurs de
-// recherche) → un seul parser couvre toutes les salles vendant via la Fnac.
+// Source: Fnac Spectacles (ticketing platform). Venue pages expose
+// schema.org `MusicEvent` JSON-LD (public data meant for search engines) →
+// a single parser covers every venue selling through Fnac.
 //
-// On ne lit QUE les @type MusicEvent : le typage schema.org fait le filtrage
-// musique pour nous (les pièces de théâtre, magie… sont d'autres @type).
+// We only read @type MusicEvent: the schema.org typing does the music
+// filtering for us (plays, magic shows... are other @type values).
 //
-// ⚠️ Ne pas ajouter ici une salle déjà couverte par un scraper dédié
-// (ex. Hydrophone via hydrophone.mjs) : les titres Fnac diffèrent souvent
-// (« Ciel + Cq Wrestling » vs « CIEL »), le dédoublonnage ne les rapprocherait
-// pas → doublons.
+// ⚠️ Don't add a venue here that's already covered by a dedicated scraper
+// (e.g. Hydrophone via hydrophone.mjs): Fnac titles often differ ("Ciel + Cq
+// Wrestling" vs "CIEL"), so deduplication wouldn't match them → duplicates.
 
 import { versParis, texte } from './_util.mjs';
 
@@ -16,7 +15,7 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
 
 export const meta = { id: 'fnac', nom: 'Fnac Spectacles', url: 'https://www.fnacspectacles.com/' };
 
-// Salles à interroger (URL de page-salle Fnac + rattachement secteur).
+// Venues to query (Fnac venue-page URL + area assignment).
 const SALLES = [
   { url: 'https://www.fnacspectacles.com/venue/palais-des-arts-salle-lesage-vannes-84776/', ville: 'Vannes', lieu: 'Palais des Arts (Salle Lesage)', secteur: 'vannes' },
   { url: 'https://www.fnacspectacles.com/city/lorient-2112/venue/palais-des-congres-lorient-69238/', ville: 'Lorient', lieu: 'Palais des Congrès', secteur: 'lorient' },
@@ -25,7 +24,7 @@ const SALLES = [
 
 const attendre = (ms) => new Promise((r) => setTimeout(r, ms));
 
-// Extrait les objets JSON-LD MusicEvent d'une page HTML.
+// Extracts MusicEvent JSON-LD objects from an HTML page.
 function extraireEvents(html) {
   const events = [];
   const blocs = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/gi)];
@@ -41,7 +40,7 @@ function extraireEvents(html) {
   return events;
 }
 
-// schema.org image : string | string[] | ImageObject | ImageObject[].
+// schema.org image: string | string[] | ImageObject | ImageObject[].
 function premiereImage(img) {
   if (!img) return null;
   const v = Array.isArray(img) ? img[0] : img;
@@ -76,10 +75,10 @@ export async function recuperer() {
       const lot = await recupererSalle(salle);
       events.push(...lot);
     } catch (err) {
-      // Une salle en panne (ou throttling Fnac) ne doit pas faire échouer les autres.
-      console.error(`  [fnac] ${salle.lieu} : ${err.message}`);
+      // A venue that's down (or Fnac throttling) shouldn't fail the others.
+      console.error(`  [fnac] ${salle.lieu}: ${err.message}`);
     }
-    await attendre(1500); // politesse / anti-throttling
+    await attendre(1500); // rate limiting / anti-throttling
   }
   return events;
 }

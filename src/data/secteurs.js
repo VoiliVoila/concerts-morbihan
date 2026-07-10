@@ -1,10 +1,10 @@
-// Définition des 6 secteurs et des communes rattachées.
-// Source unique partagée par le script de récupération (scripts/fetch-concerts.mjs)
-// et les pages Astro. Communes en minuscules, sans accent (cf. normalise()).
+// Definition of the 6 areas and their associated towns (communes).
+// Single source of truth shared by the fetch script (scripts/fetch-concerts.mjs)
+// and the Astro pages. Town names lowercase, no accents (see normalise()).
 //
-// NB : certaines communes limitrophes pourraient appartenir à 2 secteurs
-// (ex. Plouharnel entre Auray et Quiberon). Chaque commune n'est listée
-// qu'une fois : l'ordre des secteurs ci-dessous fait foi en cas de doublon.
+// NB: some border towns could arguably belong to 2 areas (e.g. Plouharnel
+// between Auray and Quiberon). Each town is listed only once: the order of
+// the areas below wins in case of overlap.
 
 export const SECTEURS = [
   {
@@ -57,8 +57,8 @@ export const SECTEURS = [
   },
 ];
 
-// Secteurs voisins (du plus proche au plus lointain) : sert à suggérer des
-// concerts « pas loin » quand un secteur n'a aucune date recensée.
+// Neighboring areas (closest to farthest): used to suggest concerts "nearby"
+// when an area has no listed dates.
 export const VOISINS = {
   vannes: ['auray', 'lorient'],
   auray: ['vannes', 'quiberon', 'erdeven', 'etel'],
@@ -69,7 +69,7 @@ export const VOISINS = {
   quiberon: ['erdeven', 'auray'],
 };
 
-// Normalise une chaîne pour comparaison : minuscule, sans accent, espaces nettoyés.
+// Normalizes a string for comparison: lowercase, no accents, trimmed whitespace.
 export function normalise(str) {
   return (str || '')
     .toLowerCase()
@@ -79,7 +79,7 @@ export function normalise(str) {
     .trim();
 }
 
-// Construit l'index commune -> slug de secteur (premier secteur gagnant).
+// Builds the town -> area slug index (first area wins).
 const indexCommunes = new Map();
 for (const s of SECTEURS) {
   for (const c of s.communes) {
@@ -88,7 +88,7 @@ for (const s of SECTEURS) {
   }
 }
 
-// Retourne le slug du secteur d'une ville, ou null si hors périmètre.
+// Returns the area slug for a town, or null if outside the covered area.
 export function secteurDeVille(ville) {
   return indexCommunes.get(normalise(ville)) ?? null;
 }

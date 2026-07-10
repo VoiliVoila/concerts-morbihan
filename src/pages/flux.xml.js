@@ -1,5 +1,5 @@
-// Flux RSS des concerts à venir, généré au build (rebâti chaque jour).
-// Fait main (pas de dépendance) : le format RSS 2.0 tient en quelques lignes.
+// RSS feed of upcoming concerts, generated at build time (rebuilt daily).
+// Hand-rolled (no dependency): the RSS 2.0 format fits in a few lines.
 import data from '../data/events.json';
 import { formatDate } from '../data/format.js';
 

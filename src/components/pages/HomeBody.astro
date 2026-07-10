@@ -25,7 +25,7 @@ const description = lang === 'fr'
   ? 'Tous les concerts à venir dans le Morbihan : Vannes, Auray, Lorient, Erdeven, Étel, Quiberon. Dates, lieux et billetterie, mis à jour chaque jour.'
   : 'Every upcoming gig in Morbihan: Vannes, Auray, Lorient, Erdeven, Étel, Quiberon. Dates, venues and tickets, updated daily.';
 
-// JSON-LD WebSite (une seule fois, sur l'accueil) : nomme le site pour les moteurs.
+// JSON-LD WebSite (once, on the homepage): names the site for search engines.
 const siteLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
@@ -112,7 +112,7 @@ const siteLd = {
       const cartes = [...document.querySelectorAll('.section .carte')];
       const groupes = [...document.querySelectorAll('.groupe-mois')];
       const norm = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
-      // Texte cherchable de chaque carte, précalculé (titre + lieu + ville + genres).
+      // Searchable text for each card, precomputed (title + venue + town + genres).
       for (const c of cartes) c.dataset.q = norm(c.textContent);
       const jour = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate());
       const now = new Date();
@@ -142,8 +142,8 @@ const siteLd = {
           c.style.display = visible ? '' : 'none';
           if (visible) n++;
         }
-        // Compteur de chaque mois recalculé sur les cartes visibles ;
-        // les mois vidés par le filtre sont masqués entièrement.
+        // Each month's counter is recalculated from the visible cards;
+        // months emptied by the filter are hidden entirely.
         for (const g of groupes) {
           const nMois = [...g.querySelectorAll('.carte')].filter((c) => c.style.display !== 'none').length;
           const em = g.querySelector('.mois-nb');

@@ -17,13 +17,13 @@ const compte = data.par_secteur;
 const px = prefix(lang);
 
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
-const rel = (path.startsWith('/en') ? path.slice(3) : path) || '/'; // chemin sans préfixe langue
+const rel = (path.startsWith('/en') ? path.slice(3) : path) || '/'; // path without the language prefix
 const estActif = (sec) => (sec === '/' ? rel === '/' : rel.startsWith(sec));
 
-// format: 'file' fait remonter des chemins en .html (ex. /vannes.html), mais
-// Cloudflare Pages sert la version sans extension (/vannes) en 200 direct et
-// redirige .html en 308 : le canonical doit viser l'URL finale, pas celle qui
-// redirige. /index.html devient /.
+// format: 'file' produces paths ending in .html (e.g. /vannes.html), but
+// Cloudflare Pages serves the extension-less version (/vannes) directly with
+// a 200 and redirects .html with a 308: the canonical must target the final
+// URL, not the one that redirects. /index.html becomes /.
 const pathnamePropre = Astro.url.pathname
   .replace(/\/index\.html$/, '/')
   .replace(/\.html$/, '');
@@ -32,7 +32,7 @@ const ogImage = new URL('/og.png', Astro.site).href;
 const autreLang = lang === 'fr' ? 'en' : 'fr';
 const autreHref = otherLangPath(pathnamePropre);
 const autreCanon = new URL(autreHref, Astro.site).href.replace(/\/$/, '');
-const xDefault = lang === 'fr' ? canonical : autreCanon; // le FR fait foi
+const xDefault = lang === 'fr' ? canonical : autreCanon; // French is the source of truth
 ---
 
 <!doctype html>

@@ -2,7 +2,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
-// Site statique servi par Cloudflare Pages, sous le sous-domaine concerts.lajetee.fr.
+// Static site served by Cloudflare Pages, under the concerts.lajetee.fr subdomain.
 export default defineConfig({
   site: 'https://concerts.lajetee.fr',
   integrations: [sitemap()],
@@ -13,8 +13,8 @@ export default defineConfig({
     routing: { prefixDefaultLocale: false },
   },
   build: {
-    // /vannes.html plutôt que /vannes/index.html : Cloudflare Pages sert alors
-    // /vannes en 200 direct, sans redirection 308. Cohérent avec trailingSlash.
+    // /vannes.html rather than /vannes/index.html: Cloudflare Pages then serves
+    // /vannes directly with a 200, no 308 redirect. Consistent with trailingSlash.
     format: 'file',
   },
 });

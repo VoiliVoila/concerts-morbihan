@@ -18,14 +18,14 @@ interface Props {
 }
 const { events, lang = 'fr' } = Astro.props;
 
-// Palette de couleurs pour les pastilles de genre (déterministe par genre).
+// Color palette for genre tags (deterministic per genre).
 const PALETTE = ['#ff5d3b', '#ffd166', '#5ad1c8', '#c08bff', '#ff8fab', '#7bd389'];
 function couleurGenre(g: string) {
   let h = 0;
   for (let i = 0; i < g.length; i++) h = (h * 31 + g.charCodeAt(i)) >>> 0;
   return PALETTE[h % PALETTE.length];
 }
-// Extrait jusqu'à 3 genres courts depuis le champ description (ex. "electro, folk-rock, punk").
+// Extracts up to 3 short genres from the description field (e.g. "electro, folk-rock, punk").
 function genres(desc?: string): string[] {
   if (!desc || desc.length > 42 || desc.includes('.')) return [];
   return desc.split(/[,/]/).map((s) => s.trim()).filter(Boolean).slice(0, 3);

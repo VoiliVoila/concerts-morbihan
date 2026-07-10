@@ -1,14 +1,14 @@
-// Internationalisation FR (défaut, à la racine) / EN (sous /en/).
-// Un seul dictionnaire ; les pages reçoivent `lang` et appellent t(lang).
+// i18n: FR (default, at the root) / EN (under /en/).
+// A single dictionary; pages receive `lang` and call t(lang).
 
 export const LANGS = ['fr', 'en'];
 
-// Déduit la langue depuis le chemin de l'URL.
+// Infers the language from the URL path.
 export function getLang(url) {
   return url.pathname === '/en' || url.pathname.startsWith('/en/') ? 'en' : 'fr';
 }
 
-// Chemin équivalent dans l'autre langue (pour le sélecteur).
+// Equivalent path in the other language (for the language switcher).
 export function otherLangPath(pathname) {
   const p = pathname.replace(/\/$/, '') || '/';
   if (p === '/en') return '/';
@@ -16,7 +16,7 @@ export function otherLangPath(pathname) {
   return p === '/' ? '/en' : '/en' + p;
 }
 
-// Préfixe de langue pour construire des liens internes.
+// Language prefix for building internal links.
 export const prefix = (lang) => (lang === 'en' ? '/en' : '');
 
 const STR = {

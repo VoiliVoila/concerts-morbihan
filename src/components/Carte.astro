@@ -11,7 +11,7 @@ const { actif = null } = Astro.props;
 const nom = Object.fromEntries(SECTEURS.map((s) => [s.slug, s.nom]));
 const compte = data.par_secteur;
 
-// Placement des libellés (le sud-ouest est dense → on les écarte) + nom court.
+// Label placement (the south-west cluster is dense → spread them out) + short name.
 const cfg: Record<string, { dx: number; dy: number; anchor: 'start' | 'middle' | 'end'; court?: string }> = {
   vannes: { dx: 18, dy: 7, anchor: 'start' },
   auray: { dx: 0, dy: -20, anchor: 'middle' },
@@ -22,11 +22,11 @@ const cfg: Record<string, { dx: number; dy: number; anchor: 'start' | 'middle' |
   quiberon: { dx: 0, dy: 30, anchor: 'middle' },
 };
 
-const FS = 26; // taille de police des libellés (unités SVG)
-const CW = 13; // largeur moyenne d'un caractère
+const FS = 26; // label font size (SVG units)
+const CW = 13; // average character width
 const PAD = 11;
 
-// Géométrie du badge derrière chaque libellé selon l'ancrage du texte.
+// Badge geometry behind each label, based on the text anchor.
 function badge(p: { x: number; y: number; slug: string }) {
   const n = compte[p.slug] ?? 0;
   const c = cfg[p.slug];

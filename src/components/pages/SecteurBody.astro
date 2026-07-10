@@ -11,8 +11,8 @@ const { lang = 'fr', secteur } = Astro.props;
 const px = prefix(lang);
 const events = data.events.filter((e) => e.secteur === secteur.slug);
 
-// Secteur sans date : on propose les concerts des secteurs voisins plutôt
-// qu'une page vide (les données sont triées par date, on garde l'ordre).
+// Area with no dates: suggest concerts from neighboring areas instead of an
+// empty page (data is already sorted by date, so we keep that order).
 const voisins = events.length === 0 ? (VOISINS[secteur.slug] ?? []) : [];
 const proches = voisins.length
   ? data.events.filter((e) => voisins.includes(e.secteur)).slice(0, 8)
