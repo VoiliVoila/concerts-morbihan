@@ -1,6 +1,6 @@
-// Source : L'Échonova (SMAC, Saint-Avé → secteur Vannes).
-// Scrape la page /programmation/ (WordPress ; l'API REST n'expose pas la date
-// du concert, on lit donc le HTML où elle figure dans l'aria-label des tuiles).
+// Source: L'Échonova (SMAC venue, Saint-Avé → vannes area).
+// Scrapes the /programmation/ page (WordPress; the REST API doesn't expose
+// the concert date, so we read it from the HTML, in the tiles' aria-label).
 
 import { chargerHtml, dateISO, texte, absolu, numeroMois } from './_util.mjs';
 
@@ -18,7 +18,7 @@ export async function recuperer() {
     const $el = $(el);
     const aria = $el.attr('aria-label') || '';
 
-    // aria-label : « ...sur le concert de <TITRE> le <Jour>, <JJ> <mois> »
+    // aria-label: "...sur le concert de <TITLE> le <Day>, <DD> <month>"
     const titreMatch = aria.match(/concert de\s+(.+?)\s+le\s+/i);
     const dateMatch = aria.match(/le\s+\w+,?\s*(\d{1,2})\s+([\p{L}.]+)/u);
     if (!titreMatch || !dateMatch) return;
@@ -47,7 +47,7 @@ export async function recuperer() {
   return events;
 }
 
-// Décode les quelques entités HTML présentes dans les aria-labels.
+// Decodes the handful of HTML entities found in aria-labels.
 function decode(s) {
   return s
     .replace(/&#0?38;|&amp;/g, '&')

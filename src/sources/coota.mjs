@@ -1,5 +1,5 @@
-// Source : Le Coota (bar-concert, Vannes → secteur Vannes).
-// Scrape /concert. Cartes .card.event ; date « Le 26 Jun 2026 » (mois anglais).
+// Source: Le Coota (concert bar, Erdeven → erdeven area).
+// Scrapes /concert. Cards .card.event; date "Le 26 Jun 2026" (English month name).
 
 import { chargerHtml, dateISO, texte, numeroMois } from './_util.mjs';
 
@@ -18,7 +18,7 @@ export async function recuperer() {
     const titre = texte($el.find('.card-title').first().text());
     if (!titre) return;
 
-    // Date dans un <p> : « Le 26 Jun 2026 »
+    // Date inside a <p>: "Le 26 Jun 2026"
     let debut = null;
     $el.find('.card-body p').each((__, p) => {
       const m = texte($(p).text()).match(/(\d{1,2})\s+([\p{L}.]+)\.?\s+(\d{4})/u);

@@ -1,8 +1,8 @@
-// Salles « suivies » : celles pour lesquelles on a une source dédiée (scraper
-// ou JSON-LD Fnac). Le reste du Morbihan est couvert via le miroir OpenAgenda.
+// "Tracked" venues: those with a dedicated source (scraper or Fnac JSON-LD).
+// The rest of Morbihan is covered via the OpenAgenda mirror.
 //
-// `cle` sert à rattacher les concerts d'events.json à la salle (correspondance
-// sur le champ `lieu`, insensible casse/accents).
+// `cle` is used to match events.json concerts to the venue (matched on the
+// `lieu` field, case/accent-insensitive).
 
 export const SALLES = [
   {

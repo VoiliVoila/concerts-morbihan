@@ -1,99 +1,96 @@
 # Concerts Morbihan
 
-Agenda indépendant des concerts à venir dans le Morbihan (Vannes, Auray,
-Lorient, Rade de Lorient, Erdeven, Étel, Quiberon). Site statique généré avec
-[Astro](https://astro.build), sans base de données ni backend : les données
-sont récupérées au build, agrégées, dédoublonnées, puis figées dans un JSON
-statique.
+Independent listings site for upcoming concerts in Morbihan, France (Vannes,
+Auray, Lorient, Rade de Lorient, Erdeven, Étel, Quiberon). Static site built
+with [Astro](https://astro.build), no database or backend: data is fetched
+at build time, merged, deduplicated, and frozen into a static JSON file.
 
 **→ [concerts.lajetee.fr](https://concerts.lajetee.fr)**
 
-## Fonctionnalités
+## Features
 
-- Agenda complet + pages par secteur, par salle, et « ce week-end »
-- Recherche et filtres (secteur, période) côté client, sans JS lourd
-- Flux RSS et export iCal
-- Données JSON-LD (`MusicEvent`) pour le SEO sémantique
-- Bilingue FR / EN
-- Rafraîchissement quotidien automatique (GitHub Actions)
+- Full listings + pages by area, by venue, and "this weekend"
+- Client-side search and filters (area, date range), no heavy JS
+- RSS feed and iCal export
+- JSON-LD (`MusicEvent`) structured data for semantic SEO
+- Bilingual FR / EN
+- Automatic daily refresh (GitHub Actions)
 
 ## Stack
 
-- [Astro 6](https://astro.build) (statique, `output: static`), CSS vanilla
-- Hébergement [Cloudflare Pages](https://pages.cloudflare.com/)
-- [Cheerio](https://cheerio.js.org/) pour le scraping HTML des sites de salles
+- [Astro 6](https://astro.build) (static, `output: static`), vanilla CSS
+- Hosted on [Cloudflare Pages](https://pages.cloudflare.com/)
+- [Cheerio](https://cheerio.js.org/) for HTML scraping of venue websites
 
 ## Architecture
 
 ```
-src/sources/*.mjs            une source par origine (chacune exporte
-        │                    `meta` + `recuperer()` → événements normalisés)
-        │   • opendatasoft.mjs   miroir public OpenAgenda (tout le département)
-        │   • echonova.mjs       scraper L'Échonova, Saint-Avé
-        │   • hydrophone.mjs     scraper Hydrophone, Lorient
-        │   • coota.mjs          scraper Le Coota, Erdeven
-        │   • fnac.mjs           JSON-LD MusicEvent des salles vendant via Fnac
+src/sources/*.mjs            one source per origin (each exports
+        │                    `meta` + `recuperer()` → normalized events)
+        │   • opendatasoft.mjs   public OpenAgenda mirror (whole département)
+        │   • echonova.mjs       scraper for L'Échonova, Saint-Avé
+        │   • hydrophone.mjs     scraper for Hydrophone, Lorient
+        │   • coota.mjs          scraper for Le Coota, Erdeven
+        │   • fnac.mjs           JSON-LD MusicEvent for venues selling via Fnac
         ▼
-scripts/fetch-concerts.mjs   orchestrateur : fusionne, filtre, dédoublonne,
-        │                    trie → events.json (tolérant : une source en
-        │                    panne n'arrête pas le build)
+scripts/fetch-concerts.mjs   orchestrator: merges, filters, deduplicates,
+        │                    sorts → events.json (fault-tolerant: one failing
+        │                    source doesn't stop the build)
         ▼
-src/data/events.json         données générées (non éditées à la main)
+src/data/events.json         generated data (never hand-edited)
         ▼
-src/pages/                   accueil, [secteur].astro, salles/[salle].astro,
-                              ce-week-end, flux RSS + export iCal
+src/pages/                   home, [secteur].astro, salles/[salle].astro,
+                              ce-week-end, RSS feed + iCal export
 ```
 
-### Sources de données
+### Data sources
 
-Chaque source renvoie des événements au format normalisé
+Each source returns events in a normalized shape:
 `{ titre, debut, ville, lieu, secteur, description, image, url, source }`.
 
-- **opendatasoft** — dataset public `evenements-publics-openagenda` (miroir
-  OpenAgenda), API Explore v2.1, sans clé. Couvre tout le département mais
-  flux bruité (filtré en 3 temps : sources exclues, signal musical, exclusion
-  du non-musical).
-- **Scrapers de salles** (`echonova`, `hydrophone`, `coota`) — lecture directe
-  du HTML des sites de salles, car les grandes salles ne publient pas sur
-  OpenAgenda.
-- **fnac** — lecture du JSON-LD `MusicEvent` des pages salles Fnac Spectacles
-  (données publiques, robustes), pour les salles programmant des concerts en
-  tournée nationale.
+- **opendatasoft** — public dataset `evenements-publics-openagenda` (OpenAgenda
+  mirror), Explore API v2.1, no key required. Covers the whole département but
+  the feed is noisy (filtered in 3 passes: excluded sources, music signal,
+  non-music exclusion).
+- **Venue scrapers** (`echonova`, `hydrophone`, `coota`) — read the venue's
+  website HTML directly, since major venues don't publish to OpenAgenda.
+- **fnac** — reads the `MusicEvent` JSON-LD from Fnac Spectacles venue pages
+  (public, reliable data), for venues booking nationally touring acts.
 
-Les affiches ne sont jamais réhébergées : le champ `image` pointe toujours
-vers l'URL d'origine (droits réservés à leurs ayants droit, mention en pied
-de page).
+Posters are never re-hosted: the `image` field always points to the original
+source URL (rights reserved to their respective owners, credited in the
+footer).
 
-### Un piège de fuseau horaire résolu
+### A timezone trap, solved
 
-Les dates dans `events.json` sont stockées en heure « murale » française
-naïve (`2026-06-20T20:00:00`, sans `Z`). Le rendu ne passe jamais par
-`new Date().getHours()` ni `toISOString()`, pour éviter un décalage de
-jour/heure au build (qui tourne en UTC sur Cloudflare). Voir
-`src/sources/_util.mjs` et `src/data/format.js`.
+Dates in `events.json` are stored as naive French "wall-clock" time
+(`2026-06-20T20:00:00`, no `Z`). Rendering never goes through
+`new Date().getHours()` or `toISOString()`, to avoid a day/hour shift at
+build time (which runs in UTC on Cloudflare). See `src/sources/_util.mjs`
+and `src/data/format.js`.
 
-## Développement local
+## Local development
 
 ```bash
 npm ci
-npm run dev          # serveur de dev Astro
-npm run build:fetch  # récupère les données puis build (= ce que fait Cloudflare)
-npm run preview      # sert dist/ en local
+npm run dev          # Astro dev server
+npm run build:fetch  # fetch data then build (what Cloudflare runs)
+npm run preview      # serve dist/ locally
 ```
 
-## Déploiement
+## Deployment
 
-Le site est entièrement statique et hébergé sur **Cloudflare Pages**, connecté
-au dépôt Git : chaque push sur `main` déclenche un rebuild (`npm run build`,
-sortie `dist/`).
+The site is fully static and hosted on **Cloudflare Pages**, connected to
+the Git repository: every push to `main` triggers a rebuild (`npm run build`,
+output `dist/`).
 
-Les dates figées au build sont rafraîchies chaque jour par un workflow
-**GitHub Actions** (`.github/workflows/refresh.yml`) : il relance la
-récupération des données, committe `events.json` s'il a changé, et pousse —
-ce qui déclenche automatiquement le rebuild Cloudflare. Aucun secret requis.
+Dates frozen at build time are refreshed daily by a **GitHub Actions**
+workflow (`.github/workflows/refresh.yml`): it reruns the data fetch,
+commits `events.json` if it changed, and pushes — which automatically
+triggers the Cloudflare rebuild. No secrets required.
 
-## Licence
+## License
 
-Code source disponible sous licence MIT. Les visuels (affiches de concerts)
-restent la propriété de leurs ayants droit respectifs et ne sont pas
-réhébergés par ce projet.
+Source code available under the MIT license. Visual assets (concert
+posters) remain the property of their respective rights holders and are
+not re-hosted by this project.

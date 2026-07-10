@@ -1,10 +1,10 @@
-// Formatage des dates pour l'affichage des cartes concert.
+// Date formatting for displaying concert cards.
 //
-// Les dates stockées dans events.json sont des heures « murales » françaises au
-// format naïf « 2026-06-20T20:00:00 » (sans fuseau, cf. sources/_util.mjs). On
-// les lit ici par parsing de chaîne — surtout PAS via new Date() + getHours(),
-// qui réinterpréterait selon le fuseau du serveur de build (UTC sur Cloudflare)
-// et décalerait jour/heure.
+// Dates stored in events.json are naive French "wall-clock" times in the
+// format "2026-06-20T20:00:00" (no timezone, see sources/_util.mjs). They
+// are read here by parsing the string — definitely NOT via
+// new Date() + getHours(), which would reinterpret them according to the
+// build server's timezone (UTC on Cloudflare) and shift the day/hour.
 
 const NOMS = {
   fr: {
@@ -24,7 +24,7 @@ function parts(iso) {
   return { y, mo, d, h, mi, dow: new Date(Date.UTC(y, mo - 1, d)).getUTCDay() };
 }
 
-// "sam. 20 juin · 20:30" / "Sat 20 June · 20:30".
+// "sam. 20 juin · 20:30" / "Sat 20 June · 20:30" (long form).
 export function formatDate(iso, lang = 'fr') {
   const p = parts(iso);
   if (!p) return '';
@@ -34,7 +34,7 @@ export function formatDate(iso, lang = 'fr') {
   return h ? `${base} · ${h}` : base;
 }
 
-// Date compacte pour les badges de carte : "sam. 20 juin" / "Sat 20 Jun".
+// Compact date for card badges: "sam. 20 juin" / "Sat 20 Jun".
 export function formatBadge(iso, lang = 'fr') {
   const p = parts(iso);
   if (!p) return '';
@@ -42,7 +42,7 @@ export function formatBadge(iso, lang = 'fr') {
   return `${n.jours[p.dow]} ${p.d} ${n.mois[p.mo - 1].slice(0, lang === 'en' ? 3 : 4)}${lang === 'en' ? '' : '.'}`;
 }
 
-// Nom de mois pour les en-têtes de groupe : "Juillet 2026" (ym = "2026-07").
+// Month name for group headings: "Juillet 2026" (ym = "2026-07").
 export function formatMois(ym, lang = 'fr') {
   const m = String(ym).match(/^(\d{4})-(\d{2})/);
   if (!m) return '';
@@ -51,7 +51,7 @@ export function formatMois(ym, lang = 'fr') {
   return `${nom.charAt(0).toUpperCase()}${nom.slice(1)} ${m[1]}`;
 }
 
-// Heure seule "20:30", ou null si minuit (heure non renseignée).
+// Time only "20:30", or null at midnight (time not specified).
 export function formatHeure(iso) {
   const p = parts(iso);
   if (!p || (p.h === 0 && p.mi === 0)) return null;
