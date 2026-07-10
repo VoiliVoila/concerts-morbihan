@@ -1,10 +1,10 @@
 {
-  "genere_le": "2026-07-10T00:34:20.044Z",
-  "total": 42,
+  "genere_le": "2026-07-10T08:21:05.956Z",
+  "total": 44,
   "par_secteur": {
     "vannes": 19,
     "auray": 0,
-    "lorient": 15,
+    "lorient": 17,
     "lorient-rade": 1,
     "erdeven": 6,
     "etel": 0,
@@ -298,6 +298,19 @@
       "source": "echonova"
     },
     {
+      "id": "hydrophone:lesfemmessenmelentiledegarderequinchagrin|2026-10-23",
+      "fin": "2026-10-23T20:30:00",
+      "titre": "Les femmes s’en mêlent : ILE DE GARDE + REQUIN CHAGRIN",
+      "debut": "2026-10-23T20:30:00",
+      "ville": "Lorient",
+      "lieu": "Hydrophone",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.hydrophone.fr/local/cache-gd2/0e/389c243d64733ec53876c619abb136.png?1783670680",
+      "url": "https://www.hydrophone.fr/Les-femmes-s-en-melent-ILE-DE-GARDE-REQUIN-CHAGRIN.html",
+      "source": "hydrophone"
+    },
+    {
       "id": "echonova:bertrandbelinlouisepapier|2026-10-24",
       "fin": "2026-10-24T00:00:00",
       "titre": "BERTRAND BELIN + LOUÏSE PAPIER",
@@ -334,6 +347,19 @@
       "description": "",
       "image": "https://www.hydrophone.fr/local/cache-gd2/04/2dd15f819ed972a3b069faf7c87904.jpg?1779134035",
       "url": "https://www.hydrophone.fr/LOL-TOLHURST-TRAMHAUS-eat-girls.html",
+      "source": "hydrophone"
+    },
+    {
+      "id": "hydrophone:katzpascale|2026-11-06",
+      "fin": "2026-11-06T17:30:00",
+      "titre": "KatzPascale",
+      "debut": "2026-11-06T17:30:00",
+      "ville": "Lorient",
+      "lieu": "Hydrophone",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.hydrophone.fr/local/cache-gd2/0b/b06f99ab727be1dad58da5decd3061.png?1783670679",
+      "url": "https://www.hydrophone.fr/KatzPascale-577.html",
       "source": "hydrophone"
     },
     {
