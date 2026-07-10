@@ -1,6 +1,7 @@
-// Source : dataset public Opendatasoft « evenements-publics-openagenda »
-// (miroir OpenAgenda, sans clé). Couvre le Morbihan « tout venant » — flux très
-// bruité, d'où le filtrage musical. Complète les sources « salles » dédiées.
+// Source: public Opendatasoft dataset "evenements-publics-openagenda"
+// (OpenAgenda mirror, no key required). Covers the whole of Morbihan
+// unfiltered — a very noisy feed, hence the music filtering. Complements
+// the dedicated venue sources.
 
 import { SECTEURS, secteurDeVille, normalise } from '../data/secteurs.js';
 import { versParis } from './_util.mjs';
@@ -12,7 +13,7 @@ const MAX_PAGES = 40;
 
 export const meta = { id: 'opendatasoft', nom: 'OpenAgenda (miroir public)', url: 'https://public.opendatasoft.com/explore/dataset/evenements-publics-openagenda/' };
 
-// Agendas sources à ignorer entièrement (bruit récurrent sur le 56).
+// Source calendars to ignore entirely (recurring noise for this département).
 const SOURCES_EXCLUES = ['mes événements france travail', 'france travail'];
 
 const MUSIQUE = /\b(concerts?|musique|musical|musicale|live|festival|fest[- ]?noz|chanson|chant|jazz|rock|rap|hip[- ]?hop|metal|punk|reggae|blues|folk|funk|soul|electro|électro|techno|house|fanfare|r[eé]cital|chorale|d[ée]ambulation musicale|dj set|showcase|sc[eè]ne ouverte|open mic|bal (?:trad|populaire|folk|breton)|bagad|orchestre|symphoni|op[ée]ra|trio|quartet|quintet)\b/i;

@@ -1,10 +1,10 @@
-// Calendrier iCalendar des concerts à venir : abonnable dans Google Agenda,
-// Apple Calendrier, etc. Fait main (pas de dépendance). Les dates naïves
-// d'events.json (heure murale française) deviennent des DTSTART;TZID=
-// Europe/Paris — le VTIMEZONE ci-dessous rend le fichier autoporteur.
+// iCalendar feed of upcoming concerts: subscribable in Google Calendar,
+// Apple Calendar, etc. Hand-rolled (no dependency). The naive dates from
+// events.json (French wall-clock time) become DTSTART;TZID=Europe/Paris —
+// the VTIMEZONE block below makes the file self-contained.
 import data from '../data/events.json';
 
-// Échappement des valeurs texte (RFC 5545 §3.3.11).
+// Escaping of text values (RFC 5545 §3.3.11).
 const esc = (s) =>
   String(s ?? '')
     .replace(/\\/g, '\\\\')
@@ -12,7 +12,7 @@ const esc = (s) =>
     .replace(/,/g, '\\,')
     .replace(/\r?\n/g, '\\n');
 
-// Repli des lignes à 74 octets max (RFC 5545 §3.1), continuation par espace.
+// Folds lines to 74 bytes max (RFC 5545 §3.1), continuation lines start with a space.
 function plie(ligne) {
   const out = [];
   let reste = ligne;
@@ -24,7 +24,7 @@ function plie(ligne) {
   return out.join('\r\n');
 }
 
-// « 2026-06-20T20:00:00 » → « 20260620T200000 » (heure murale, TZID à part).
+// "2026-06-20T20:00:00" → "20260620T200000" (wall-clock time, TZID separate).
 const dtLocal = (iso) => iso.replace(/[-:]/g, '').slice(0, 15);
 
 export async function GET({ site }) {

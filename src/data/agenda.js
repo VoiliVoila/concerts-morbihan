@@ -1,18 +1,18 @@
-// Helpers de lecture d'events.json partagés par les pages (accueil, salles,
-// week-end, flux). Toutes les dates manipulées ici sont les chaînes naïves
-// « 2026-06-20T20:00:00 » d'events.json : on compare/découpe les chaînes,
-// jamais via new Date() local (cf. src/data/format.js).
+// Helpers for reading events.json, shared by the pages (home, venues,
+// weekend, feeds). All dates handled here are the naive
+// "2026-06-20T20:00:00" strings from events.json: we compare/slice strings,
+// never through a local new Date() (see src/data/format.js).
 
 import { normalise } from './secteurs.js';
 
-// Concerts d'une salle suivie : correspondance sur le champ `lieu`
-// (insensible casse/accents), même logique que la page Salles.
+// Concerts for a tracked venue: matched on the `lieu` field
+// (case/accent-insensitive), same logic as the Venues page.
 export function concertsDeSalle(events, cle) {
   const k = normalise(cle);
   return events.filter((e) => normalise(e.lieu).includes(k));
 }
 
-// Regroupe les events (déjà triés par date) par mois : [{ ym: '2026-07', events }].
+// Groups events (already sorted by date) by month: [{ ym: '2026-07', events }].
 export function groupesParMois(events) {
   const groupes = [];
   for (const e of events) {
@@ -24,20 +24,20 @@ export function groupesParMois(events) {
   return groupes;
 }
 
-// Date du jour à Paris au format YYYY-MM-DD (le build tourne en UTC).
+// Today's date in Paris, as YYYY-MM-DD (the build runs in UTC).
 export function aujourdhuiParis() {
   return new Intl.DateTimeFormat('fr-CA', { timeZone: 'Europe/Paris' }).format(new Date());
 }
 
-// Bornes (incluses) du week-end « pertinent » au moment du build, en YYYY-MM-DD :
-// du prochain vendredi au dimanche suivant — ou du jour même si on est déjà
-// dans le week-end (ven/sam/dim). Le site est rebâti chaque jour, donc la
-// page reste fraîche.
+// Bounds (inclusive) of the "relevant" upcoming weekend at build time, as
+// YYYY-MM-DD: from the next Friday through the following Sunday — or from
+// today if we're already in the weekend (Fri/Sat/Sun). The site is rebuilt
+// daily, so the page stays fresh.
 export function bornesWeekend() {
   const auj = aujourdhuiParis();
   const [y, m, d] = auj.split('-').map(Number);
   const base = Date.UTC(y, m - 1, d);
-  const dow = new Date(base).getUTCDay(); // 0 = dimanche … 6 = samedi
+  const dow = new Date(base).getUTCDay(); // 0 = Sunday … 6 = Saturday
   const ymd = (t) => new Date(t).toISOString().slice(0, 10);
   const JOUR = 864e5;
   if (dow === 5 || dow === 6 || dow === 0) {
@@ -48,7 +48,7 @@ export function bornesWeekend() {
   return [ymd(ven), ymd(ven + 2 * JOUR)];
 }
 
-// Concerts dont la date tombe dans le week-end à venir.
+// Concerts whose date falls within the upcoming weekend.
 export function concertsDuWeekend(events) {
   const [debut, fin] = bornesWeekend();
   return events.filter((e) => {
