@@ -41,6 +41,9 @@ async function main() {
     const { id, nom } = source.meta;
     try {
       const bruts = await source.recuperer();
+      if (bruts.length === 0) {
+        console.warn(`⚠ [${id}] returned 0 raw events — the scraper might be broken (site structure changed?)`);
+      }
       let retenus = 0;
       for (const e of bruts) {
         if (!e.debut || new Date(e.debut) < minuit) continue; // past events
