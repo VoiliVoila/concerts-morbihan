@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-07-10T08:21:05.956Z",
-  "total": 44,
+  "genere_le": "2026-07-11T07:10:09.321Z",
+  "total": 45,
   "par_secteur": {
-    "vannes": 19,
+    "vannes": 20,
     "auray": 0,
     "lorient": 17,
     "lorient-rade": 1,
@@ -11,19 +11,6 @@
     "quiberon": 1
   },
   "events": [
-    {
-      "id": "coota:thenucleonsproject|2026-07-10",
-      "fin": "2026-07-10T00:00:00",
-      "titre": "THE NUCLEONS PROJECT",
-      "debut": "2026-07-10T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Pachas Dirty Psycho Rock'n'Roll",
-      "image": "https://lecoota.fr/images/thumb/1782296388.png",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
     {
       "id": "coota:bloodflower|2026-07-11",
       "fin": "2026-07-11T00:00:00",
@@ -64,6 +51,19 @@
       "source": "opendatasoft"
     },
     {
+      "id": "opendatasoft:francoisvincentsouricetteblues|2026-07-15",
+      "fin": "2026-07-15T10:30:00",
+      "titre": "Francois Vincent - Souricette blues",
+      "debut": "2026-07-15T10:30:00",
+      "ville": "Baden",
+      "lieu": "Médiathèque de Baden",
+      "secteur": "vannes",
+      "description": "Contes pour les tout-petits (18 mois-3 ans)",
+      "image": "https://cdn.openagenda.com/main/a1c12b4d57c447809dcc8203d04f4a24.base.image.jpg",
+      "url": "https://openagenda.com/festival-du-conte-de-baden/events/francois-vincent-souricette-blues",
+      "source": "opendatasoft"
+    },
+    {
       "id": "coota:thebloyetbrothers|2026-07-16",
       "fin": "2026-07-16T00:00:00",
       "titre": "THE BLOYET BROTHERS",
@@ -99,6 +99,19 @@
       "secteur": "erdeven",
       "description": "Chansons du voyage",
       "image": "https://lecoota.fr/images/thumb/1782299976.jpg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
+    },
+    {
+      "id": "coota:superweekend|2026-07-22",
+      "fin": "2026-07-22T00:00:00",
+      "titre": "Superweekend",
+      "debut": "2026-07-22T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "Hyper Giga Meta Funk",
+      "image": "https://lecoota.fr/images/thumb/1782380841.png",
       "url": "https://lecoota.fr/concert",
       "source": "coota"
     },
