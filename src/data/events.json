@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-07-14T07:09:52.988Z",
-  "total": 55,
+  "genere_le": "2026-07-15T07:13:19.423Z",
+  "total": 56,
   "par_secteur": {
-    "vannes": 30,
+    "vannes": 31,
     "auray": 0,
     "lorient": 17,
     "lorient-rade": 1,
@@ -659,6 +659,19 @@
       "description": "global-groove, transe, world-underground",
       "image": "https://lechonova.com/uploads/2026/07/coznanan.jpg",
       "url": "https://lechonova.com/evenement/bongo-joe-night-cocanha-yalla-miku-king-ayisoba-cyril-bongo-joe-dj-set/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:subodyssey6channelonereemshotkurunsoundsystem|2026-12-12",
+      "fin": "2026-12-12T00:00:00",
+      "titre": "SUB ODYSSEY #6 : CHANNEL ONE + REEMSHOT + KÜRÜN SOUND SYSTEM",
+      "debut": "2026-12-12T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "dub",
+      "image": "https://lechonova.com/uploads/2026/07/banniere-shotgun-subodyssey6-rouge.jpg",
+      "url": "https://lechonova.com/evenement/sub-odyssey-6-channel-one-reemshot-kurun-sound-system/",
       "source": "echonova"
     },
     {
