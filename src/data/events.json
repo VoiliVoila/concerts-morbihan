@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-07-15T07:13:19.423Z",
-  "total": 56,
+  "genere_le": "2026-07-16T07:21:21.040Z",
+  "total": 57,
   "par_secteur": {
-    "vannes": 31,
+    "vannes": 32,
     "auray": 0,
     "lorient": 17,
     "lorient-rade": 1,
@@ -11,19 +11,6 @@
     "quiberon": 1
   },
   "events": [
-    {
-      "id": "opendatasoft:francoisvincentsouricetteblues|2026-07-15",
-      "fin": "2026-07-15T10:30:00",
-      "titre": "Francois Vincent - Souricette blues",
-      "debut": "2026-07-15T10:30:00",
-      "ville": "Baden",
-      "lieu": "Médiathèque de Baden",
-      "secteur": "vannes",
-      "description": "Contes pour les tout-petits (18 mois-3 ans)",
-      "image": "https://cdn.openagenda.com/main/a1c12b4d57c447809dcc8203d04f4a24.base.image.jpg",
-      "url": "https://openagenda.com/festival-du-conte-de-baden/events/francois-vincent-souricette-blues",
-      "source": "opendatasoft"
-    },
     {
       "id": "coota:thebloyetbrothers|2026-07-16",
       "fin": "2026-07-16T00:00:00",
@@ -441,6 +428,19 @@
       "source": "echonova"
     },
     {
+      "id": "echonova:bretonsemezi|2026-10-30",
+      "fin": "2026-10-30T00:00:00",
+      "titre": "B.R.E.T.O.N.S + Emezi",
+      "debut": "2026-10-30T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "trad-rock",
+      "image": "https://lechonova.com/uploads/2026/07/bretons.jpg",
+      "url": "https://lechonova.com/evenement/b-r-e-t-o-n-s-emezi/",
+      "source": "echonova"
+    },
+    {
       "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
       "fin": "2026-10-31T00:00:00",
       "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
@@ -597,6 +597,19 @@
       "source": "echonova"
     },
     {
+      "id": "echonova:aperosonoretout|2026-11-26",
+      "fin": "2026-11-26T00:00:00",
+      "titre": "APÉRO SONORE : Tout",
+      "debut": "2026-11-26T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "pop, rock, soul",
+      "image": "https://lechonova.com/uploads/2026/07/clara.jpg",
+      "url": "https://lechonova.com/evenement/apero-sonore-tout-le-monde-sappelle-clara/",
+      "source": "echonova"
+    },
+    {
       "id": "echonova:meryljahlysdjpablosca|2026-11-27",
       "fin": "2026-11-27T00:00:00",
       "titre": "MERYL + JAHLYS + DJ PABLOSCA",
@@ -670,7 +683,7 @@
       "lieu": "L'Échonova",
       "secteur": "vannes",
       "description": "dub",
-      "image": "https://lechonova.com/uploads/2026/07/banniere-shotgun-subodyssey6-rouge.jpg",
+      "image": "https://lechonova.com/uploads/2026/07/banniere-shotgun-subodyssey6-jaune.jpg",
       "url": "https://lechonova.com/evenement/sub-odyssey-6-channel-one-reemshot-kurun-sound-system/",
       "source": "echonova"
     },
