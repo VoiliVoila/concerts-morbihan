@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-07-16T07:21:21.040Z",
-  "total": 57,
+  "genere_le": "2026-07-17T07:15:07.638Z",
+  "total": 63,
   "par_secteur": {
-    "vannes": 32,
+    "vannes": 38,
     "auray": 0,
     "lorient": 17,
     "lorient-rade": 1,
@@ -11,84 +11,6 @@
     "quiberon": 1
   },
   "events": [
-    {
-      "id": "coota:thebloyetbrothers|2026-07-16",
-      "fin": "2026-07-16T00:00:00",
-      "titre": "THE BLOYET BROTHERS",
-      "debut": "2026-07-16T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Rock organique familial",
-      "image": "https://lecoota.fr/images/thumb/1782298731.jpg",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
-    {
-      "id": "opendatasoft:restitutiondustageenfantsplaceauxptitsconteursetconteuses|2026-07-16",
-      "fin": "2026-07-16T14:30:00",
-      "titre": "✨ Restitution du stage enfants : place aux p'tits conteurs et conteuses ! ✨",
-      "debut": "2026-07-16T14:30:00",
-      "ville": "Baden",
-      "lieu": "Champ communal de Kergonano, baden",
-      "secteur": "vannes",
-      "description": "Restitution du stage de contes des enfants",
-      "image": "https://cdn.openagenda.com/main/504c60ab8a7e496faa2021e78d2bc8fd.base.image.jpg",
-      "url": "https://openagenda.com/festival-du-conte-de-baden/events/restitution-du-stage-enfants-place-aux-ptits-conteurs-et-conteuses",
-      "source": "opendatasoft"
-    },
-    {
-      "id": "opendatasoft:coupdenvoifestiflevillageseveilleplaceauxartistes|2026-07-16",
-      "fin": "2026-07-16T15:30:00",
-      "titre": "🚀 Coup d'envoi festif : Le village s'éveille, place aux artistes ! 🎭",
-      "debut": "2026-07-16T15:30:00",
-      "ville": "Baden",
-      "lieu": "Champ communal de Kergonano, baden",
-      "secteur": "vannes",
-      "description": "🚀 Coup d'envoi festif : Le village s'éveille, place aux artistes ! 🎭",
-      "image": "https://cdn.openagenda.com/main/5516d6c077914cfbb9832e2e7fe435e8.base.image.jpg",
-      "url": "https://openagenda.com/festival-du-conte-de-baden/events/coup-denvoi-festif-le-village-seveille-place-aux-artistes",
-      "source": "opendatasoft"
-    },
-    {
-      "id": "opendatasoft:deliriumlimpromptumusical|2026-07-16",
-      "fin": "2026-07-16T17:00:00",
-      "titre": "Delirium - L'impromptu musical",
-      "debut": "2026-07-16T17:00:00",
-      "ville": "Baden",
-      "lieu": "Champ communal de Kergonano, baden",
-      "secteur": "vannes",
-      "description": "Delirium - L'impromptu musical",
-      "image": "https://cdn.openagenda.com/main/2ea0639911074334bfb775af8eadc819.base.image.jpg",
-      "url": "https://openagenda.com/festival-du-conte-de-baden/events/delirium-limpromptu-musical",
-      "source": "opendatasoft"
-    },
-    {
-      "id": "opendatasoft:sylvievievillelavieillequitricotaitdesbulldozers|2026-07-16",
-      "fin": "2026-07-16T18:00:00",
-      "titre": "Sylvie Vieville - La vieille qui tricotait des bulldozers",
-      "debut": "2026-07-16T18:00:00",
-      "ville": "Baden",
-      "lieu": "Champ communal de Kergonano, baden",
-      "secteur": "vannes",
-      "description": "Spectacle de contes à partir de 8 ans",
-      "image": "https://cdn.openagenda.com/main/43f32e290d41489f8a86ea40eba5b377.base.image.jpg",
-      "url": "https://openagenda.com/festival-du-conte-de-baden/events/sylvie-vieville-la-vieille-qui-tricotait-des-bulldozers",
-      "source": "opendatasoft"
-    },
-    {
-      "id": "opendatasoft:sceneouverteavousdejouer|2026-07-16",
-      "fin": "2026-07-16T22:30:00",
-      "titre": "🎤 Scène ouverte : à vous de jouer ! 🌟",
-      "debut": "2026-07-16T22:30:00",
-      "ville": "Baden",
-      "lieu": "Champ communal de Kergonano, baden",
-      "secteur": "vannes",
-      "description": "🎤 Scène ouverte : à vous de jouer ! 🌟",
-      "image": "https://cdn.openagenda.com/main/ce23752f676540f69d0c6bcac4e8e8be.base.image.jpg",
-      "url": "https://openagenda.com/festival-du-conte-de-baden/events/scene-ouverte-a-vous-de-jouer-9149954",
-      "source": "opendatasoft"
-    },
     {
       "id": "coota:saladedebruit|2026-07-17",
       "fin": "2026-07-17T00:00:00",
@@ -194,6 +116,19 @@
       "source": "coota"
     },
     {
+      "id": "coota:skankycombo|2026-07-25",
+      "fin": "2026-07-25T00:00:00",
+      "titre": "SKANKY COMBO",
+      "debut": "2026-07-25T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "Rock steady/ska/Early reggae",
+      "image": "https://lecoota.fr/images/thumb/1782302245.jpg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
+    },
+    {
       "id": "opendatasoft:ecumefestivalles5ans|2026-08-07",
       "fin": "2026-08-07T15:00:00",
       "titre": "Écume Festival - Les 5 ans",
@@ -272,16 +207,16 @@
       "source": "opendatasoft"
     },
     {
-      "id": "echonova:hilighttribepremierepartie|2026-09-25",
+      "id": "echonova:hilighttribeliamoon|2026-09-25",
       "fin": "2026-09-25T00:00:00",
-      "titre": "HILIGHT TRIBE + première partie",
+      "titre": "HILIGHT TRIBE + LIA MOON",
       "debut": "2026-09-25T00:00:00",
       "ville": "Saint-Avé",
       "lieu": "L'Échonova",
       "secteur": "vannes",
       "description": "natural-trance",
       "image": "https://lechonova.com/uploads/2026/04/site.jpg",
-      "url": "https://lechonova.com/evenement/hilight-tribe-premiere-partie/",
+      "url": "https://lechonova.com/evenement/hilight-tribe-lia-moon/",
       "source": "echonova"
     },
     {
@@ -363,9 +298,22 @@
       "source": "hydrophone"
     },
     {
+      "id": "echonova:gigofightclub2|2026-10-10",
+      "fin": "2026-10-10T00:00:00",
+      "titre": "GIGOFIGHT CLUB #2",
+      "debut": "2026-10-10T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "techno, transe",
+      "image": "https://lechonova.com/uploads/2026/07/gigoteuse.jpg",
+      "url": "https://lechonova.com/evenement/gigofight-club-2/",
+      "source": "echonova"
+    },
+    {
       "id": "echonova:bondimanchecheveux|2026-10-11",
       "fin": "2026-10-11T00:00:00",
-      "titre": "BON DIMANCHE : CHEVEUX",
+      "titre": "BON DIMANCHE ! CHEVEUX",
       "debut": "2026-10-11T00:00:00",
       "ville": "Saint-Avé",
       "lieu": "L'Échonova",
@@ -373,6 +321,19 @@
       "description": "en-famille",
       "image": "https://lechonova.com/uploads/2026/07/design-sans-titre-2.jpg",
       "url": "https://lechonova.com/evenement/bon-dimanche-cheveux/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:visitepriveedelechonova|2026-10-15",
+      "fin": "2026-10-15T00:00:00",
+      "titre": "VISITE PRIVÉE DE L’ECHONOVA",
+      "debut": "2026-10-15T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "visite",
+      "image": "https://lechonova.com/uploads/2025/07/illu-lumiere.png",
+      "url": "https://lechonova.com/evenement/visite-privee-de-lechonova/",
       "source": "echonova"
     },
     {
@@ -389,9 +350,9 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:yvnnis1erepartie|2026-10-23",
+      "id": "echonova:yvnnisakissijaykid|2026-10-23",
       "fin": "2026-10-23T00:00:00",
-      "titre": "YVNNIS + 1ère partie",
+      "titre": "YVNNIS + AKISSI + JAY KID",
       "debut": "2026-10-23T00:00:00",
       "ville": "Saint-Avé",
       "lieu": "L'Échonova",
@@ -428,6 +389,19 @@
       "source": "echonova"
     },
     {
+      "id": "echonova:afterworkrollerdanceparty|2026-10-29",
+      "fin": "2026-10-29T00:00:00",
+      "titre": "AFTERWORK : ROLLER DANCE PARTY",
+      "debut": "2026-10-29T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "roller",
+      "image": "https://lechonova.com/uploads/2026/07/afterwork2.jpg",
+      "url": "https://lechonova.com/evenement/afterwork-roller-dance-party-2/",
+      "source": "echonova"
+    },
+    {
       "id": "echonova:bretonsemezi|2026-10-30",
       "fin": "2026-10-30T00:00:00",
       "titre": "B.R.E.T.O.N.S + Emezi",
@@ -438,6 +412,19 @@
       "description": "trad-rock",
       "image": "https://lechonova.com/uploads/2026/07/bretons.jpg",
       "url": "https://lechonova.com/evenement/b-r-e-t-o-n-s-emezi/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "global-groove",
+      "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
+      "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
       "source": "echonova"
     },
     {
@@ -467,6 +454,19 @@
       "source": "hydrophone"
     },
     {
+      "id": "echonova:filagerencontreavec|2026-11-05",
+      "fin": "2026-11-05T00:00:00",
+      "titre": "FILAGE & RENCONTRE AVEC",
+      "debut": "2026-11-05T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "surprise",
+      "image": "https://lechonova.com/uploads/2026/03/capture-decran-2026-07-16-a-172136.png",
+      "url": "https://lechonova.com/evenement/filage/",
+      "source": "echonova"
+    },
+    {
       "id": "hydrophone:loltolhursttramhauseatgirls|2026-11-05",
       "fin": "2026-11-05T20:00:00",
       "titre": "LOL TOLHURST + TRAMHAUS + eat-girls",
@@ -478,6 +478,19 @@
       "image": "https://www.hydrophone.fr/local/cache-gd2/04/2dd15f819ed972a3b069faf7c87904.jpg?1779134035",
       "url": "https://www.hydrophone.fr/LOL-TOLHURST-TRAMHAUS-eat-girls.html",
       "source": "hydrophone"
+    },
+    {
+      "id": "echonova:novalovesyamacdecloslacchesikersu|2026-11-06",
+      "fin": "2026-11-06T00:00:00",
+      "titre": "NOVA LOVES YA : MAC DECLOS + LACCHESI + KERSU",
+      "debut": "2026-11-06T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "hardgroove, techno",
+      "image": "https://lechonova.com/uploads/2026/07/raversound.jpg",
+      "url": "https://lechonova.com/evenement/nova-loves-ya-mac-declos-lacchesi-kersu/",
+      "source": "echonova"
     },
     {
       "id": "hydrophone:katzpascale|2026-11-06",
@@ -504,6 +517,19 @@
       "image": "https://www.hydrophone.fr/local/cache-gd2/2e/934edb76012781977434903a87bd79.jpg?1782894731",
       "url": "https://www.hydrophone.fr/MERYL-STREEK-CHEST-LIBRARY-CARD.html",
       "source": "hydrophone"
+    },
+    {
+      "id": "echonova:tourneedestrans|2026-11-07",
+      "fin": "2026-11-07T00:00:00",
+      "titre": "Tournée des Trans",
+      "debut": "2026-11-07T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "scene-locale",
+      "image": "https://lechonova.com/uploads/2026/07/tdt.jpg",
+      "url": "https://lechonova.com/evenement/tournee-des-trans/",
+      "source": "echonova"
     },
     {
       "id": "hydrophone:conferencelamourlefootballetlamusique|2026-11-07",
@@ -571,6 +597,19 @@
       "source": "hydrophone"
     },
     {
+      "id": "echonova:firstlightinsomniabirthdayeskaguests|2026-11-14",
+      "fin": "2026-11-14T00:00:00",
+      "titre": "First Light Insomnia Birthday : Eska & Guests",
+      "debut": "2026-11-14T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "techno",
+      "image": "https://lechonova.com/uploads/2026/07/insomnia.jpg",
+      "url": "https://lechonova.com/evenement/first-light-insomnia-birthday-eska-guests/",
+      "source": "echonova"
+    },
+    {
       "id": "hydrophone:marguerite|2026-11-14",
       "fin": "2026-11-14T20:30:00",
       "titre": "MARGUERITE",
@@ -582,6 +621,19 @@
       "image": "https://www.hydrophone.fr/local/cache-gd2/39/5f98982a6c1e9e3d84c3df86ea125a.jpg?1779785719",
       "url": "https://www.hydrophone.fr/MARGUERITE.html",
       "source": "hydrophone"
+    },
+    {
+      "id": "echonova:afterworkbeaujolaisnouveaubretagnenouvelle|2026-11-19",
+      "fin": "2026-11-19T00:00:00",
+      "titre": "AFTERWORK : BEAUJOLAIS NOUVEAU – BRETAGNE NOUVELLE",
+      "debut": "2026-11-19T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "apero",
+      "image": "https://lechonova.com/uploads/2026/07/beaujo.jpg",
+      "url": "https://lechonova.com/evenement/afterwork-beaujolais-nouveau-bretagne-nouvelle/",
+      "source": "echonova"
     },
     {
       "id": "echonova:mknkclubmanu|2026-11-21",
@@ -649,9 +701,9 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:bambyguests|2026-12-04",
+      "id": "echonova:bambymachartleymalaureinsdjset|2026-12-04",
       "fin": "2026-12-04T00:00:00",
-      "titre": "Bamby + guests",
+      "titre": "Bamby + Mac Hartley + Malaureins (dj set)",
       "debut": "2026-12-04T00:00:00",
       "ville": "Saint-Avé",
       "lieu": "L'Échonova",
@@ -675,6 +727,19 @@
       "source": "echonova"
     },
     {
+      "id": "echonova:spontusguest|2026-12-11",
+      "fin": "2026-12-11T00:00:00",
+      "titre": "SPONTUS & GUEST",
+      "debut": "2026-12-11T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "trad",
+      "image": "https://lechonova.com/uploads/2026/07/spontus.jpg",
+      "url": "https://lechonova.com/evenement/spontus-guest/",
+      "source": "echonova"
+    },
+    {
       "id": "echonova:subodyssey6channelonereemshotkurunsoundsystem|2026-12-12",
       "fin": "2026-12-12T00:00:00",
       "titre": "SUB ODYSSEY #6 : CHANNEL ONE + REEMSHOT + KÜRÜN SOUND SYSTEM",
@@ -685,6 +750,19 @@
       "description": "dub",
       "image": "https://lechonova.com/uploads/2026/07/banniere-shotgun-subodyssey6-jaune.jpg",
       "url": "https://lechonova.com/evenement/sub-odyssey-6-channel-one-reemshot-kurun-sound-system/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:afterworkdenoel|2026-12-17",
+      "fin": "2026-12-17T00:00:00",
+      "titre": "AFTERWORK DE NOËL",
+      "debut": "2026-12-17T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "noel",
+      "image": "https://lechonova.com/uploads/2026/07/afterwork.jpg",
+      "url": "https://lechonova.com/evenement/afterwork-de-noel/",
       "source": "echonova"
     },
     {
