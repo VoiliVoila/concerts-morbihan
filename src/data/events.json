@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-07-18T06:59:09.494Z",
-  "total": 64,
+  "genere_le": "2026-07-19T07:25:22.164Z",
+  "total": 63,
   "par_secteur": {
-    "vannes": 39,
+    "vannes": 38,
     "auray": 0,
     "lorient": 17,
     "lorient-rade": 1,
@@ -11,32 +11,6 @@
     "quiberon": 1
   },
   "events": [
-    {
-      "id": "coota:karpatt|2026-07-18",
-      "fin": "2026-07-18T00:00:00",
-      "titre": "KARPATT",
-      "debut": "2026-07-18T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Chansons du voyage",
-      "image": "https://lecoota.fr/images/thumb/1782299976.jpg",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
-    {
-      "id": "opendatasoft:concertleswaterphone|2026-07-18",
-      "fin": "2026-07-18T19:30:00",
-      "titre": "🎵 Concert : Les Waterphone",
-      "debut": "2026-07-18T19:30:00",
-      "ville": "Baden",
-      "lieu": "Champ communal de Kergonano, baden",
-      "secteur": "vannes",
-      "description": "🎵 Concert : Les Waterphone",
-      "image": "https://cdn.openagenda.com/main/a9f1a7eb01124957bfe020c84f3a5841.base.image.jpg",
-      "url": "https://openagenda.com/festival-du-conte-de-baden/events/concert-les-waterphone",
-      "source": "opendatasoft"
-    },
     {
       "id": "coota:superweekend|2026-07-22",
       "fin": "2026-07-22T00:00:00",
@@ -99,6 +73,19 @@
       "secteur": "erdeven",
       "description": "Rock Latino Engagé",
       "image": "https://lecoota.fr/images/thumb/1782302430.jpg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
+    },
+    {
+      "id": "coota:larifetnosmen|2026-07-31",
+      "fin": "2026-07-31T00:00:00",
+      "titre": "LA RIF ET NOS MEN",
+      "debut": "2026-07-31T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "rap pop rock",
+      "image": "https://lecoota.fr/images/thumb/1782302997.png",
       "url": "https://lecoota.fr/concert",
       "source": "coota"
     },
