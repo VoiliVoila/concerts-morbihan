@@ -1,10 +1,10 @@
 {
-  "genere_le": "2026-07-20T07:57:09.695Z",
-  "total": 63,
+  "genere_le": "2026-07-21T07:31:29.632Z",
+  "total": 66,
   "par_secteur": {
     "vannes": 38,
     "auray": 0,
-    "lorient": 17,
+    "lorient": 20,
     "lorient-rade": 1,
     "erdeven": 6,
     "etel": 0,
@@ -101,6 +101,45 @@
       "image": "https://cdn.openagenda.com/main/1c31e2141df44b7fb16934356a463f46.base.image.jpg",
       "url": "https://openagenda.com/unidivers-oui-sortir/events/ecume-festival-les-5-ans",
       "source": "opendatasoft"
+    },
+    {
+      "id": "hydrophone:oceanracetvoddj|2026-09-10",
+      "fin": "2026-09-10T20:00:00",
+      "titre": "OCEAN RACE : TVOD + DJ",
+      "debut": "2026-09-10T20:00:00",
+      "ville": "Lorient",
+      "lieu": "Hydrophone",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.hydrophone.fr/local/cache-gd2/6a/0cbad83377149377793ea04f1cf08e.png?1784537996",
+      "url": "https://www.hydrophone.fr/OCEAN-RACE-TVOD-DJ.html",
+      "source": "hydrophone"
+    },
+    {
+      "id": "hydrophone:oceanracekenatalenac|2026-09-11",
+      "fin": "2026-09-11T20:00:00",
+      "titre": "OCEAN RACE : KENATA + LENA C",
+      "debut": "2026-09-11T20:00:00",
+      "ville": "Lorient",
+      "lieu": "Hydrophone",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.hydrophone.fr/local/cache-gd2/f7/729172a41ffd6e782da4c0020ad077.png?1784537996",
+      "url": "https://www.hydrophone.fr/OCEAN-RACE-KENATA.html",
+      "source": "hydrophone"
+    },
+    {
+      "id": "hydrophone:oceanracenesadestheplanet|2026-09-12",
+      "fin": "2026-09-12T20:00:00",
+      "titre": "OCEAN RACE : NES + ADES THE PLANET",
+      "debut": "2026-09-12T20:00:00",
+      "ville": "Lorient",
+      "lieu": "Hydrophone",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.hydrophone.fr/local/cache-gd2/72/bec1251bfc5051d45bab00601dcf7f.png?1784537997",
+      "url": "https://www.hydrophone.fr/OCEAN-RACE-NES-ADES-THE-PLANET.html",
+      "source": "hydrophone"
     },
     {
       "id": "hydrophone:ciel|2026-09-17",
