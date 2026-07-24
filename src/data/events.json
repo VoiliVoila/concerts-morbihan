@@ -1,29 +1,16 @@
 {
-  "genere_le": "2026-07-23T07:31:55.016Z",
-  "total": 68,
+  "genere_le": "2026-07-24T07:29:32.235Z",
+  "total": 67,
   "par_secteur": {
     "vannes": 41,
     "auray": 0,
     "lorient": 20,
     "lorient-rade": 1,
-    "erdeven": 5,
+    "erdeven": 4,
     "etel": 0,
     "quiberon": 1
   },
   "events": [
-    {
-      "id": "coota:aloko|2026-07-23",
-      "fin": "2026-07-23T00:00:00",
-      "titre": "ALOKO",
-      "debut": "2026-07-23T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Luso-Tropikal-Jazz",
-      "image": "https://lecoota.fr/images/thumb/1782301217.jpg",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
     {
       "id": "coota:lunebleuebrings|2026-07-24",
       "fin": "2026-07-24T00:00:00",
