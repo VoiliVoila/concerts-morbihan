@@ -7,6 +7,8 @@ dist/
 
 # Doc de travail interne (repo public) : source de vérité dans notes/projects/concerts-doc
 CLAUDE.md
+AGENTS.md
 DEPLOY.md
 docs/
 .claude/
+.agents/
