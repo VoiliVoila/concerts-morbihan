@@ -33,21 +33,40 @@ const siteLd = {
   url: new URL(px || '/', Astro.site).href,
   inLanguage: lang,
 };
+const motFaire = t(lang, 'home.titleTrait');
+const vols = [
+  ['-0.34em', '0.46em', '-12deg'],
+  ['0.18em', '-0.38em', '9deg'],
+  ['-0.12em', '0.31em', '-7deg'],
+  ['0.29em', '-0.28em', '11deg'],
+  ['-0.24em', '0.42em', '-9deg'],
+];
 ---
 
 <Base titre={titre} description={description} lang={lang}>
   <EventsJsonLd events={data.events} />
   <script type="application/ld+json" set:html={JSON.stringify(siteLd)} />
 
-  <section class="hero">
-    <p class="hero-eyebrow"><span class="etoile">✦</span> {t(lang, 'home.eyebrow')}</p>
-    <h1 class="hero-title">
-      {t(lang, 'home.title1')} <span class="trait">{t(lang, 'home.titleTrait')}</span><br />
-      {t(lang, 'home.title2') ? t(lang, 'home.title2') + ' ' : ''}<span class="accent">{t(lang, 'home.titleAccent')}</span>
-    </h1>
-    <p class="hero-sub">
-      {t(lang, 'home.sub')} <Fragment set:html={t(lang, 'home.subStats', data.total, cetteSemaine)} />
-    </p>
+  <section class="hero hero-accueil">
+    <div class="hero-contenu">
+      <p class="hero-eyebrow"><span class="etoile">✦</span> {t(lang, 'home.eyebrow')}</p>
+      <h1 class="hero-title">
+        <span class="hero-ligne"><span>{t(lang, 'home.title1')} {lang === 'fr' ? (
+          <span class="trait trait-anime">
+            <span class="sr-only">{motFaire}</span>
+            <span class="trait-lettres" aria-hidden="true">
+              {Array.from(motFaire).map((lettre, i) => (
+                <span style={`--i:${i};--x:${vols[i][0]};--y:${vols[i][1]};--r:${vols[i][2]}`}>{lettre}</span>
+              ))}
+            </span>
+          </span>
+        ) : <span class="trait">{motFaire}</span>}</span></span>
+        <span class="hero-ligne"><span>{t(lang, 'home.title2') ? t(lang, 'home.title2') + ' ' : ''}<span class="accent">{t(lang, 'home.titleAccent')}</span></span></span>
+      </h1>
+      <p class="hero-sub">
+        {t(lang, 'home.sub')} <Fragment set:html={t(lang, 'home.subStats', data.total, cetteSemaine)} />
+      </p>
+    </div>
   </section>
 
   {noms.length > 0 && (
