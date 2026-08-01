@@ -6,6 +6,7 @@ import { SECTEURS } from '../../data/secteurs.js';
 import { groupesParMois } from '../../data/agenda.js';
 import { formatMois } from '../../data/format.js';
 import { t, prefix } from '../../i18n.js';
+import { jsonLd } from '../../data/jsonld.js';
 import data from '../../data/events.json';
 
 interface Props { lang?: string }
@@ -45,7 +46,7 @@ const vols = [
 
 <Base titre={titre} description={description} lang={lang}>
   <EventsJsonLd events={data.events} />
-  <script type="application/ld+json" set:html={JSON.stringify(siteLd)} />
+  <script type="application/ld+json" set:html={jsonLd(siteLd)} />
 
   <section class="hero hero-accueil">
     <div class="hero-contenu">

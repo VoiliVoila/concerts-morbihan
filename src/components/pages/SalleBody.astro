@@ -5,6 +5,7 @@ import EventsJsonLd from '../EventsJsonLd.astro';
 import { SECTEURS } from '../../data/secteurs.js';
 import { concertsDeSalle } from '../../data/agenda.js';
 import { t, prefix } from '../../i18n.js';
+import { jsonLd } from '../../data/jsonld.js';
 import data from '../../data/events.json';
 
 interface Props {
@@ -43,7 +44,7 @@ const venueLd = {
 
 <Base titre={titre} description={description} lang={lang}>
   {events.length > 0 && <EventsJsonLd events={events} />}
-  <script type="application/ld+json" set:html={JSON.stringify(venueLd)} />
+  <script type="application/ld+json" set:html={jsonLd(venueLd)} />
 
   <section class="hero">
     <p class="hero-eyebrow"><a href={`${px}/salles`} class="hero-retour">{t(lang, 'venue.allVenues')}</a> · {t(lang, 'venue.eyebrow')}</p>

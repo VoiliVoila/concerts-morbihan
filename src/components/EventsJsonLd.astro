@@ -1,4 +1,6 @@
 ---
+import { jsonLd } from '../data/jsonld.js';
+
 // Emits a list of MusicEvent as JSON-LD (schema.org) for semantic SEO:
 // search engines understand this is a listing of dated, located concerts.
 interface Concert {
@@ -40,4 +42,4 @@ const ld = {
 };
 ---
 
-<script type="application/ld+json" set:html={JSON.stringify(ld)} />
+<script type="application/ld+json" set:html={jsonLd(ld)} />
