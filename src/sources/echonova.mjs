@@ -32,7 +32,7 @@ export async function recuperer() {
     const styles = ($el.attr('data-styles') || '').split(';').filter(Boolean).join(', ');
 
     events.push({
-      titre: decode(texte(titreMatch[1])),
+      titre: texte(titreMatch[1]),
       debut,
       ville: VILLE,
       lieu: "L'Échonova",
@@ -45,13 +45,4 @@ export async function recuperer() {
   });
 
   return events;
-}
-
-// Decodes the handful of HTML entities found in aria-labels.
-function decode(s) {
-  return s
-    .replace(/&#0?38;|&amp;/g, '&')
-    .replace(/&rsquo;|&#8217;/g, '’')
-    .replace(/&eacute;/g, 'é')
-    .replace(/&[a-z]+;|&#\d+;/gi, '');
 }
