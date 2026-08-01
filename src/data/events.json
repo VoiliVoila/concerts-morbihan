@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-07-31T07:48:41.363Z",
+  "genere_le": "2026-08-01T07:26:00.189Z",
   "total": 70,
   "par_secteur": {
     "vannes": 42,
@@ -11,19 +11,6 @@
     "quiberon": 1
   },
   "events": [
-    {
-      "id": "coota:larifetnosmen|2026-07-31",
-      "fin": "2026-07-31T00:00:00",
-      "titre": "LA RIF ET NOS MEN",
-      "debut": "2026-07-31T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "rap pop rock",
-      "image": "https://lecoota.fr/images/thumb/1782302997.png",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
     {
       "id": "coota:bernard22h|2026-08-01",
       "fin": "2026-08-01T00:00:00",
@@ -88,6 +75,19 @@
       "image": "https://img.openagenda.com/main/1c31e2141df44b7fb16934356a463f46.base.image.jpg",
       "url": "https://openagenda.com/unidivers-oui-sortir/events/ecume-festival-les-5-ans",
       "source": "opendatasoft"
+    },
+    {
+      "id": "coota:soireedanselatinedjparty19h|2026-08-08",
+      "fin": "2026-08-08T00:00:00",
+      "titre": "Soirée Danse Latine & DJ Party 19H",
+      "debut": "2026-08-08T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "Salsa - Forrò - Bachata...",
+      "image": "https://lecoota.fr/images/thumb/1785494136.jpeg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
     },
     {
       "id": "coota:jewly22h|2026-08-13",
