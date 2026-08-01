@@ -1,13 +1,16 @@
-# Politique de sécurité
+# Security Policy
 
-Ce dépôt contient le code du site statique Concerts Morbihan. Seule la
-branche `main`, correspondant à la version publiée, est maintenue.
+## Supported Version
 
-## Signaler une vulnérabilité
+Security updates are provided for the code on the `main` branch, which is the
+currently deployed version of the site.
 
-N’ouvrez pas d’issue publique pour une vulnérabilité potentielle. Utilisez
-plutôt le bouton « Report a vulnerability » de l’onglet Security de GitHub.
+## Reporting a Vulnerability
 
-Un accusé de réception est envoyé dans les 7 jours. Après analyse, un correctif
-ou une décision de non-correction est communiqué de manière coordonnée.
+Please do not open a public issue for a potential security vulnerability. Use
+the **Report a vulnerability** option in this repository's Security tab.
 
+Include a clear description of the issue, its potential impact, and steps to
+reproduce it where possible. Acknowledgement will be provided within seven
+days. Fixes and disclosure decisions are handled in coordination with the
+reporter.
