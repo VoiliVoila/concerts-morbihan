@@ -1,22 +1,13 @@
-# Security Policy
+# Politique de sécurité
 
-## Supported Versions
+Ce dépôt contient le code du site statique Concerts Morbihan. Seule la
+branche `main`, correspondant à la version publiée, est maintenue.
 
-This section has not be updated yet. 
+## Signaler une vulnérabilité
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+N’ouvrez pas d’issue publique pour une vulnérabilité potentielle. Utilisez
+plutôt le bouton « Report a vulnerability » de l’onglet Security de GitHub.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
-
-## Reporting a Vulnerability
-
-Please let me know if you notice any vulnerability in this repo/ 
-My Git email contact is : 260955775+VoiliVoila@users.noreply.github.com
-
+Un accusé de réception est envoyé dans les 7 jours. Après analyse, un correctif
+ou une décision de non-correction est communiqué de manière coordonnée.
 

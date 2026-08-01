@@ -33,6 +33,18 @@ function cle(e) {
   return `${t}|${(e.debut || '').slice(0, 10)}`;
 }
 
+// The rendered site links to event and poster URLs obtained from third-party
+// feeds. Keep only absolute HTTPS URLs before persisting generated data.
+function urlHttps(value) {
+  if (typeof value !== 'string') return null;
+  try {
+    const url = new URL(value);
+    return url.protocol === 'https:' ? url.href : null;
+  } catch {
+    return null;
+  }
+}
+
 async function main() {
   const collectes = new Map();
   const rapport = [];
@@ -48,10 +60,11 @@ async function main() {
       for (const e of bruts) {
         if (!e.debut || new Date(e.debut) < minuit) continue; // past events
         if (!e.titre) continue;
-        const k = cle(e);
+        const event = { ...e, image: urlHttps(e.image), url: urlHttps(e.url) };
+        const k = cle(event);
         // Venue-specific sources win over the generic mirror on duplicates.
-        if (!collectes.has(k) || (collectes.get(k).source === 'opendatasoft' && e.source !== 'opendatasoft')) {
-          collectes.set(k, { id: `${e.source}:${k}`, fin: e.debut, ...e });
+        if (!collectes.has(k) || (collectes.get(k).source === 'opendatasoft' && event.source !== 'opendatasoft')) {
+          collectes.set(k, { id: `${event.source}:${k}`, fin: event.debut, ...event });
           retenus++;
         }
       }
