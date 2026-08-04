@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-08-03T08:26:56.559Z",
+  "genere_le": "2026-08-04T07:37:04.808Z",
   "total": 70,
   "par_secteur": {
     "vannes": 42,
@@ -324,19 +324,6 @@
       "source": "hydrophone"
     },
     {
-      "id": "echonova:gigofightclub2|2026-10-10",
-      "fin": "2026-10-10T00:00:00",
-      "titre": "GIGOFIGHT CLUB #2",
-      "debut": "2026-10-10T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "techno, transe",
-      "image": "https://lechonova.com/uploads/2026/07/gigoteuse.jpg",
-      "url": "https://lechonova.com/evenement/gigofight-club-2/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:bienvenueauclublancerlacommunicationdesonprojetsurlesreseauxsociauxlespiegesaeviter|2026-10-10",
       "fin": "2026-10-10T00:00:00",
       "titre": "Bienvenue au Club : lancer la communication de son projet sur les réseaux sociaux : les pièges à éviter",
@@ -347,6 +334,19 @@
       "description": "atelier",
       "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
       "url": "https://lechonova.com/evenement/bienvenue-au-club-lancer-la-communication-de-son-projet-sur-les-reseaux-sociaux/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:gigofightclub2|2026-10-10",
+      "fin": "2026-10-10T00:00:00",
+      "titre": "GIGOFIGHT CLUB #2",
+      "debut": "2026-10-10T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "techno, transe",
+      "image": "https://lechonova.com/uploads/2026/07/gigoteuse.jpg",
+      "url": "https://lechonova.com/evenement/gigofight-club-2/",
       "source": "echonova"
     },
     {
@@ -363,19 +363,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:aperosonorefuzeta|2026-10-15",
-      "fin": "2026-10-15T00:00:00",
-      "titre": "APÉRO SONORE : FUZETA",
-      "debut": "2026-10-15T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "rock",
-      "image": "https://lechonova.com/uploads/2026/07/fuzz.jpg",
-      "url": "https://lechonova.com/evenement/apero-sonore-fuzeta/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:visitepriveedelechonova|2026-10-15",
       "fin": "2026-10-15T00:00:00",
       "titre": "VISITE PRIVÉE DE L’ECHONOVA",
@@ -386,6 +373,19 @@
       "description": "visite",
       "image": "https://lechonova.com/uploads/2025/07/illu-lumiere.png",
       "url": "https://lechonova.com/evenement/visite-privee-de-lechonova/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:aperosonorefuzeta|2026-10-15",
+      "fin": "2026-10-15T00:00:00",
+      "titre": "APÉRO SONORE : FUZETA",
+      "debut": "2026-10-15T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "rock",
+      "image": "https://lechonova.com/uploads/2026/07/fuzz.jpg",
+      "url": "https://lechonova.com/evenement/apero-sonore-fuzeta/",
       "source": "echonova"
     },
     {
@@ -467,19 +467,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
-      "fin": "2026-10-31T00:00:00",
-      "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
-      "debut": "2026-10-31T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "global-bass, latin-club, reaggaeton",
-      "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
-      "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
       "fin": "2026-10-31T00:00:00",
       "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
@@ -503,6 +490,19 @@
       "description": "djing",
       "image": "https://lechonova.com/uploads/2026/07/lula.jpg",
       "url": "https://lechonova.com/evenement/labonumusique-avec-lula666/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "global-bass, latin-club, reaggaeton",
+      "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
+      "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
       "source": "echonova"
     },
     {
