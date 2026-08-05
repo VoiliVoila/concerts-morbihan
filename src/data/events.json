@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-08-04T07:37:04.808Z",
-  "total": 70,
+  "genere_le": "2026-08-05T07:36:34.340Z",
+  "total": 71,
   "par_secteur": {
-    "vannes": 42,
+    "vannes": 43,
     "auray": 0,
     "lorient": 20,
     "lorient-rade": 1,
@@ -21,6 +21,19 @@
       "secteur": "erdeven",
       "description": "Groove végétal",
       "image": "https://lecoota.fr/images/thumb/1784915083.jpeg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
+    },
+    {
+      "id": "coota:robbykielt22h|2026-08-05",
+      "fin": "2026-08-05T00:00:00",
+      "titre": "Robby Kielt 22H",
+      "debut": "2026-08-05T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "Surf Rock Raggae",
+      "image": "https://lecoota.fr/images/thumb/1785870643.jpeg",
       "url": "https://lecoota.fr/concert",
       "source": "coota"
     },
@@ -86,19 +99,6 @@
       "secteur": "erdeven",
       "description": "Indie Rock",
       "image": "https://lecoota.fr/images/thumb/1785172615.png",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
-    {
-      "id": "coota:zeybek22h|2026-08-15",
-      "fin": "2026-08-15T00:00:00",
-      "titre": "Zeybëk 22H",
-      "debut": "2026-08-15T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Rock Psyché Turc/World Jazz",
-      "image": "https://lecoota.fr/images/thumb/1785176120.jpg",
       "url": "https://lecoota.fr/concert",
       "source": "coota"
     },
@@ -324,19 +324,6 @@
       "source": "hydrophone"
     },
     {
-      "id": "echonova:bienvenueauclublancerlacommunicationdesonprojetsurlesreseauxsociauxlespiegesaeviter|2026-10-10",
-      "fin": "2026-10-10T00:00:00",
-      "titre": "Bienvenue au Club : lancer la communication de son projet sur les réseaux sociaux : les pièges à éviter",
-      "debut": "2026-10-10T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "atelier",
-      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
-      "url": "https://lechonova.com/evenement/bienvenue-au-club-lancer-la-communication-de-son-projet-sur-les-reseaux-sociaux/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:gigofightclub2|2026-10-10",
       "fin": "2026-10-10T00:00:00",
       "titre": "GIGOFIGHT CLUB #2",
@@ -347,6 +334,19 @@
       "description": "techno, transe",
       "image": "https://lechonova.com/uploads/2026/07/gigoteuse.jpg",
       "url": "https://lechonova.com/evenement/gigofight-club-2/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:bienvenueauclublancerlacommunicationdesonprojetsurlesreseauxsociauxlespiegesaeviter|2026-10-10",
+      "fin": "2026-10-10T00:00:00",
+      "titre": "Bienvenue au Club : lancer la communication de son projet sur les réseaux sociaux : les pièges à éviter",
+      "debut": "2026-10-10T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "atelier",
+      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
+      "url": "https://lechonova.com/evenement/bienvenue-au-club-lancer-la-communication-de-son-projet-sur-les-reseaux-sociaux/",
       "source": "echonova"
     },
     {
@@ -363,19 +363,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:visitepriveedelechonova|2026-10-15",
-      "fin": "2026-10-15T00:00:00",
-      "titre": "VISITE PRIVÉE DE L’ECHONOVA",
-      "debut": "2026-10-15T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "visite",
-      "image": "https://lechonova.com/uploads/2025/07/illu-lumiere.png",
-      "url": "https://lechonova.com/evenement/visite-privee-de-lechonova/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:aperosonorefuzeta|2026-10-15",
       "fin": "2026-10-15T00:00:00",
       "titre": "APÉRO SONORE : FUZETA",
@@ -386,6 +373,19 @@
       "description": "rock",
       "image": "https://lechonova.com/uploads/2026/07/fuzz.jpg",
       "url": "https://lechonova.com/evenement/apero-sonore-fuzeta/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:visitepriveedelechonova|2026-10-15",
+      "fin": "2026-10-15T00:00:00",
+      "titre": "VISITE PRIVÉE DE L’ECHONOVA",
+      "debut": "2026-10-15T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "visite",
+      "image": "https://lechonova.com/uploads/2025/07/illu-lumiere.png",
+      "url": "https://lechonova.com/evenement/visite-privee-de-lechonova/",
       "source": "echonova"
     },
     {
@@ -413,6 +413,19 @@
       "image": "https://lechonova.com/uploads/2026/04/yvnnis-site.jpg",
       "url": "https://lechonova.com/evenement/yvnnis-1ere-partie/",
       "source": "echonova"
+    },
+    {
+      "id": "opendatasoft:festivalvivelamagie|2026-10-23",
+      "fin": "2026-10-23T14:30:00",
+      "titre": "FESTIVAL VIVE LA MAGIE",
+      "debut": "2026-10-23T14:30:00",
+      "ville": "Vannes",
+      "lieu": "Palais des Arts et des Congrès",
+      "secteur": "vannes",
+      "description": "Deux jours d'évasion avec un programme magique inédit de spectacles et d'ateliers !",
+      "image": "https://img.openagenda.com/main/06438e49edce4bd2b2fee92f5b26b203.base.image.jpg",
+      "url": "https://openagenda.com/unidivers-oui-sortir/events/festival-vive-la-magie-7435867",
+      "source": "opendatasoft"
     },
     {
       "id": "hydrophone:lesfemmessenmelentiledegarderequinchagrin|2026-10-23",
@@ -467,6 +480,19 @@
       "source": "echonova"
     },
     {
+      "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "global-bass, latin-club, reaggaeton",
+      "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
+      "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
+      "source": "echonova"
+    },
+    {
       "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
       "fin": "2026-10-31T00:00:00",
       "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
@@ -490,19 +516,6 @@
       "description": "djing",
       "image": "https://lechonova.com/uploads/2026/07/lula.jpg",
       "url": "https://lechonova.com/evenement/labonumusique-avec-lula666/",
-      "source": "echonova"
-    },
-    {
-      "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
-      "fin": "2026-10-31T00:00:00",
-      "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
-      "debut": "2026-10-31T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "global-bass, latin-club, reaggaeton",
-      "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
-      "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
       "source": "echonova"
     },
     {
@@ -779,19 +792,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
-      "fin": "2026-12-04T00:00:00",
-      "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
-      "debut": "2026-12-04T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "atelier",
-      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
-      "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:bambymachartleymalaureinsdjset|2026-12-04",
       "fin": "2026-12-04T00:00:00",
       "titre": "Bamby + Mac Hartley + Malaureins (dj set)",
@@ -802,6 +802,19 @@
       "description": "bouyon, dancehall, shatta",
       "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
       "url": "https://lechonova.com/evenement/bamby-guests/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
+      "fin": "2026-12-04T00:00:00",
+      "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
+      "debut": "2026-12-04T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "atelier",
+      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
+      "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
       "source": "echonova"
     },
     {
