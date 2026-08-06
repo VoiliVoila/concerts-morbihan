@@ -1,0 +1,5 @@
+# Supply-chain policy: do not lower these values in a project or command.
+minimumReleaseAge: 10080
+minimumReleaseAgeStrict: true
+minimumReleaseAgeIgnoreMissingTime: false
+trustLockfile: false
