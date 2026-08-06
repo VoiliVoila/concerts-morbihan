@@ -72,16 +72,16 @@ and `src/data/format.js`.
 ## Local development
 
 ```bash
-npm ci
-npm run dev          # Astro dev server
-npm run build:fetch  # fetch data then build (what Cloudflare runs)
-npm run preview      # serve dist/ locally
+pnpm install --frozen-lockfile
+pnpm run dev          # Astro dev server
+pnpm run build:fetch  # fetch data then build (what Cloudflare runs)
+pnpm run preview      # serve dist/ locally
 ```
 
 ## Deployment
 
 The site is fully static and hosted on **Cloudflare Pages**, connected to
-the Git repository: every push to `main` triggers a rebuild (`npm run build`,
+the Git repository: every push to `main` triggers a rebuild (`pnpm run build`,
 output `dist/`).
 
 Dates frozen at build time are refreshed daily by a **GitHub Actions**
