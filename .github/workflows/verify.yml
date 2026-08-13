@@ -23,7 +23,10 @@ jobs:
           cache: pnpm
 
       - name: Enable pinned pnpm
-        run: corepack enable && corepack install --global pnpm@11.20.0
+        run: |
+          corepack enable
+          corepack install --global pnpm@11.20.0
+          corepack pnpm --version
 
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm run build
+      - run: corepack pnpm install --frozen-lockfile
+      - run: corepack pnpm run build

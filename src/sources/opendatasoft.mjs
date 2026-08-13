@@ -4,7 +4,7 @@
 // the dedicated venue sources.
 
 import { SECTEURS, secteurDeVille, normalise } from '../data/secteurs.js';
-import { versParis } from './_util.mjs';
+import { versParis, signalTimeout } from './_util.mjs';
 
 const DATASET = 'evenements-publics-openagenda';
 const BASE = `https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/${DATASET}/records`;
@@ -28,7 +28,10 @@ async function fetchPage(offset) {
   url.searchParams.set('order_by', 'firstdate_begin');
   url.searchParams.set('limit', String(PAGE));
   url.searchParams.set('offset', String(offset));
-  const res = await fetch(url, { headers: { 'User-Agent': 'concerts-morbihan/0.1' } });
+  const res = await fetch(url, {
+    headers: { 'User-Agent': 'concerts-morbihan/0.1' },
+    signal: signalTimeout(),
+  });
   if (!res.ok) throw new Error(`API ${res.status} ${res.statusText} (offset ${offset})`);
   return res.json();
 }
