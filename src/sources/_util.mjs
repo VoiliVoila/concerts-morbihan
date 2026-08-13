@@ -4,6 +4,11 @@
 import * as cheerio from 'cheerio';
 
 const UA = 'Mozilla/5.0 (compatible; concerts-morbihan/0.1; +https://concerts-morbihan.pages.dev)';
+export const FETCH_TIMEOUT_MS = 20_000;
+
+export function signalTimeout() {
+  return AbortSignal.timeout(FETCH_TIMEOUT_MS);
+}
 
 // Month -> number (0-11). Covers long-form French, and FR/EN abbreviations.
 const MOIS = {
@@ -71,7 +76,7 @@ export function versParis(isoUtc) {
 
 // Fetches the HTML of a URL and returns a loaded cheerio instance.
 export async function chargerHtml(url) {
-  const res = await fetch(url, { headers: { 'User-Agent': UA } });
+  const res = await fetch(url, { headers: { 'User-Agent': UA }, signal: signalTimeout() });
   if (!res.ok) throw new Error(`HTTP ${res.status} on ${url}`);
   return cheerio.load(await res.text());
 }

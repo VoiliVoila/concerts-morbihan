@@ -9,7 +9,7 @@
 // (e.g. Hydrophone via hydrophone.mjs): Fnac titles often differ ("Ciel + Cq
 // Wrestling" vs "CIEL"), so deduplication wouldn't match them → duplicates.
 
-import { versParis, texte } from './_util.mjs';
+import { versParis, texte, signalTimeout } from './_util.mjs';
 
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36';
 
@@ -49,7 +49,10 @@ function premiereImage(img) {
 }
 
 async function recupererSalle(salle) {
-  const res = await fetch(salle.url, { headers: { 'User-Agent': UA, 'Accept-Language': 'fr' } });
+  const res = await fetch(salle.url, {
+    headers: { 'User-Agent': UA, 'Accept-Language': 'fr' },
+    signal: signalTimeout(),
+  });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const html = await res.text();
   return extraireEvents(html)

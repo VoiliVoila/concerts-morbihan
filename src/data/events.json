@@ -1,6 +1,6 @@
 {
-  "genere_le": "2026-08-06T07:37:01.670Z",
-  "total": 71,
+  "genere_le": "2026-08-13T08:53:59.825Z",
+  "total": 70,
   "par_secteur": {
     "vannes": 43,
     "auray": 0,
@@ -8,58 +8,19 @@
     "lorient-rade": 1,
     "erdeven": 6,
     "etel": 0,
-    "quiberon": 1
+    "quiberon": 0
   },
   "events": [
     {
-      "id": "coota:lescoureursderempart22h|2026-08-06",
-      "fin": "2026-08-06T00:00:00",
-      "titre": "Les Coureurs de Rempart 22H",
-      "debut": "2026-08-06T00:00:00",
+      "id": "coota:davidbrownemurray19h30|2026-08-13",
+      "fin": "2026-08-13T00:00:00",
+      "titre": "David Browne Murray 19H30",
+      "debut": "2026-08-13T00:00:00",
       "ville": "Erdeven",
       "lieu": "Le Coota",
       "secteur": "erdeven",
-      "description": "Rock Rap Punk",
-      "image": "https://lecoota.fr/images/thumb/1784915587.png",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
-    {
-      "id": "coota:idrisssarlaandtheiroots22h|2026-08-07",
-      "fin": "2026-08-07T00:00:00",
-      "titre": "Idriss Sarla and the I'Roots 22H",
-      "debut": "2026-08-07T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Reggae Roots",
-      "image": "https://lecoota.fr/images/thumb/1785169562.JPG",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
-    {
-      "id": "opendatasoft:ecumefestivalles5ans|2026-08-07",
-      "fin": "2026-08-07T15:00:00",
-      "titre": "Écume Festival - Les 5 ans",
-      "debut": "2026-08-07T15:00:00",
-      "ville": "Saint-Pierre-Quiberon",
-      "lieu": "Écume Festival",
-      "secteur": "quiberon",
-      "description": "ÉCUME FESTIVAL FÊTE SES 5 ANS À SAINT-PIERRE QUIBERON",
-      "image": "https://img.openagenda.com/main/1c31e2141df44b7fb16934356a463f46.base.image.jpg",
-      "url": "https://openagenda.com/unidivers-oui-sortir/events/ecume-festival-les-5-ans",
-      "source": "opendatasoft"
-    },
-    {
-      "id": "coota:soireedanselatinedjparty19h|2026-08-08",
-      "fin": "2026-08-08T00:00:00",
-      "titre": "Soirée Danse Latine & DJ Party 19H",
-      "debut": "2026-08-08T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Salsa - Forrò - Bachata...",
-      "image": "https://lecoota.fr/images/thumb/1785494136.jpeg",
+      "description": "Solo Guitare",
+      "image": "https://lecoota.fr/images/thumb/1786039797.png",
       "url": "https://lecoota.fr/concert",
       "source": "coota"
     },
@@ -99,6 +60,32 @@
       "secteur": "erdeven",
       "description": "Rock Psyché Turc/World Jazz",
       "image": "https://lecoota.fr/images/thumb/1785176120.jpg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
+    },
+    {
+      "id": "coota:moher22h|2026-08-20",
+      "fin": "2026-08-20T00:00:00",
+      "titre": "Moher 22H",
+      "debut": "2026-08-20T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "Musique Irlandaise",
+      "image": "https://lecoota.fr/images/thumb/1785175348.png",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
+    },
+    {
+      "id": "coota:djusu22h|2026-08-21",
+      "fin": "2026-08-21T00:00:00",
+      "titre": "Djusu 22H",
+      "debut": "2026-08-21T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "AfroGroove",
+      "image": "https://lecoota.fr/images/thumb/1785182791.jpg",
       "url": "https://lecoota.fr/concert",
       "source": "coota"
     },
@@ -324,19 +311,6 @@
       "source": "hydrophone"
     },
     {
-      "id": "echonova:bienvenueauclublancerlacommunicationdesonprojetsurlesreseauxsociauxlespiegesaeviter|2026-10-10",
-      "fin": "2026-10-10T00:00:00",
-      "titre": "Bienvenue au Club : lancer la communication de son projet sur les réseaux sociaux : les pièges à éviter",
-      "debut": "2026-10-10T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "atelier",
-      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
-      "url": "https://lechonova.com/evenement/bienvenue-au-club-lancer-la-communication-de-son-projet-sur-les-reseaux-sociaux/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:gigofightclub2|2026-10-10",
       "fin": "2026-10-10T00:00:00",
       "titre": "GIGOFIGHT CLUB #2",
@@ -347,6 +321,19 @@
       "description": "techno, transe",
       "image": "https://lechonova.com/uploads/2026/07/gigoteuse.jpg",
       "url": "https://lechonova.com/evenement/gigofight-club-2/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:bienvenueauclublancerlacommunicationdesonprojetsurlesreseauxsociauxlespiegesaeviter|2026-10-10",
+      "fin": "2026-10-10T00:00:00",
+      "titre": "Bienvenue au Club : lancer la communication de son projet sur les réseaux sociaux : les pièges à éviter",
+      "debut": "2026-10-10T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "atelier",
+      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
+      "url": "https://lechonova.com/evenement/bienvenue-au-club-lancer-la-communication-de-son-projet-sur-les-reseaux-sociaux/",
       "source": "echonova"
     },
     {
@@ -363,19 +350,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:visitepriveedelechonova|2026-10-15",
-      "fin": "2026-10-15T00:00:00",
-      "titre": "VISITE PRIVÉE DE L’ECHONOVA",
-      "debut": "2026-10-15T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "visite",
-      "image": "https://lechonova.com/uploads/2025/07/illu-lumiere.png",
-      "url": "https://lechonova.com/evenement/visite-privee-de-lechonova/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:aperosonorefuzeta|2026-10-15",
       "fin": "2026-10-15T00:00:00",
       "titre": "APÉRO SONORE : FUZETA",
@@ -386,6 +360,19 @@
       "description": "rock",
       "image": "https://lechonova.com/uploads/2026/07/fuzz.jpg",
       "url": "https://lechonova.com/evenement/apero-sonore-fuzeta/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:visitepriveedelechonova|2026-10-15",
+      "fin": "2026-10-15T00:00:00",
+      "titre": "VISITE PRIVÉE DE L’ECHONOVA",
+      "debut": "2026-10-15T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "visite",
+      "image": "https://lechonova.com/uploads/2025/07/illu-lumiere.png",
+      "url": "https://lechonova.com/evenement/visite-privee-de-lechonova/",
       "source": "echonova"
     },
     {
@@ -480,6 +467,19 @@
       "source": "echonova"
     },
     {
+      "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "global-bass, latin-club, reaggaeton",
+      "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
+      "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
+      "source": "echonova"
+    },
+    {
       "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
       "fin": "2026-10-31T00:00:00",
       "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
@@ -503,19 +503,6 @@
       "description": "djing",
       "image": "https://lechonova.com/uploads/2026/07/lula.jpg",
       "url": "https://lechonova.com/evenement/labonumusique-avec-lula666/",
-      "source": "echonova"
-    },
-    {
-      "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
-      "fin": "2026-10-31T00:00:00",
-      "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
-      "debut": "2026-10-31T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "global-bass, latin-club, reaggaeton",
-      "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
-      "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
       "source": "echonova"
     },
     {
