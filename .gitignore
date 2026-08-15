@@ -6,7 +6,7 @@ dist/
 .env
 .env.local
 
-# Doc de travail interne (repo public) : source de vérité dans notes/projects/concerts-doc
+# Internal working files (not tracked in this public repository)
 CLAUDE.md
 AGENTS.md
 DEPLOY.md
