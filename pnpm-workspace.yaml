@@ -5,3 +5,7 @@ minimumReleaseAgeIgnoreMissingTime: false
 trustLockfile: false
 allowBuilds:
   esbuild: true
+
+# Keep PostCSS on the patched nanoid release until its transitive resolution is refreshed upstream.
+overrides:
+  "postcss@8.5.25>nanoid": 3.3.18
