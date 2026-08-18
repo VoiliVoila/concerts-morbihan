@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-08-17T05:32:46.694Z",
+  "genere_le": "2026-08-18T05:26:15.448Z",
   "total": 70,
   "par_secteur": {
     "vannes": 43,
@@ -11,6 +11,19 @@
     "quiberon": 0
   },
   "events": [
+    {
+      "id": "coota:gnomistan22h|2026-08-19",
+      "fin": "2026-08-19T00:00:00",
+      "titre": "Gnomistan 22H",
+      "debut": "2026-08-19T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "Gnome Traditionnel",
+      "image": "https://lecoota.fr/images/thumb/1786984566.jpeg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
+    },
     {
       "id": "coota:moher22h|2026-08-20",
       "fin": "2026-08-20T00:00:00",
@@ -73,19 +86,6 @@
       "secteur": "erdeven",
       "description": "Punk Rock",
       "image": "https://lecoota.fr/images/thumb/1785871865.png",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
-    {
-      "id": "coota:hophophopcrew|2026-08-29",
-      "fin": "2026-08-29T00:00:00",
-      "titre": "Hop Hop Hop Crew",
-      "debut": "2026-08-29T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Balkan Fusion",
-      "image": "https://lecoota.fr/images/thumb/1785517012.jpg",
       "url": "https://lecoota.fr/concert",
       "source": "coota"
     },
