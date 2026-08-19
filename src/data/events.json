@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-08-18T05:26:15.448Z",
-  "total": 70,
+  "genere_le": "2026-08-19T05:27:18.240Z",
+  "total": 72,
   "par_secteur": {
-    "vannes": 43,
+    "vannes": 45,
     "auray": 0,
     "lorient": 20,
     "lorient-rade": 1,
@@ -116,6 +116,19 @@
       "source": "hydrophone"
     },
     {
+      "id": "opendatasoft:ptiteconftrouversavoixliberersonchantparcapucinelafait|2026-09-12",
+      "fin": "2026-09-12T10:00:00",
+      "titre": "P'tite conf' \"Trouver sa voix, libérer son chant\" par Capucine Lafait",
+      "debut": "2026-09-12T10:00:00",
+      "ville": "Ploeren",
+      "lieu": "Espace culturel Le Triskell - Ploeren",
+      "secteur": "vannes",
+      "description": "Capucine Lafait présente l'approche intuitive du chant, illustrée par son tambour, pour libérer émotions et lâcher prise sans jugement. Accessible à tous, même aux non-initiés. Réservation en ligne.",
+      "image": "https://img.openagenda.com/main/7ae1ed9d22f64301b51bcb1283320239.base.image.jpg",
+      "url": "https://openagenda.com/unidivers-oui-sortir/events/ptite-conf-trouver-sa-voix-liberer-son-chant-par-capucine-lafait",
+      "source": "opendatasoft"
+    },
+    {
       "id": "hydrophone:theoceanracenesadestheplanet|2026-09-12",
       "fin": "2026-09-12T20:00:00",
       "titre": "THE OCEAN RACE : NES + ADES THE PLANET",
@@ -168,17 +181,17 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:lesemancipeesjour2theaurumigraphyt|2026-09-19",
-      "fin": "2026-09-19T00:00:00",
-      "titre": "LES ÉMANCIPÉÉS JOUR 2 : THÉA + Urumi + Graphy-T",
-      "debut": "2026-09-19T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
+      "id": "opendatasoft:lancementdesaisonspectaclequimaimemesuive|2026-09-18",
+      "fin": "2026-09-18T19:00:00",
+      "titre": "Lancement de saison - Spectacle \"Qui m'aime me suive\"",
+      "debut": "2026-09-18T19:00:00",
+      "ville": "Ploeren",
+      "lieu": "Espace culturel Le Triskell - Ploeren",
       "secteur": "vannes",
-      "description": "emocore, frapcore, hyperpop, pop, techno",
-      "image": "https://lechonova.com/uploads/2026/06/site5.jpg",
-      "url": "https://lechonova.com/evenement/les-emancipees-2026-jour2/",
-      "source": "echonova"
+      "description": "*Qui m'aime me suive* transforme le hashtag en scène. Entre addiction et liberté, la danse d'Amélie Jousseaume interroge nos écrans et nos liens. Dès 6 ans. Réservation : www.ploeren.bzh",
+      "image": "https://img.openagenda.com/main/d816177c780645cd848881785a631445.base.image.jpg",
+      "url": "https://openagenda.com/unidivers-oui-sortir/events/lancement-de-saison-spectacle-qui-maime-me-suive",
+      "source": "opendatasoft"
     },
     {
       "id": "echonova:bienvenueauclub|2026-09-19",
@@ -191,6 +204,19 @@
       "description": "conference",
       "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
       "url": "https://lechonova.com/evenement/bienvenue-au-club-le-rap-apres-la-trapocalypse/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:lesemancipeesjour2theaurumigraphyt|2026-09-19",
+      "fin": "2026-09-19T00:00:00",
+      "titre": "LES ÉMANCIPÉÉS JOUR 2 : THÉA + Urumi + Graphy-T",
+      "debut": "2026-09-19T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "emocore, frapcore, hyperpop, pop, techno",
+      "image": "https://lechonova.com/uploads/2026/06/site5.jpg",
+      "url": "https://lechonova.com/evenement/les-emancipees-2026-jour2/",
       "source": "echonova"
     },
     {
@@ -311,19 +337,6 @@
       "source": "hydrophone"
     },
     {
-      "id": "echonova:gigofightclub2|2026-10-10",
-      "fin": "2026-10-10T00:00:00",
-      "titre": "GIGOFIGHT CLUB #2",
-      "debut": "2026-10-10T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "techno, transe",
-      "image": "https://lechonova.com/uploads/2026/07/gigoteuse.jpg",
-      "url": "https://lechonova.com/evenement/gigofight-club-2/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:bienvenueauclublancerlacommunicationdesonprojetsurlesreseauxsociauxlespiegesaeviter|2026-10-10",
       "fin": "2026-10-10T00:00:00",
       "titre": "Bienvenue au Club : lancer la communication de son projet sur les réseaux sociaux : les pièges à éviter",
@@ -334,6 +347,19 @@
       "description": "atelier",
       "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
       "url": "https://lechonova.com/evenement/bienvenue-au-club-lancer-la-communication-de-son-projet-sur-les-reseaux-sociaux/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:gigofightclub2|2026-10-10",
+      "fin": "2026-10-10T00:00:00",
+      "titre": "GIGOFIGHT CLUB #2",
+      "debut": "2026-10-10T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "techno, transe",
+      "image": "https://lechonova.com/uploads/2026/07/gigoteuse.jpg",
+      "url": "https://lechonova.com/evenement/gigofight-club-2/",
       "source": "echonova"
     },
     {
@@ -467,19 +493,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
-      "fin": "2026-10-31T00:00:00",
-      "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
-      "debut": "2026-10-31T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "global-groove",
-      "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
-      "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:labonumusiqueaveclula666|2026-10-31",
       "fin": "2026-10-31T00:00:00",
       "titre": "LABONUMUSIQUE AVEC LULA666",
@@ -503,6 +516,19 @@
       "description": "global-bass, latin-club, reaggaeton",
       "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
       "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "global-groove",
+      "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
+      "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
       "source": "echonova"
     },
     {
@@ -545,9 +571,9 @@
       "source": "hydrophone"
     },
     {
-      "id": "echonova:novalovesyamacdecloslacchesikersu|2026-11-06",
+      "id": "echonova:novamovesyamacdecloslacchesikersu|2026-11-06",
       "fin": "2026-11-06T00:00:00",
-      "titre": "NOVA LOVES YA : MAC DECLOS + LACCHESI + KERSU",
+      "titre": "NOVA MOVES YA : MAC DECLOS + LACCHESI + KERSU",
       "debut": "2026-11-06T00:00:00",
       "ville": "Saint-Avé",
       "lieu": "L'Échonova",
@@ -683,7 +709,7 @@
       "lieu": "L'Échonova",
       "secteur": "vannes",
       "description": "techno",
-      "image": "https://lechonova.com/uploads/2026/07/insomnia.jpg",
+      "image": "https://lechonova.com/uploads/2026/07/format-banniere-1920x1080-uyn47a.jpg",
       "url": "https://lechonova.com/evenement/first-light-insomnia-birthday-eskha-guests/",
       "source": "echonova"
     },
@@ -779,19 +805,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
-      "fin": "2026-12-04T00:00:00",
-      "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
-      "debut": "2026-12-04T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "atelier",
-      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
-      "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:bambymachartleymalaureinsdjset|2026-12-04",
       "fin": "2026-12-04T00:00:00",
       "titre": "Bamby + Mac Hartley + Malaureins (dj set)",
@@ -802,6 +815,19 @@
       "description": "bouyon, dancehall, shatta",
       "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
       "url": "https://lechonova.com/evenement/bamby-guests/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
+      "fin": "2026-12-04T00:00:00",
+      "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
+      "debut": "2026-12-04T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "atelier",
+      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
+      "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
       "source": "echonova"
     },
     {
