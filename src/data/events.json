@@ -1,29 +1,16 @@
 {
-  "genere_le": "2026-08-21T05:30:02.709Z",
-  "total": 71,
+  "genere_le": "2026-08-22T05:24:10.663Z",
+  "total": 70,
   "par_secteur": {
     "vannes": 45,
     "auray": 0,
     "lorient": 20,
     "lorient-rade": 1,
-    "erdeven": 5,
+    "erdeven": 4,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "coota:djusu22h|2026-08-21",
-      "fin": "2026-08-21T00:00:00",
-      "titre": "Djusu 22H",
-      "debut": "2026-08-21T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "AfroGroove",
-      "image": "https://lecoota.fr/images/thumb/1785182791.jpg",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
     {
       "id": "coota:djoonjaouadamr22h|2026-08-22",
       "fin": "2026-08-22T00:00:00",
@@ -181,19 +168,6 @@
       "source": "opendatasoft"
     },
     {
-      "id": "echonova:lesemancipeesjour2theaurumigraphyt|2026-09-19",
-      "fin": "2026-09-19T00:00:00",
-      "titre": "LES ÉMANCIPÉÉS JOUR 2 : THÉA + Urumi + Graphy-T",
-      "debut": "2026-09-19T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "emocore, frapcore, hyperpop, pop, techno",
-      "image": "https://lechonova.com/uploads/2026/06/site5.jpg",
-      "url": "https://lechonova.com/evenement/les-emancipees-2026-jour2/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:bienvenueauclub|2026-09-19",
       "fin": "2026-09-19T00:00:00",
       "titre": "Bienvenue au Club :",
@@ -204,6 +178,19 @@
       "description": "conference",
       "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
       "url": "https://lechonova.com/evenement/bienvenue-au-club-le-rap-apres-la-trapocalypse/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:lesemancipeesjour2theaurumigraphyt|2026-09-19",
+      "fin": "2026-09-19T00:00:00",
+      "titre": "LES ÉMANCIPÉÉS JOUR 2 : THÉA + Urumi + Graphy-T",
+      "debut": "2026-09-19T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "emocore, frapcore, hyperpop, pop, techno",
+      "image": "https://lechonova.com/uploads/2026/06/site5.jpg",
+      "url": "https://lechonova.com/evenement/les-emancipees-2026-jour2/",
       "source": "echonova"
     },
     {
@@ -324,19 +311,6 @@
       "source": "hydrophone"
     },
     {
-      "id": "echonova:gigofightclub2|2026-10-10",
-      "fin": "2026-10-10T00:00:00",
-      "titre": "GIGOFIGHT CLUB #2",
-      "debut": "2026-10-10T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "techno, transe",
-      "image": "https://lechonova.com/uploads/2026/07/gigoteuse.jpg",
-      "url": "https://lechonova.com/evenement/gigofight-club-2/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:bienvenueauclublancerlacommunicationdesonprojetsurlesreseauxsociauxlespiegesaeviter|2026-10-10",
       "fin": "2026-10-10T00:00:00",
       "titre": "Bienvenue au Club : lancer la communication de son projet sur les réseaux sociaux : les pièges à éviter",
@@ -347,6 +321,19 @@
       "description": "atelier",
       "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
       "url": "https://lechonova.com/evenement/bienvenue-au-club-lancer-la-communication-de-son-projet-sur-les-reseaux-sociaux/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:gigofightclub2|2026-10-10",
+      "fin": "2026-10-10T00:00:00",
+      "titre": "GIGOFIGHT CLUB #2",
+      "debut": "2026-10-10T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "techno, transe",
+      "image": "https://lechonova.com/uploads/2026/07/gigoteuse.jpg",
+      "url": "https://lechonova.com/evenement/gigofight-club-2/",
       "source": "echonova"
     },
     {
@@ -792,19 +779,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
-      "fin": "2026-12-04T00:00:00",
-      "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
-      "debut": "2026-12-04T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "atelier",
-      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
-      "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:bambymachartleymalaureinsdjset|2026-12-04",
       "fin": "2026-12-04T00:00:00",
       "titre": "Bamby + Mac Hartley + Malaureins (dj set)",
@@ -815,6 +789,19 @@
       "description": "bouyon, dancehall, shatta",
       "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
       "url": "https://lechonova.com/evenement/bamby-guests/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
+      "fin": "2026-12-04T00:00:00",
+      "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
+      "debut": "2026-12-04T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "atelier",
+      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
+      "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
       "source": "echonova"
     },
     {
