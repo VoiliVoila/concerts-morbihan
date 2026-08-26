@@ -1,10 +1,10 @@
 {
-  "genere_le": "2026-08-25T05:29:08.296Z",
-  "total": 72,
+  "genere_le": "2026-08-26T05:32:01.456Z",
+  "total": 75,
   "par_secteur": {
-    "vannes": 45,
+    "vannes": 47,
     "auray": 0,
-    "lorient": 20,
+    "lorient": 21,
     "lorient-rade": 1,
     "erdeven": 6,
     "etel": 0,
@@ -283,6 +283,32 @@
       "image": "https://www.hydrophone.fr/local/cache-gd2/82/e95a24bc540c7eca9eecaece835851.jpg?1777017113",
       "url": "https://www.hydrophone.fr/LA-MAISON-TELLIER.html",
       "source": "hydrophone"
+    },
+    {
+      "id": "opendatasoft:spectaclemusicalnoiresnouvelles|2026-10-02",
+      "fin": "2026-10-02T18:00:00",
+      "titre": "Spectacle musical « Noires nouvelles »",
+      "debut": "2026-10-02T18:00:00",
+      "ville": "Ploemeur",
+      "lieu": "Espace Culturel Passe Ouest",
+      "secteur": "lorient",
+      "description": "Biblis en folie 2026",
+      "image": "https://img.openagenda.com/main/a18ac53575b94605b30da418fb203f09.base.image.jpg",
+      "url": "https://openagenda.com/culture/events/spectacle-musical-noires-nouvelles",
+      "source": "opendatasoft"
+    },
+    {
+      "id": "opendatasoft:concertlessimone|2026-10-02",
+      "fin": "2026-10-02T19:00:00",
+      "titre": "Concert Les Simone",
+      "debut": "2026-10-02T19:00:00",
+      "ville": "Baden",
+      "lieu": "Médiathèque de Baden",
+      "secteur": "vannes",
+      "description": "Biblis en folie 2026",
+      "image": "https://img.openagenda.com/main/bdad9fece5e1481d9116139cdea6d9ca.base.image.jpg",
+      "url": "https://openagenda.com/culture/events/concert-les-simone-7247225",
+      "source": "opendatasoft"
     },
     {
       "id": "echonova:armajackson|2026-10-03",
@@ -906,6 +932,19 @@
       "description": "pop",
       "image": "https://lechonova.com/uploads/2026/06/le-slouanges-site.jpg",
       "url": "https://lechonova.com/evenement/les-louanges-guests/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:martabothlanephotons|2027-02-05",
+      "fin": "2027-02-05T00:00:00",
+      "titre": "MARTA + BOTHLANE + PHOTONS",
+      "debut": "2027-02-05T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "live, techno",
+      "image": "https://lechonova.com/uploads/2026/08/marta-site.jpg",
+      "url": "https://lechonova.com/evenement/marta-bothlane-photons/",
       "source": "echonova"
     },
     {
