@@ -1,29 +1,16 @@
 {
-  "genere_le": "2026-08-28T17:09:03.299Z",
-  "total": 72,
+  "genere_le": "2026-08-29T11:28:20.524Z",
+  "total": 71,
   "par_secteur": {
     "vannes": 47,
     "auray": 0,
     "lorient": 21,
     "lorient-rade": 1,
-    "erdeven": 3,
+    "erdeven": 2,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "coota:10juin22h|2026-08-28",
-      "fin": "2026-08-28T00:00:00",
-      "titre": "10 Juin 22H",
-      "debut": "2026-08-28T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Punk Rock",
-      "image": "https://lecoota.fr/images/thumb/1785871865.png",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
     {
       "id": "coota:lucyenconcertaucoota20h30|2026-08-29",
       "fin": "2026-08-29T00:00:00",
