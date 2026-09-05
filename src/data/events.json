@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-09-04T09:19:09.278Z",
+  "genere_le": "2026-09-05T08:48:40.519Z",
   "total": 75,
   "par_secteur": {
     "vannes": 47,
@@ -11,19 +11,6 @@
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "coota:faygo22h|2026-09-04",
-      "fin": "2026-09-04T00:00:00",
-      "titre": "FAYGO 22H",
-      "debut": "2026-09-04T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "RAGGAE",
-      "image": "https://lecoota.fr/images/thumb/1788186723.jpeg",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
     {
       "id": "coota:littletomband22h|2026-09-05",
       "fin": "2026-09-05T00:00:00",
@@ -220,6 +207,19 @@
       "source": "echonova"
     },
     {
+      "id": "coota:tisdass22h|2026-09-19",
+      "fin": "2026-09-19T00:00:00",
+      "titre": "TisDass 22H",
+      "debut": "2026-09-19T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "Rock Tamasheq NIGER",
+      "image": "https://lecoota.fr/images/thumb/1788190654.jpg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
+    },
+    {
       "id": "opendatasoft:ouvertureexceptionnelleducentredemusiqueanciennevemialimur|2026-09-19",
       "fin": "2026-09-19T14:00:00",
       "titre": "Ouverture exceptionnelle du Centre de Musique Ancienne (VEMI) à Limur",
@@ -389,6 +389,19 @@
       "source": "echonova"
     },
     {
+      "id": "opendatasoft:baladesenmediathequeslectureaccompagneeenmusique|2026-10-10",
+      "fin": "2026-10-10T16:00:00",
+      "titre": "Balade(s) en médiathèques - Lecture accompagnée en musique",
+      "debut": "2026-10-10T16:00:00",
+      "ville": "Ploeren",
+      "lieu": "Médiathèque de Ploeren - Le Triskell",
+      "secteur": "vannes",
+      "description": "À partir de textes de la médiathèque, explorez la lecture à voix haute avec des improvisations musicales. Un atelier accessible dès 12 ans pour jouer avec les mots et les sons. Sur réservation.",
+      "image": "https://img.openagenda.com/main/4ce4bd2ae35544799fc3f7f61595b2dc.base.image.jpg",
+      "url": "https://openagenda.com/unidivers-oui-sortir/events/balades-en-mediatheques-lecture-accompagnee-en-musique",
+      "source": "opendatasoft"
+    },
+    {
       "id": "echonova:bondimanchecheveux|2026-10-11",
       "fin": "2026-10-11T00:00:00",
       "titre": "BON DIMANCHE ! CHEVEUX",
@@ -425,19 +438,6 @@
       "description": "visite",
       "image": "https://lechonova.com/uploads/2025/07/illu-lumiere.png",
       "url": "https://lechonova.com/evenement/visite-privee-de-lechonova/",
-      "source": "echonova"
-    },
-    {
-      "id": "echonova:speedmeetingvannesallstar16|2026-10-16",
-      "fin": "2026-10-16T00:00:00",
-      "titre": "SPEED MEETING : VANNES ALL STAR #16",
-      "debut": "2026-10-16T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "speed-meeting",
-      "image": "https://lechonova.com/uploads/2025/06/477577698-1312028209903896-8190957387047402375-n.jpg",
-      "url": "https://lechonova.com/evenement/speed-meeting-vannes-all-star-16/",
       "source": "echonova"
     },
     {
@@ -519,19 +519,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
-      "fin": "2026-10-31T00:00:00",
-      "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
-      "debut": "2026-10-31T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "global-bass, latin-club, reaggaeton",
-      "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
-      "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
       "fin": "2026-10-31T00:00:00",
       "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
@@ -555,6 +542,19 @@
       "description": "djing",
       "image": "https://lechonova.com/uploads/2026/07/lula.jpg",
       "url": "https://lechonova.com/evenement/labonumusique-avec-lula666/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "global-bass, latin-club, reaggaeton",
+      "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
+      "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
       "source": "echonova"
     },
     {
