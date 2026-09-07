@@ -1,29 +1,16 @@
 {
-  "genere_le": "2026-09-06T09:08:48.539Z",
+  "genere_le": "2026-09-07T09:56:36.246Z",
   "total": 75,
   "par_secteur": {
     "vannes": 47,
-    "auray": 0,
+    "auray": 1,
     "lorient": 21,
     "lorient-rade": 1,
-    "erdeven": 6,
+    "erdeven": 5,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "coota:lafamillebouffard18h|2026-09-06",
-      "fin": "2026-09-06T00:00:00",
-      "titre": "LA FAMILLE BOUFFARD 18H",
-      "debut": "2026-09-06T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Spectacle",
-      "image": "https://lecoota.fr/images/thumb/1788275825.jpeg",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
     {
       "id": "hydrophone:theoceanraceatlantictvoddj|2026-09-10",
       "fin": "2026-09-10T20:00:00",
@@ -168,19 +155,6 @@
       "source": "opendatasoft"
     },
     {
-      "id": "echonova:lesemancipeesjour2theaurumigraphyt|2026-09-19",
-      "fin": "2026-09-19T00:00:00",
-      "titre": "LES ÉMANCIPÉÉS JOUR 2 : THÉA + Urumi + Graphy-T",
-      "debut": "2026-09-19T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "emocore, frapcore, hyperpop, pop, techno",
-      "image": "https://lechonova.com/uploads/2026/06/site5.jpg",
-      "url": "https://lechonova.com/evenement/les-emancipees-2026-jour2/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:bienvenueauclub|2026-09-19",
       "fin": "2026-09-19T00:00:00",
       "titre": "Bienvenue au Club :",
@@ -191,6 +165,19 @@
       "description": "conference",
       "image": "https://lechonova.com/uploads/2026/07/raphael.jpg",
       "url": "https://lechonova.com/evenement/bienvenue-au-club-le-rap-apres-la-trapocalypse/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:lesemancipeesjour2theaurumigraphyt|2026-09-19",
+      "fin": "2026-09-19T00:00:00",
+      "titre": "LES ÉMANCIPÉÉS JOUR 2 : THÉA + Urumi + Graphy-T",
+      "debut": "2026-09-19T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "emocore, frapcore, hyperpop, pop, techno",
+      "image": "https://lechonova.com/uploads/2026/06/site5.jpg",
+      "url": "https://lechonova.com/evenement/les-emancipees-2026-jour2/",
       "source": "echonova"
     },
     {
@@ -217,6 +204,19 @@
       "description": "Au dernier étage, le Vannes Early Music Institute (VEMI) perpétue la musique traditionnelle. Découvrez ses instruments historiques et son atelier de lutherie où naissent et renaissent les sonorités …",
       "image": "https://img.openagenda.com/main/348637a91ca5455bb1f249bb000d7b31.base.image.jpg",
       "url": "https://openagenda.com/culture/events/apertura-excepcional-del-centro-de-musica-antigua-vemi-en-limur",
+      "source": "opendatasoft"
+    },
+    {
+      "id": "opendatasoft:decouvertemusicaledelorguedesaintgildas|2026-09-20",
+      "fin": "2026-09-20T16:00:00",
+      "titre": "Découverte musicale de l’orgue de Saint-Gildas",
+      "debut": "2026-09-20T16:00:00",
+      "ville": "Auray",
+      "lieu": "Église Saint-Gildas",
+      "secteur": "auray",
+      "description": "Journées Européennes du patrimoine",
+      "image": "https://img.openagenda.com/main/e4e5893d02214ec5b9c759cc6800f726.base.image.jpg",
+      "url": "https://openagenda.com/culture/events/decouverte-musicale-de-lorgue-de-saint-gildas",
       "source": "opendatasoft"
     },
     {
@@ -519,19 +519,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
-      "fin": "2026-10-31T00:00:00",
-      "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
-      "debut": "2026-10-31T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "global-groove",
-      "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
-      "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:labonumusiqueaveclula666|2026-10-31",
       "fin": "2026-10-31T00:00:00",
       "titre": "LABONUMUSIQUE AVEC LULA666",
@@ -558,16 +545,29 @@
       "source": "echonova"
     },
     {
+      "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "global-groove",
+      "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
+      "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
+      "source": "echonova"
+    },
+    {
       "id": "hydrophone:girlsinhawaiichatonlaveur|2026-11-04",
-      "fin": "2026-11-04T19:30:00",
+      "fin": "2026-11-04T20:30:00",
       "titre": "GIRLS IN HAWAII + CHATON LAVEUR",
-      "debut": "2026-11-04T19:30:00",
+      "debut": "2026-11-04T20:30:00",
       "ville": "Lorient",
       "lieu": "Hydrophone",
       "secteur": "lorient",
       "description": "",
       "image": "https://www.hydrophone.fr/local/cache-gd2/22/c2f9126cea91720616c8b9039936e2.png?1779134035",
-      "url": "https://www.hydrophone.fr/GIRLS-IN-HAWAII.html",
+      "url": "https://www.hydrophone.fr/GIRLS-IN-HAWAII-CHATON-LAVEUR.html",
       "source": "hydrophone"
     },
     {
@@ -831,19 +831,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
-      "fin": "2026-12-04T00:00:00",
-      "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
-      "debut": "2026-12-04T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "atelier",
-      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
-      "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:bambymachartleymalaureinsdjset|2026-12-04",
       "fin": "2026-12-04T00:00:00",
       "titre": "Bamby + Mac Hartley + Malaureins (dj set)",
@@ -854,6 +841,19 @@
       "description": "bouyon, dancehall, shatta",
       "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
       "url": "https://lechonova.com/evenement/bamby-guests/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
+      "fin": "2026-12-04T00:00:00",
+      "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
+      "debut": "2026-12-04T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "atelier",
+      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
+      "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
       "source": "echonova"
     },
     {
