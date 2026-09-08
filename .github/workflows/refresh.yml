@@ -41,6 +41,6 @@ jobs:
             echo "No change in events.json — nothing to do."
           else
             git add src/data/events.json
-            git commit -m "chore: daily concert refresh [skip ci]"
+            git commit -m "chore: daily concert refresh"
             git push
           fi
