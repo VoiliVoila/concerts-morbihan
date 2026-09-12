@@ -1,42 +1,16 @@
 {
-  "genere_le": "2026-09-11T09:21:16.763Z",
-  "total": 76,
+  "genere_le": "2026-09-12T09:00:58.263Z",
+  "total": 73,
   "par_secteur": {
     "vannes": 48,
     "auray": 1,
-    "lorient": 21,
+    "lorient": 19,
     "lorient-rade": 1,
-    "erdeven": 5,
+    "erdeven": 4,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "coota:dissidence22h|2026-09-11",
-      "fin": "2026-09-11T00:00:00",
-      "titre": "DISSIDENCE 22H",
-      "debut": "2026-09-11T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "AFROBLUES FUSION",
-      "image": "https://lecoota.fr/images/thumb/1788188847.jpg",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
-    {
-      "id": "hydrophone:theoceanraceatlantickenatalenac|2026-09-11",
-      "fin": "2026-09-11T20:00:00",
-      "titre": "THE OCEAN RACE ATLANTIC : KENATA + LENA C",
-      "debut": "2026-09-11T20:00:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/f7/729172a41ffd6e782da4c0020ad077.png?1784537996",
-      "url": "https://www.hydrophone.fr/THE-OCEAN-RACE-ATLANTIC-KENATA-LENA-C.html",
-      "source": "hydrophone"
-    },
     {
       "id": "coota:2milesbeforeshutdown22h|2026-09-12",
       "fin": "2026-09-12T00:00:00",
@@ -350,19 +324,6 @@
       "source": "hydrophone"
     },
     {
-      "id": "echonova:bienvenueauclublancerlacommunicationdesonprojetsurlesreseauxsociauxlespiegesaeviter|2026-10-10",
-      "fin": "2026-10-10T00:00:00",
-      "titre": "Bienvenue au Club : lancer la communication de son projet sur les réseaux sociaux : les pièges à éviter",
-      "debut": "2026-10-10T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "atelier",
-      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
-      "url": "https://lechonova.com/evenement/bienvenue-au-club-lancer-la-communication-de-son-projet-sur-les-reseaux-sociaux/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:gigofightclub2|2026-10-10",
       "fin": "2026-10-10T00:00:00",
       "titre": "GIGOFIGHT CLUB #2",
@@ -373,6 +334,19 @@
       "description": "techno, transe",
       "image": "https://lechonova.com/uploads/2026/07/gigoteuse.jpg",
       "url": "https://lechonova.com/evenement/gigofight-club-2/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:bienvenueauclublancerlacommunicationdesonprojetsurlesreseauxsociauxlespiegesaeviter|2026-10-10",
+      "fin": "2026-10-10T00:00:00",
+      "titre": "Bienvenue au Club : lancer la communication de son projet sur les réseaux sociaux : les pièges à éviter",
+      "debut": "2026-10-10T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "atelier",
+      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
+      "url": "https://lechonova.com/evenement/bienvenue-au-club-lancer-la-communication-de-son-projet-sur-les-reseaux-sociaux/",
       "source": "echonova"
     },
     {
@@ -985,19 +959,6 @@
       "image": "https://lechonova.com/uploads/2026/08/site.jpg",
       "url": "https://lechonova.com/evenement/isaac-delusion-premiere-partie/",
       "source": "echonova"
-    },
-    {
-      "id": "hydrophone:theoceanraceatlantictvoddj|2027-09-10",
-      "fin": "2027-09-10T20:00:00",
-      "titre": "THE OCEAN RACE ATLANTIC : TVOD + DJ",
-      "debut": "2027-09-10T20:00:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/6a/0cbad83377149377793ea04f1cf08e.png?1784537996",
-      "url": "https://www.hydrophone.fr/THE-OCEAN-RACE-ATLANTIC-TVOD-DJ.html",
-      "source": "hydrophone"
     }
   ]
 }
