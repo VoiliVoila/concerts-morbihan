@@ -1,29 +1,16 @@
 {
-  "genere_le": "2026-09-14T10:19:09.993Z",
-  "total": 71,
+  "genere_le": "2026-09-15T09:46:18.698Z",
+  "total": 72,
   "par_secteur": {
     "vannes": 47,
     "auray": 1,
-    "lorient": 18,
+    "lorient": 19,
     "lorient-rade": 1,
     "erdeven": 4,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "hydrophone:ciel|2026-09-17",
-      "fin": "2026-09-17T20:00:00",
-      "titre": "CIEL",
-      "debut": "2026-09-17T20:00:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/5f/78178088e6c4a1737cb19e794cde53.jpg?1768899553",
-      "url": "https://www.hydrophone.fr/CIEL.html",
-      "source": "hydrophone"
-    },
     {
       "id": "hydrophone:cqwrestlingthiswilldestroyyourears|2026-09-17",
       "fin": "2026-09-17T20:00:00",
@@ -35,6 +22,19 @@
       "description": "",
       "image": "https://www.hydrophone.fr/local/cache-gd2/8a/3638f782b531371c7f64fb7c38f752.jpg?1783411534",
       "url": "https://www.hydrophone.fr/CQ-WRESTLING-THIS-WILL-DESTROY-YOUR-EARS.html",
+      "source": "hydrophone"
+    },
+    {
+      "id": "hydrophone:ciel|2026-09-17",
+      "fin": "2026-09-17T20:00:00",
+      "titre": "CIEL",
+      "debut": "2026-09-17T20:00:00",
+      "ville": "Lorient",
+      "lieu": "Hydrophone",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.hydrophone.fr/local/cache-gd2/5f/78178088e6c4a1737cb19e794cde53.jpg?1768899553",
+      "url": "https://www.hydrophone.fr/CIEL.html",
       "source": "hydrophone"
     },
     {
@@ -738,6 +738,19 @@
       "image": "https://lechonova.com/uploads/2025/12/site-3.jpg",
       "url": "https://lechonova.com/evenement/meryl-premiere-partie/",
       "source": "echonova"
+    },
+    {
+      "id": "hydrophone:alforelconcertdessinegrandpublic|2026-11-28",
+      "fin": "2026-11-28T10:30:00",
+      "titre": "Alf & Orel : CONCERT DESSINÉ (GRAND PUBLIC)",
+      "debut": "2026-11-28T10:30:00",
+      "ville": "Lorient",
+      "lieu": "Hydrophone",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.hydrophone.fr/local/cache-gd2/13/14deed09949e50b0629667bcb31aeb.png?1789464840",
+      "url": "https://www.hydrophone.fr/Alf-Orel-CONCERT-DESSINE-GRAND-PUBLIC.html",
+      "source": "hydrophone"
     },
     {
       "id": "echonova:foireauxdisques|2026-11-29",
