@@ -1,42 +1,16 @@
 {
-  "genere_le": "2026-09-17T09:48:50.517Z",
-  "total": 77,
+  "genere_le": "2026-09-18T09:22:48.935Z",
+  "total": 75,
   "par_secteur": {
     "vannes": 49,
     "auray": 1,
-    "lorient": 22,
+    "lorient": 20,
     "lorient-rade": 1,
     "erdeven": 4,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "hydrophone:cqwrestlingthiswilldestroyyourears|2026-09-17",
-      "fin": "2026-09-17T20:00:00",
-      "titre": "CQ WRESTLING + THIS WILL DESTROY YOUR EARS",
-      "debut": "2026-09-17T20:00:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/8a/3638f782b531371c7f64fb7c38f752.jpg?1783411534",
-      "url": "https://www.hydrophone.fr/CQ-WRESTLING-THIS-WILL-DESTROY-YOUR-EARS.html",
-      "source": "hydrophone"
-    },
-    {
-      "id": "hydrophone:ciel|2026-09-17",
-      "fin": "2026-09-17T20:00:00",
-      "titre": "CIEL",
-      "debut": "2026-09-17T20:00:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/5f/78178088e6c4a1737cb19e794cde53.jpg?1768899553",
-      "url": "https://www.hydrophone.fr/CIEL.html",
-      "source": "hydrophone"
-    },
     {
       "id": "echonova:lesemancipeesjour1ishalimsadaulnaylinlina6el|2026-09-18",
       "fin": "2026-09-18T00:00:00",
@@ -207,9 +181,9 @@
       "source": "hydrophone"
     },
     {
-      "id": "hydrophone:lamaisontellier|2026-10-01",
+      "id": "hydrophone:lamaisontellieranabhein|2026-10-01",
       "fin": "2026-10-01T20:00:00",
-      "titre": "LA MAISON TELLIER",
+      "titre": "LA MAISON TELLIER + AN ABHEIN",
       "debut": "2026-10-01T20:00:00",
       "ville": "Lorient",
       "lieu": "Hydrophone",
