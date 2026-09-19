@@ -1,55 +1,16 @@
 {
-  "genere_le": "2026-09-18T09:22:48.935Z",
-  "total": 75,
+  "genere_le": "2026-09-19T09:11:08.987Z",
+  "total": 72,
   "par_secteur": {
-    "vannes": 49,
+    "vannes": 47,
     "auray": 1,
     "lorient": 20,
     "lorient-rade": 1,
-    "erdeven": 4,
+    "erdeven": 3,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "echonova:lesemancipeesjour1ishalimsadaulnaylinlina6el|2026-09-18",
-      "fin": "2026-09-18T00:00:00",
-      "titre": "LES ÉMANCIPÉÉS JOUR 1 : ISHA & Limsa d’Aulnay + LinLin + A6EL",
-      "debut": "2026-09-18T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "electro, pop, rap",
-      "image": "https://lechonova.com/uploads/2026/06/site3.jpg",
-      "url": "https://lechonova.com/evenement/les-emancipees-2026-jour1/",
-      "source": "echonova"
-    },
-    {
-      "id": "coota:nhacada22h|2026-09-18",
-      "fin": "2026-09-18T00:00:00",
-      "titre": "NHACADA 22H",
-      "debut": "2026-09-18T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Live Électro Percussif & Chant Arabe",
-      "image": "https://lecoota.fr/images/thumb/1788189981.jpg",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
-    {
-      "id": "opendatasoft:lancementdesaisonspectaclequimaimemesuive|2026-09-18",
-      "fin": "2026-09-18T19:00:00",
-      "titre": "Lancement de saison - Spectacle \"Qui m'aime me suive\"",
-      "debut": "2026-09-18T19:00:00",
-      "ville": "Ploeren",
-      "lieu": "Espace culturel Le Triskell - Ploeren",
-      "secteur": "vannes",
-      "description": "*Qui m'aime me suive* transforme le hashtag en scène. Entre addiction et liberté, la danse d'Amélie Jousseaume interroge nos écrans et nos liens. Dès 6 ans. Réservation : www.ploeren.bzh",
-      "image": "https://img.openagenda.com/main/d816177c780645cd848881785a631445.base.image.jpg",
-      "url": "https://openagenda.com/unidivers-oui-sortir/events/lancement-de-saison-spectacle-qui-maime-me-suive",
-      "source": "opendatasoft"
-    },
     {
       "id": "echonova:lesemancipeesjour2theaurumigraphyt|2026-09-19",
       "fin": "2026-09-19T00:00:00",
@@ -480,6 +441,19 @@
       "source": "echonova"
     },
     {
+      "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "global-bass, latin-club, reaggaeton",
+      "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
+      "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
+      "source": "echonova"
+    },
+    {
       "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
       "fin": "2026-10-31T00:00:00",
       "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
@@ -503,19 +477,6 @@
       "description": "djing",
       "image": "https://lechonova.com/uploads/2026/07/lula.jpg",
       "url": "https://lechonova.com/evenement/labonumusique-avec-lula666/",
-      "source": "echonova"
-    },
-    {
-      "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
-      "fin": "2026-10-31T00:00:00",
-      "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
-      "debut": "2026-10-31T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "global-bass, latin-club, reaggaeton",
-      "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
-      "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
       "source": "echonova"
     },
     {
@@ -818,19 +779,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
-      "fin": "2026-12-04T00:00:00",
-      "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
-      "debut": "2026-12-04T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "atelier",
-      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
-      "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:bambymachartleymalaureinsdjset|2026-12-04",
       "fin": "2026-12-04T00:00:00",
       "titre": "Bamby + Mac Hartley + Malaureins (dj set)",
@@ -841,6 +789,19 @@
       "description": "bouyon, dancehall, shatta",
       "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
       "url": "https://lechonova.com/evenement/bamby-guests/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
+      "fin": "2026-12-04T00:00:00",
+      "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
+      "debut": "2026-12-04T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "atelier",
+      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
+      "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
       "source": "echonova"
     },
     {
