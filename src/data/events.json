@@ -1,42 +1,16 @@
 {
-  "genere_le": "2026-09-20T09:35:39.401Z",
-  "total": 68,
+  "genere_le": "2026-09-21T10:23:49.957Z",
+  "total": 66,
   "par_secteur": {
     "vannes": 44,
-    "auray": 1,
+    "auray": 0,
     "lorient": 20,
-    "lorient-rade": 1,
+    "lorient-rade": 0,
     "erdeven": 2,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "opendatasoft:decouvertemusicaledelorguedesaintgildas|2026-09-20",
-      "fin": "2026-09-20T16:00:00",
-      "titre": "Découverte musicale de l’orgue de Saint-Gildas",
-      "debut": "2026-09-20T16:00:00",
-      "ville": "Auray",
-      "lieu": "Église Saint-Gildas",
-      "secteur": "auray",
-      "description": "Journées Européennes du patrimoine",
-      "image": "https://img.openagenda.com/main/e4e5893d02214ec5b9c759cc6800f726.base.image.jpg",
-      "url": "https://openagenda.com/culture/events/decouverte-musicale-de-lorgue-de-saint-gildas",
-      "source": "opendatasoft"
-    },
-    {
-      "id": "opendatasoft:concertespritkoradetidianedia|2026-09-20",
-      "fin": "2026-09-20T17:00:00",
-      "titre": "Concert \"Esprit Kora\" de Tidiane Dia",
-      "debut": "2026-09-20T17:00:00",
-      "ville": "Nostang",
-      "lieu": "Chapelle Notre-Dame-de-Joie de Légevin",
-      "secteur": "lorient-rade",
-      "description": "Concert dans la chapelle",
-      "image": "https://img.openagenda.com/main/7c607b1c687b4101abb91684818bf366.base.image.jpg",
-      "url": "https://openagenda.com/culture/events/concert-esprit-kora-de-tidiane-dia",
-      "source": "opendatasoft"
-    },
     {
       "id": "echonova:hilighttribeliamoon|2026-09-25",
       "fin": "2026-09-25T00:00:00",
