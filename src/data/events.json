@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-09-28T11:26:09.368Z",
-  "total": 62,
+  "genere_le": "2026-09-29T11:05:42.616Z",
+  "total": 63,
   "par_secteur": {
-    "vannes": 43,
+    "vannes": 44,
     "auray": 0,
     "lorient": 19,
     "lorient-rade": 0,
@@ -543,6 +543,19 @@
       "image": "https://www.hydrophone.fr/local/cache-gd2/39/5f98982a6c1e9e3d84c3df86ea125a.jpg?1779785719",
       "url": "https://www.hydrophone.fr/MARGUERITE.html",
       "source": "hydrophone"
+    },
+    {
+      "id": "opendatasoft:festivalprojectiontansition|2026-11-17",
+      "fin": "2026-11-17T19:30:00",
+      "titre": "Festival \"Projection Tansition\"",
+      "debut": "2026-11-17T19:30:00",
+      "ville": "Vannes",
+      "lieu": "Cinéma La Garenne",
+      "secteur": "vannes",
+      "description": "festival ciné débat à Vannes Cinéma Le Garenne Vannes",
+      "image": "https://img.openagenda.com/main/4a3c18a399304d11b058829459eaeb3b.base.image.jpg",
+      "url": "https://openagenda.com/transitions-vannes-auray/events/festival-projection-tansition",
+      "source": "opendatasoft"
     },
     {
       "id": "echonova:afterworkbeaujolaisnouveaubretagnenouvelle|2026-11-19",
