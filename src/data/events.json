@@ -1,42 +1,16 @@
 {
-  "genere_le": "2026-10-02T10:52:35.676Z",
+  "genere_le": "2026-10-03T10:12:26.174Z",
   "total": 63,
   "par_secteur": {
     "vannes": 44,
     "auray": 0,
-    "lorient": 19,
+    "lorient": 17,
     "lorient-rade": 0,
-    "erdeven": 0,
+    "erdeven": 2,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "opendatasoft:spectaclemusicalnoiresnouvelles|2026-10-02",
-      "fin": "2026-10-02T18:00:00",
-      "titre": "Spectacle musical « Noires nouvelles »",
-      "debut": "2026-10-02T18:00:00",
-      "ville": "Ploemeur",
-      "lieu": "Espace Culturel Passe Ouest",
-      "secteur": "lorient",
-      "description": "Biblis en folie 2026",
-      "image": "https://img.openagenda.com/main/a18ac53575b94605b30da418fb203f09.base.image.jpg",
-      "url": "https://openagenda.com/culture/events/spectacle-musical-noires-nouvelles",
-      "source": "opendatasoft"
-    },
-    {
-      "id": "opendatasoft:concertlessimone|2026-10-02",
-      "fin": "2026-10-02T19:00:00",
-      "titre": "Concert Les Simone",
-      "debut": "2026-10-02T19:00:00",
-      "ville": "Baden",
-      "lieu": "Médiathèque de Baden",
-      "secteur": "vannes",
-      "description": "Biblis en folie 2026",
-      "image": "https://img.openagenda.com/main/bdad9fece5e1481d9116139cdea6d9ca.base.image.jpg",
-      "url": "https://openagenda.com/culture/events/concert-les-simone-7247225",
-      "source": "opendatasoft"
-    },
     {
       "id": "echonova:armajackson|2026-10-03",
       "fin": "2026-10-03T00:00:00",
@@ -207,6 +181,19 @@
       "source": "echonova"
     },
     {
+      "id": "coota:samindongrak22h|2026-10-17",
+      "fin": "2026-10-17T00:00:00",
+      "titre": "Samin Dong Rak 22H",
+      "debut": "2026-10-17T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "Musique du monde",
+      "image": "https://lecoota.fr/images/thumb/1790943820.jpg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
+    },
+    {
       "id": "opendatasoft:concertcharlesblandinletriskellmonteleson|2026-10-17",
       "fin": "2026-10-17T11:00:00",
       "titre": "Concert Charles Blandin - Le Triskell monte le son",
@@ -231,6 +218,19 @@
       "image": "https://lechonova.com/uploads/2026/04/yvnnis-site.jpg",
       "url": "https://lechonova.com/evenement/yvnnis-1ere-partie/",
       "source": "echonova"
+    },
+    {
+      "id": "coota:absomisterfrenchwax22h|2026-10-23",
+      "fin": "2026-10-23T00:00:00",
+      "titre": "Abso + Mister French Wax 22H",
+      "debut": "2026-10-23T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "REGGAE/DUB/HIP HOP",
+      "image": "https://lecoota.fr/images/thumb/1790944816.jpeg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
     },
     {
       "id": "opendatasoft:festivalvivelamagie|2026-10-23",
@@ -818,17 +818,17 @@
       "source": "echonova"
     },
     {
-      "id": "hydrophone:lamaisontellieranabhein|2027-10-01",
-      "fin": "2027-10-01T20:00:00",
-      "titre": "LA MAISON TELLIER + AN ABHEIN",
-      "debut": "2027-10-01T20:00:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/82/e95a24bc540c7eca9eecaece835851.jpg?1777017113",
-      "url": "https://www.hydrophone.fr/LA-MAISON-TELLIER.html",
-      "source": "hydrophone"
+      "id": "echonova:teddybearsafianolin|2027-04-02",
+      "fin": "2027-04-02T00:00:00",
+      "titre": "TEDDYBEAR + SAFIA NOLIN",
+      "debut": "2027-04-02T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "chanson, pop",
+      "image": "https://lechonova.com/uploads/2026/10/teddy-site.jpg",
+      "url": "https://lechonova.com/evenement/teddybear-safia-nolin/",
+      "source": "echonova"
     }
   ]
 }
