@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-10-03T10:12:26.174Z",
-  "total": 63,
+  "genere_le": "2026-10-04T10:54:18.904Z",
+  "total": 61,
   "par_secteur": {
-    "vannes": 44,
+    "vannes": 42,
     "auray": 0,
     "lorient": 17,
     "lorient-rade": 0,
@@ -11,32 +11,6 @@
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "echonova:armajackson|2026-10-03",
-      "fin": "2026-10-03T00:00:00",
-      "titre": "ARMA JACKSON",
-      "debut": "2026-10-03T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "rnb, soul",
-      "image": "https://lechonova.com/uploads/2026/05/visuel-arma-vannes.png",
-      "url": "https://lechonova.com/evenement/arma-jackson/",
-      "source": "echonova"
-    },
-    {
-      "id": "opendatasoft:drachemusiquebretonneapparitionsoccitanes|2026-10-03",
-      "fin": "2026-10-03T15:30:00",
-      "titre": "Drache : musique bretonne, apparitions occitanes",
-      "debut": "2026-10-03T15:30:00",
-      "ville": "Vannes",
-      "lieu": "Médiathèque De Beaupré-Tohannic",
-      "secteur": "vannes",
-      "description": "Biblis en folie 2026",
-      "image": "https://img.openagenda.com/main/a021ca8ad30743e1b293b8020435a4f1.base.image.jpg",
-      "url": "https://openagenda.com/culture/events/drache-musique-bretonne-apparitions-occitanes",
-      "source": "opendatasoft"
-    },
     {
       "id": "echonova:nonolagrintajaguarr|2026-10-08",
       "fin": "2026-10-08T00:00:00",
@@ -298,19 +272,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
-      "fin": "2026-10-31T00:00:00",
-      "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
-      "debut": "2026-10-31T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "global-groove",
-      "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
-      "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
       "fin": "2026-10-31T00:00:00",
       "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
@@ -334,6 +295,19 @@
       "description": "djing",
       "image": "https://lechonova.com/uploads/2026/07/lula.jpg",
       "url": "https://lechonova.com/evenement/labonumusique-avec-lula666/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "global-groove",
+      "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
+      "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
       "source": "echonova"
     },
     {
