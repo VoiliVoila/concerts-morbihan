@@ -1,10 +1,10 @@
 {
-  "genere_le": "2026-10-05T12:02:07.287Z",
-  "total": 61,
+  "genere_le": "2026-10-06T11:47:30.927Z",
+  "total": 64,
   "par_secteur": {
     "vannes": 42,
     "auray": 0,
-    "lorient": 17,
+    "lorient": 20,
     "lorient-rade": 0,
     "erdeven": 2,
     "etel": 0,
@@ -64,9 +64,9 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:gigofightclub2|2026-10-10",
+      "id": "echonova:gigofightclub2annule|2026-10-10",
       "fin": "2026-10-10T00:00:00",
-      "titre": "GIGOFIGHT CLUB #2",
+      "titre": "GIGOFIGHT CLUB #2 (annulé)",
       "debut": "2026-10-10T00:00:00",
       "ville": "Saint-Avé",
       "lieu": "L'Échonova",
@@ -584,6 +584,19 @@
       "source": "hydrophone"
     },
     {
+      "id": "opendatasoft:rixxiek9|2026-11-27",
+      "fin": "2026-11-27T21:30:00",
+      "titre": "RIXXIE K9",
+      "debut": "2026-11-27T21:30:00",
+      "ville": "Lorient",
+      "lieu": "L'EMBARCADÈRE",
+      "secteur": "lorient",
+      "description": "dans le cadre du Festival Culture Bar-Bars",
+      "image": "https://img.openagenda.com/main/01ce9b07735f41bda1331f42187346ae.base.image.jpg",
+      "url": "https://openagenda.com/festival-culture-bar-bars/events/rixxie",
+      "source": "opendatasoft"
+    },
+    {
       "id": "hydrophone:alforelconcertdessine|2026-11-28",
       "fin": "2026-11-28T10:30:00",
       "titre": "Alf & Orel : CONCERT DESSINÉ",
@@ -595,6 +608,32 @@
       "image": "https://www.hydrophone.fr/local/cache-gd2/13/14deed09949e50b0629667bcb31aeb.png?1789464840",
       "url": "https://www.hydrophone.fr/Alf-Orel-CONCERT-DESSINE-586.html",
       "source": "hydrophone"
+    },
+    {
+      "id": "opendatasoft:ezeli|2026-11-28",
+      "fin": "2026-11-28T21:00:00",
+      "titre": "EZELI",
+      "debut": "2026-11-28T21:00:00",
+      "ville": "Lorient",
+      "lieu": "L'EMBARCADÈRE",
+      "secteur": "lorient",
+      "description": "dans le cadre du Festival Culture Bar-Bars",
+      "image": "https://img.openagenda.com/main/942f3f2a01754cb496bfab3825119054.base.image.jpg",
+      "url": "https://openagenda.com/festival-culture-bar-bars/events/ezeli",
+      "source": "opendatasoft"
+    },
+    {
+      "id": "opendatasoft:hamasaari|2026-11-28",
+      "fin": "2026-11-28T21:00:00",
+      "titre": "HamaSaari",
+      "debut": "2026-11-28T21:00:00",
+      "ville": "Lorient",
+      "lieu": "BAR D'EN FACE",
+      "secteur": "lorient",
+      "description": "dans le cadre du Festival Culture Bar-Bars",
+      "image": "https://img.openagenda.com/main/0b4ab436240a4b3ab87e52528e1c388e.base.image.jpg",
+      "url": "https://openagenda.com/festival-culture-bar-bars/events/hamasaari",
+      "source": "opendatasoft"
     },
     {
       "id": "echonova:foireauxdisques|2026-11-29",
