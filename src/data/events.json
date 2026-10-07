@@ -1,10 +1,10 @@
 {
-  "genere_le": "2026-10-06T11:47:30.927Z",
-  "total": 64,
+  "genere_le": "2026-10-07T11:30:57.452Z",
+  "total": 75,
   "par_secteur": {
-    "vannes": 42,
+    "vannes": 51,
     "auray": 0,
-    "lorient": 20,
+    "lorient": 22,
     "lorient-rade": 0,
     "erdeven": 2,
     "etel": 0,
@@ -23,6 +23,19 @@
       "image": "https://lechonova.com/uploads/2026/05/site.jpg",
       "url": "https://lechonova.com/evenement/nono-la-grinta-premiere-partie/",
       "source": "echonova"
+    },
+    {
+      "id": "opendatasoft:nonolagrinta|2026-10-08",
+      "fin": "2026-10-08T20:00:00",
+      "titre": "Nono La Grinta",
+      "debut": "2026-10-08T20:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Echonova",
+      "secteur": "vannes",
+      "description": "Si vous aimez : Werenoi, le rap versatile, les jeunes artistes déterminés et les chats Bar et restauration sur place Placement libre et debout NONO LA GRINTA La Grinta, comprenez la détermination,…",
+      "image": "https://img.openagenda.com/main/5f057f2be8ef4355a8fb232dad069c5e.base.image.jpg",
+      "url": "https://openagenda.com/shotgun/events/nono-la-grinta-4685733",
+      "source": "opendatasoft"
     },
     {
       "id": "echonova:riseofthenorthstarten56|2026-10-09",
@@ -220,6 +233,19 @@
       "source": "opendatasoft"
     },
     {
+      "id": "opendatasoft:labringuehalloweengirlsonlylorient|2026-10-23",
+      "fin": "2026-10-23T20:30:00",
+      "titre": "LA BRINGUE - HALLOWEEN GIRLS ONLY - Lorient",
+      "debut": "2026-10-23T20:30:00",
+      "ville": "Lorient",
+      "lieu": "Le VOGUE club",
+      "secteur": "lorient",
+      "description": "🎃 LA BRINGUE PASSE EN MODE HALLOWEEN 100 % GIRLS 👻 Prépare-toi pour une soirée aussi effrayante que mémorable… Halloween à La Bringue, c’est LA soirée à ne pas rater ! Au programme : 💃🏾 Une…",
+      "image": "https://img.openagenda.com/main/2a2b529d65b74e1cb68d95e8c34ce00b.base.image.jpg",
+      "url": "https://openagenda.com/shotgun/events/la-bringue-halloween-girls-only-lorient",
+      "source": "opendatasoft"
+    },
+    {
       "id": "hydrophone:lesfemmessenmelentiledegarderequinchagrin|2026-10-23",
       "fin": "2026-10-23T20:30:00",
       "titre": "Les femmes s’en mêlent : ILE DE GARDE + REQUIN CHAGRIN",
@@ -244,6 +270,19 @@
       "image": "https://lechonova.com/uploads/2025/10/site-bertrand-belin-watt-photo.jpg",
       "url": "https://lechonova.com/evenement/bertrand-belin-1ere-partie/",
       "source": "echonova"
+    },
+    {
+      "id": "opendatasoft:alarmxsetsmashresidence13|2026-10-24",
+      "fin": "2026-10-24T20:00:00",
+      "titre": "ALARM x SET&SMASH - RÉSIDENCE 1/3",
+      "debut": "2026-10-24T20:00:00",
+      "ville": "Ploeren",
+      "lieu": "SET&SMASH",
+      "secteur": "vannes",
+      "description": "ALARM x SET&SMASH — RÉSIDENCE 1/3 Jusqu’à la fin de l’année, ALARM prend ses quartiers au SET & SMASH pour une résidence en trois dates. Trois dates. Trois line-ups. Une même direction : faire…",
+      "image": "https://img.openagenda.com/main/0e12ee7b2edc495b9490773b2eb0cae7.base.image.jpg",
+      "url": "https://openagenda.com/shotgun/events/alarm-x-setandsmash-residence-13",
+      "source": "opendatasoft"
     },
     {
       "id": "echonova:afterworkrollerdanceparty|2026-10-29",
@@ -272,19 +311,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
-      "fin": "2026-10-31T00:00:00",
-      "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
-      "debut": "2026-10-31T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "global-bass, latin-club, reaggaeton",
-      "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
-      "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:labonumusiqueaveclula666|2026-10-31",
       "fin": "2026-10-31T00:00:00",
       "titre": "LABONUMUSIQUE AVEC LULA666",
@@ -309,6 +335,32 @@
       "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
       "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
       "source": "echonova"
+    },
+    {
+      "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "global-bass, latin-club, reaggaeton",
+      "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
+      "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
+      "source": "echonova"
+    },
+    {
+      "id": "opendatasoft:nochedelosmuertosdngdngdnglula666santamuerte|2026-10-31",
+      "fin": "2026-10-31T22:00:00",
+      "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE",
+      "debut": "2026-10-31T22:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Echonova",
+      "secteur": "vannes",
+      "description": "Si vous aimez : Les rituels hypnotiques, les soirées clubs alternatives, et l'effervescence des nuits sud-américaines en 2026 Bar et restauration sur place - soirée interdite aux mineurs Sortez vos…",
+      "image": "https://img.openagenda.com/main/13a45d21f0194c01b3ab3c572be795f3.base.image.jpg",
+      "url": "https://openagenda.com/shotgun/events/noche-de-los-muertos-dngdngdng-lula666-santa-muerte",
+      "source": "opendatasoft"
     },
     {
       "id": "hydrophone:girlsinhawaiichatonlaveur|2026-11-04",
@@ -506,6 +558,19 @@
       "source": "hydrophone"
     },
     {
+      "id": "opendatasoft:firstlightinsomniabirthdayeskhamore|2026-11-14",
+      "fin": "2026-11-14T22:00:00",
+      "titre": "FIRST LIGHT - INSOMNIA BIRTHDAY : ESKHA & MORE",
+      "debut": "2026-11-14T22:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Echonova",
+      "secteur": "vannes",
+      "description": "🦋 FIRST LIGHT 14.11 - INSOMNIA BIRTHDAY : ESKHA & MORE 📆 SAMEDI 14 NOVEMBRE 🕙 22h - 04h 📍 L’Échonova - Vannes (56) 🎟️ Billetterie Shotgun - à partir de 12,99€ (lien en bio) First Light célèbre…",
+      "image": "https://img.openagenda.com/main/368320f6b12c4cf4b938bd1e3faf6a34.base.image.jpg",
+      "url": "https://openagenda.com/shotgun/events/first-light-insomnia-birthday-eskha-and-more",
+      "source": "opendatasoft"
+    },
+    {
       "id": "opendatasoft:festivalprojectiontansition|2026-11-17",
       "fin": "2026-11-17T19:30:00",
       "titre": "Festival \"Projection Tansition\"",
@@ -545,6 +610,19 @@
       "source": "echonova"
     },
     {
+      "id": "opendatasoft:mknkclubmanulemalinsomniaconerabbeat|2026-11-21",
+      "fin": "2026-11-21T22:00:00",
+      "titre": "MKNK CLUB : Manu le Malin + Somniac One + RABBeAT + ...",
+      "debut": "2026-11-21T22:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Echonova",
+      "secteur": "vannes",
+      "description": "⏰ Soirée tardive : 22H - 04H Interdit aux mineurs Le label MKNK, curaté par Manu le Malin, emblème de la scène hardcore, à prévu d'investir L'Echonova. Au programme : MANU LE MALIN : Depuis plus de…",
+      "image": "https://img.openagenda.com/main/a267e20db84d47a4b2d9ba30b5056835.base.image.jpg",
+      "url": "https://openagenda.com/shotgun/events/mknk-club-manu-le-malin-somniac-one-rabbeat",
+      "source": "opendatasoft"
+    },
+    {
       "id": "echonova:aperosonoretout|2026-11-26",
       "fin": "2026-11-26T00:00:00",
       "titre": "APÉRO SONORE : Tout",
@@ -582,6 +660,19 @@
       "image": "https://www.hydrophone.fr/local/cache-gd2/e7/b211a458ad013701f97d21450e5f33.png?1789464381",
       "url": "https://www.hydrophone.fr/Alf-Orel-CONCERT-DESSINE-SCOLAIRE.html",
       "source": "hydrophone"
+    },
+    {
+      "id": "opendatasoft:meryl|2026-11-27",
+      "fin": "2026-11-27T20:00:00",
+      "titre": "MERYL",
+      "debut": "2026-11-27T20:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Echonova",
+      "secteur": "vannes",
+      "description": "⏰ Ouverture des portes : 20H00 – Début des concerts : 20H30 🌭🍻 Bar et Restauration sur place 👯 PLACEMENT libre et debout MERYL : Figure incontournable de la scène française, Meryl, aux multiples…",
+      "image": "https://img.openagenda.com/main/a5b93c8d1858449d93cbc119b35028a6.base.image.jpg",
+      "url": "https://openagenda.com/shotgun/events/meryl-1162847",
+      "source": "opendatasoft"
     },
     {
       "id": "opendatasoft:rixxiek9|2026-11-27",
@@ -727,6 +818,19 @@
       "source": "echonova"
     },
     {
+      "id": "opendatasoft:illusion2026lorient|2026-12-12",
+      "fin": "2026-12-12T19:00:00",
+      "titre": "ILLUSION 2026 - Lorient",
+      "debut": "2026-12-12T19:00:00",
+      "ville": "Lanester",
+      "lieu": "Parc des Expositions Lorient Bretagne Sud",
+      "secteur": "lorient",
+      "description": "ILLUSION LORIENT – BZH ÉDITION XXL Après un SOLD OUT à Lorient en décembre 2024 et une édition SOLD OUT à Vannes en décembre 2025, ILLUSION est de retour en terre bretonne ! Rendez-vous le 12…",
+      "image": "https://img.openagenda.com/main/9fc131df40ed4005988be084e9f1edae.base.image.jpg",
+      "url": "https://openagenda.com/shotgun/events/illusion-2026-lorient",
+      "source": "opendatasoft"
+    },
+    {
       "id": "echonova:afterworkdenoel|2026-12-17",
       "fin": "2026-12-17T00:00:00",
       "titre": "AFTERWORK DE NOËL",
@@ -792,6 +896,19 @@
       "source": "echonova"
     },
     {
+      "id": "opendatasoft:meteorasystemize|2027-02-06",
+      "fin": "2027-02-06T19:30:00",
+      "titre": "METEORA + Systemize",
+      "debut": "2027-02-06T19:30:00",
+      "ville": "Vannes",
+      "lieu": "Lieu",
+      "secteur": "vannes",
+      "description": "Fans de Linkin Park, METEORA est de retour à L’Echonova le 6 février 2027 ! Plongez dans un live intense de 1h30, à la fois puissant et chargé d’émotion, qui revisite les plus grands classiques de…",
+      "image": "https://img.openagenda.com/main/91b70d79320f46ff9e0643740d2d3927.base.image.jpg",
+      "url": "https://openagenda.com/shotgun/events/meteora-systemize",
+      "source": "opendatasoft"
+    },
+    {
       "id": "hydrophone:revnoiricesealedeyes|2027-02-10",
       "fin": "2027-02-10T20:00:00",
       "titre": "REVNOIR + ICE SEALED EYES",
@@ -842,6 +959,32 @@
       "image": "https://lechonova.com/uploads/2026/10/teddy-site.jpg",
       "url": "https://lechonova.com/evenement/teddybear-safia-nolin/",
       "source": "echonova"
+    },
+    {
+      "id": "echonova:noepreszowpremierepartie|2027-04-03",
+      "fin": "2027-04-03T00:00:00",
+      "titre": "NOE PRESZOW + première partie",
+      "debut": "2027-04-03T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "pop",
+      "image": "https://lechonova.com/uploads/2026/09/noe-site.jpg",
+      "url": "https://lechonova.com/evenement/noepreszow/",
+      "source": "echonova"
+    },
+    {
+      "id": "opendatasoft:arianebonzinilechonovasaintave|2027-04-10",
+      "fin": "2027-04-10T20:00:00",
+      "titre": "ARIANE BONZINI - L'Echonova - Saint-Avé",
+      "debut": "2027-04-10T20:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Echonova",
+      "secteur": "vannes",
+      "description": "Ariane Bonzini + 1ère partie ARIANE BONZINI On ne sait pas grand-chose d'Ariane Bonzini. L'âge, peut-être. Le prénom, sûrement mais il déroute, comme prévu. Le reste, il le garde pour lui, posé…",
+      "image": "https://img.openagenda.com/main/8c67b4ae10d84343820e82f043b2f7de.base.image.jpg",
+      "url": "https://openagenda.com/shotgun/events/ariane-bonzini-lechonova-saint-ave",
+      "source": "opendatasoft"
     }
   ]
 }
