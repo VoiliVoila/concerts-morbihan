@@ -1,55 +1,16 @@
 {
-  "genere_le": "2026-10-09T11:38:56.722Z",
-  "total": 74,
+  "genere_le": "2026-10-10T10:56:43.280Z",
+  "total": 71,
   "par_secteur": {
-    "vannes": 50,
+    "vannes": 48,
     "auray": 0,
-    "lorient": 22,
+    "lorient": 21,
     "lorient-rade": 0,
     "erdeven": 2,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "echonova:riseofthenorthstarten56|2026-10-09",
-      "fin": "2026-10-09T00:00:00",
-      "titre": "RISE OF THE NORTHSTAR + TEN56.",
-      "debut": "2026-10-09T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "metal, rap-metal",
-      "image": "https://lechonova.com/uploads/2026/03/pix-by-jean-claude-joam-portraitweb-bassdef-site.jpg",
-      "url": "https://lechonova.com/evenement/rise-of-the-northstar-ten56/",
-      "source": "echonova"
-    },
-    {
-      "id": "hydrophone:pijamaelliejames|2026-10-09",
-      "fin": "2026-10-09T20:30:00",
-      "titre": "Pi Ja Ma + Ellie James",
-      "debut": "2026-10-09T20:30:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/8a/ba284ec8c5378fca145fa94d1abd96.jpg?1777017114",
-      "url": "https://www.hydrophone.fr/Pi-Ja-Ma-Ellie-James.html",
-      "source": "hydrophone"
-    },
-    {
-      "id": "opendatasoft:sunsetbarge2lavagueelectro|2026-10-09",
-      "fin": "2026-10-09T21:00:00",
-      "titre": "Sunset Barge #2 La Vague Electro",
-      "debut": "2026-10-09T21:00:00",
-      "ville": "Vannes",
-      "lieu": "PIANO BARGE",
-      "secteur": "vannes",
-      "description": "Hello La Team :)) La Vague Electro Soundsystem déferle au Piano Barge vendredi 9 octobre à partir de 21H en compagnie de DJ FAUXSET, ZYMON & KIFMATEK. House - Tekhouse - Bass Music - Minimal & Tekno…",
-      "image": "https://img.openagenda.com/main/19b56a3d604a474d989d10eff45f1517.base.image.jpg",
-      "url": "https://openagenda.com/shotgun/events/sunset-barge-2-la-vague-electro",
-      "source": "opendatasoft"
-    },
     {
       "id": "echonova:gigofightclub2annule|2026-10-10",
       "fin": "2026-10-10T00:00:00",
