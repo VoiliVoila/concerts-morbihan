@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-10-12T12:44:35.617Z",
+  "genere_le": "2026-10-13T12:27:20.312Z",
   "total": 67,
   "par_secteur": {
     "vannes": 44,
@@ -11,19 +11,6 @@
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "hydrophone:peacelobe|2026-10-12",
-      "fin": "2026-10-12T14:30:00",
-      "titre": "PEACE & LOBE",
-      "debut": "2026-10-12T14:30:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/cf/d040b2c5ab3643686993cdd8e171cc.png?1789462517",
-      "url": "https://www.hydrophone.fr/PEACE-LOBE-Spectacle-pedagogique-autour-des-musiques-et-des-risques-auditifs.html",
-      "source": "hydrophone"
-    },
     {
       "id": "hydrophone:peacelobe|2026-10-13",
       "fin": "2026-10-13T10:00:00",
@@ -881,6 +868,19 @@
       "image": "https://img.openagenda.com/main/8c67b4ae10d84343820e82f043b2f7de.base.image.jpg",
       "url": "https://openagenda.com/shotgun/events/ariane-bonzini-lechonova-saint-ave",
       "source": "opendatasoft"
+    },
+    {
+      "id": "hydrophone:peacelobe|2027-10-12",
+      "fin": "2027-10-12T14:30:00",
+      "titre": "PEACE & LOBE",
+      "debut": "2027-10-12T14:30:00",
+      "ville": "Lorient",
+      "lieu": "Hydrophone",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.hydrophone.fr/local/cache-gd2/cf/d040b2c5ab3643686993cdd8e171cc.png?1789462517",
+      "url": "https://www.hydrophone.fr/PEACE-LOBE-Spectacle-pedagogique-autour-des-musiques-et-des-risques-auditifs.html",
+      "source": "hydrophone"
     }
   ]
 }
