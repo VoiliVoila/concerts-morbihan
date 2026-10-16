@@ -1,41 +1,28 @@
 {
-  "genere_le": "2026-10-15T09:36:15.798Z",
-  "total": 65,
+  "genere_le": "2026-10-16T09:29:08.533Z",
+  "total": 67,
   "par_secteur": {
-    "vannes": 44,
+    "vannes": 42,
     "auray": 0,
     "lorient": 19,
     "lorient-rade": 0,
-    "erdeven": 2,
+    "erdeven": 6,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
     {
-      "id": "echonova:aperosonorefuzeta|2026-10-15",
-      "fin": "2026-10-15T00:00:00",
-      "titre": "APÉRO SONORE : FUZETA",
-      "debut": "2026-10-15T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "rock",
-      "image": "https://lechonova.com/uploads/2026/07/fuzz.jpg",
-      "url": "https://lechonova.com/evenement/apero-sonore-fuzeta/",
-      "source": "echonova"
-    },
-    {
-      "id": "echonova:visitepriveedelechonova|2026-10-15",
-      "fin": "2026-10-15T00:00:00",
-      "titre": "VISITE PRIVÉE DE L’ECHONOVA",
-      "debut": "2026-10-15T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "visite",
-      "image": "https://lechonova.com/uploads/2025/07/illu-lumiere.png",
-      "url": "https://lechonova.com/evenement/visite-privee-de-lechonova/",
-      "source": "echonova"
+      "id": "coota:crazyppfeatrasdivarius22h|2026-10-16",
+      "fin": "2026-10-16T00:00:00",
+      "titre": "Crazy PP FEAT Ras Divarius 22H",
+      "debut": "2026-10-16T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "Reggae Dub",
+      "image": "https://lecoota.fr/images/thumb/1792085186.jpg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
     },
     {
       "id": "coota:samindongrak22h|2026-10-17",
@@ -142,6 +129,19 @@
       "source": "echonova"
     },
     {
+      "id": "coota:forronachuva22h|2026-10-24",
+      "fin": "2026-10-24T00:00:00",
+      "titre": "Forró na chuva 22H",
+      "debut": "2026-10-24T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "Forró",
+      "image": "https://lecoota.fr/images/thumb/1792085380.jpg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
+    },
+    {
       "id": "opendatasoft:alarmxsetsmashresidence13|2026-10-24",
       "fin": "2026-10-24T20:00:00",
       "titre": "ALARM x SET&SMASH - RÉSIDENCE 1/3",
@@ -181,17 +181,17 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
-      "fin": "2026-10-31T00:00:00",
-      "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
-      "debut": "2026-10-31T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "global-groove",
-      "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
-      "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
-      "source": "echonova"
+      "id": "coota:raavni22h|2026-10-30",
+      "fin": "2026-10-30T00:00:00",
+      "titre": "Raavni 22H",
+      "debut": "2026-10-30T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "Techno House Trance",
+      "image": "https://lecoota.fr/images/thumb/1792086433.png",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
     },
     {
       "id": "echonova:labonumusiqueaveclula666|2026-10-31",
@@ -218,6 +218,32 @@
       "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
       "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
       "source": "echonova"
+    },
+    {
+      "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "global-groove",
+      "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
+      "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
+      "source": "echonova"
+    },
+    {
+      "id": "coota:papazombie22h|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "Papa Zombie 22H",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "New Orleans Rythm & Blues",
+      "image": "https://lecoota.fr/images/thumb/1792087354.jpg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
     },
     {
       "id": "opendatasoft:nochedelosmuertosdngdngdnglula666santamuerte|2026-10-31",
@@ -623,19 +649,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:bambymachartleymalaureinsdjset|2026-12-04",
-      "fin": "2026-12-04T00:00:00",
-      "titre": "Bamby + Mac Hartley + Malaureins (dj set)",
-      "debut": "2026-12-04T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "bouyon, dancehall, shatta",
-      "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
-      "url": "https://lechonova.com/evenement/bamby-guests/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
       "fin": "2026-12-04T00:00:00",
       "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
@@ -646,6 +659,19 @@
       "description": "atelier",
       "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
       "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:bambymachartleymalaureinsdjset|2026-12-04",
+      "fin": "2026-12-04T00:00:00",
+      "titre": "Bamby + Mac Hartley + Malaureins (dj set)",
+      "debut": "2026-12-04T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "bouyon, dancehall, shatta",
+      "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
+      "url": "https://lechonova.com/evenement/bamby-guests/",
       "source": "echonova"
     },
     {
