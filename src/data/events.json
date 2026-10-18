@@ -1,42 +1,16 @@
 {
-  "genere_le": "2026-10-17T09:00:04.830Z",
-  "total": 66,
+  "genere_le": "2026-10-18T09:19:19.633Z",
+  "total": 64,
   "par_secteur": {
-    "vannes": 42,
+    "vannes": 41,
     "auray": 0,
     "lorient": 19,
     "lorient-rade": 0,
-    "erdeven": 5,
+    "erdeven": 4,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "coota:samindongrak22h|2026-10-17",
-      "fin": "2026-10-17T00:00:00",
-      "titre": "Samin Dong Rak 22H",
-      "debut": "2026-10-17T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Musique du monde",
-      "image": "https://lecoota.fr/images/thumb/1790943820.jpg",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
-    {
-      "id": "opendatasoft:concertcharlesblandinletriskellmonteleson|2026-10-17",
-      "fin": "2026-10-17T11:00:00",
-      "titre": "Concert Charles Blandin - Le Triskell monte le son",
-      "debut": "2026-10-17T11:00:00",
-      "ville": "Ploeren",
-      "lieu": "Espace culturel Le Triskell - Ploeren",
-      "secteur": "vannes",
-      "description": "Les mélodies de Charles Blandin mêlent jazz, folk, musiques du monde et musique sacrée, portées par ses guitares à sept cordes. Une ambiance intime et sensible est proposée au public. Entrée libre.",
-      "image": "https://img.openagenda.com/main/04973f3cdc3f4258927f58c566d22407.base.image.jpg",
-      "url": "https://openagenda.com/unidivers-oui-sortir/events/concert-charles-blandin-le-triskell-monte-le-son",
-      "source": "opendatasoft"
-    },
     {
       "id": "echonova:yvnnisakissijaykid|2026-10-23",
       "fin": "2026-10-23T00:00:00",
