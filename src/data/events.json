@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-10-18T09:19:19.633Z",
-  "total": 64,
+  "genere_le": "2026-10-19T10:30:14.532Z",
+  "total": 65,
   "par_secteur": {
     "vannes": 41,
     "auray": 0,
     "lorient": 19,
     "lorient-rade": 0,
-    "erdeven": 4,
+    "erdeven": 5,
     "etel": 0,
     "quiberon": 0
   },
@@ -90,15 +90,15 @@
       "source": "echonova"
     },
     {
-      "id": "coota:forronachuva22h|2026-10-24",
+      "id": "coota:karkara22h|2026-10-24",
       "fin": "2026-10-24T00:00:00",
-      "titre": "Forró na chuva 22H",
+      "titre": "KARKARA 22H",
       "debut": "2026-10-24T00:00:00",
       "ville": "Erdeven",
       "lieu": "Le Coota",
       "secteur": "erdeven",
-      "description": "Forró",
-      "image": "https://lecoota.fr/images/thumb/1792085380.jpg",
+      "description": "Rock Psychédélique",
+      "image": "https://lecoota.fr/images/thumb/1792402068.jpg",
       "url": "https://lecoota.fr/concert",
       "source": "coota"
     },
@@ -452,6 +452,19 @@
       "image": "https://lechonova.com/uploads/2026/07/afterwork-site3.jpg",
       "url": "https://lechonova.com/evenement/afterwork-beaujolais-nouveau-bretagne-nouvelle/",
       "source": "echonova"
+    },
+    {
+      "id": "coota:forronachuva22h|2026-11-20",
+      "fin": "2026-11-20T00:00:00",
+      "titre": "Forró na chuva 22H",
+      "debut": "2026-11-20T00:00:00",
+      "ville": "Erdeven",
+      "lieu": "Le Coota",
+      "secteur": "erdeven",
+      "description": "Forró",
+      "image": "https://lecoota.fr/images/thumb/1792085380.jpg",
+      "url": "https://lecoota.fr/concert",
+      "source": "coota"
     },
     {
       "id": "echonova:mknkclubmanu|2026-11-21",
