@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-10-21T09:48:57.990Z",
-  "total": 65,
+  "genere_le": "2026-10-22T09:50:00.513Z",
+  "total": 66,
   "par_secteur": {
-    "vannes": 41,
+    "vannes": 42,
     "auray": 0,
     "lorient": 19,
     "lorient-rade": 0,
@@ -155,6 +155,19 @@
       "source": "coota"
     },
     {
+      "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "global-bass, latin-club, reaggaeton",
+      "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
+      "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
+      "source": "echonova"
+    },
+    {
       "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
       "fin": "2026-10-31T00:00:00",
       "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
@@ -178,19 +191,6 @@
       "description": "djing",
       "image": "https://lechonova.com/uploads/2026/07/lula.jpg",
       "url": "https://lechonova.com/evenement/labonumusique-avec-lula666/",
-      "source": "echonova"
-    },
-    {
-      "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
-      "fin": "2026-10-31T00:00:00",
-      "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
-      "debut": "2026-10-31T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "global-bass, latin-club, reaggaeton",
-      "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
-      "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
       "source": "echonova"
     },
     {
@@ -815,6 +815,19 @@
       "description": "pop",
       "image": "https://lechonova.com/uploads/2026/08/site.jpg",
       "url": "https://lechonova.com/evenement/isaac-delusion-premiere-partie/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:alainchamfort|2027-03-21",
+      "fin": "2027-03-21T00:00:00",
+      "titre": "ALAIN CHAMFORT",
+      "debut": "2027-03-21T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "chanson",
+      "image": "https://lechonova.com/uploads/2026/10/alain-site.jpg",
+      "url": "https://lechonova.com/evenement/alain-chamfort/",
       "source": "echonova"
     },
     {
