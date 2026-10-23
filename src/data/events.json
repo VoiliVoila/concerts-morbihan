@@ -1,10 +1,10 @@
 {
-  "genere_le": "2026-10-22T09:50:00.513Z",
-  "total": 66,
+  "genere_le": "2026-10-23T09:44:19.508Z",
+  "total": 67,
   "par_secteur": {
     "vannes": 42,
     "auray": 0,
-    "lorient": 19,
+    "lorient": 20,
     "lorient-rade": 0,
     "erdeven": 5,
     "etel": 0,
@@ -712,6 +712,19 @@
       "image": "https://lechonova.com/uploads/2026/07/afterwork-site.jpg",
       "url": "https://lechonova.com/evenement/afterwork-de-noel/",
       "source": "echonova"
+    },
+    {
+      "id": "opendatasoft:lacollab4jacidorexaft6rknkt|2026-12-18",
+      "fin": "2026-12-18T23:59:00",
+      "titre": "La Collab #4 : Jacidorex, AFT6R, KNKT",
+      "debut": "2026-12-18T23:59:00",
+      "ville": "Quéven",
+      "lieu": "Quéven",
+      "secteur": "lorient",
+      "description": "🔗 La Collab #4 w/ JACIDOREX, Aft6r, KNKT 🔗 Le premier jour des vacances de Noël, direction le V-Club pour lancer les festivités comme il se doit. Préparez-vous à une nuit sous haute tension avec…",
+      "image": "https://img.openagenda.com/main/27efb6e0f0614196b9bd9aeb0c448b63.base.image.jpg",
+      "url": "https://openagenda.com/shotgun/events/la-collab-4-jacidorex-aft6r-knkt",
+      "source": "opendatasoft"
     },
     {
       "id": "echonova:vannesallstar16|2026-12-19",
