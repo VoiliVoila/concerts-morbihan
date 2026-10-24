@@ -1,81 +1,16 @@
 {
-  "genere_le": "2026-10-23T09:44:19.508Z",
-  "total": 67,
+  "genere_le": "2026-10-24T09:17:27.005Z",
+  "total": 62,
   "par_secteur": {
-    "vannes": 42,
+    "vannes": 40,
     "auray": 0,
-    "lorient": 20,
+    "lorient": 18,
     "lorient-rade": 0,
-    "erdeven": 5,
+    "erdeven": 4,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "echonova:yvnnisakissijaykid|2026-10-23",
-      "fin": "2026-10-23T00:00:00",
-      "titre": "YVNNIS + AKISSI + JAY KID",
-      "debut": "2026-10-23T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "rap",
-      "image": "https://lechonova.com/uploads/2026/04/yvnnis-site.jpg",
-      "url": "https://lechonova.com/evenement/yvnnis-1ere-partie/",
-      "source": "echonova"
-    },
-    {
-      "id": "coota:absomisterfrenchwax22h|2026-10-23",
-      "fin": "2026-10-23T00:00:00",
-      "titre": "Abso + Mister French Wax 22H",
-      "debut": "2026-10-23T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "REGGAE/DUB/HIP HOP",
-      "image": "https://lecoota.fr/images/thumb/1790944816.jpeg",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
-    {
-      "id": "opendatasoft:festivalvivelamagie|2026-10-23",
-      "fin": "2026-10-23T14:30:00",
-      "titre": "FESTIVAL VIVE LA MAGIE",
-      "debut": "2026-10-23T14:30:00",
-      "ville": "Vannes",
-      "lieu": "Palais des Arts et des Congrès",
-      "secteur": "vannes",
-      "description": "Deux jours d'évasion avec un programme magique inédit de spectacles et d'ateliers !",
-      "image": "https://img.openagenda.com/main/06438e49edce4bd2b2fee92f5b26b203.base.image.jpg",
-      "url": "https://openagenda.com/unidivers-oui-sortir/events/festival-vive-la-magie-7435867",
-      "source": "opendatasoft"
-    },
-    {
-      "id": "opendatasoft:labringuehalloweengirlsonlylorient|2026-10-23",
-      "fin": "2026-10-23T20:30:00",
-      "titre": "LA BRINGUE - HALLOWEEN GIRLS ONLY - Lorient",
-      "debut": "2026-10-23T20:30:00",
-      "ville": "Lorient",
-      "lieu": "Le VOGUE club",
-      "secteur": "lorient",
-      "description": "🎃 LA BRINGUE PASSE EN MODE HALLOWEEN 100 % GIRLS 👻 Prépare-toi pour une soirée aussi effrayante que mémorable… Halloween à La Bringue, c’est LA soirée à ne pas rater ! Au programme : 💃🏾 Une…",
-      "image": "https://img.openagenda.com/main/2a2b529d65b74e1cb68d95e8c34ce00b.base.image.jpg",
-      "url": "https://openagenda.com/shotgun/events/la-bringue-halloween-girls-only-lorient",
-      "source": "opendatasoft"
-    },
-    {
-      "id": "hydrophone:lesfemmessenmelentiledegarderequinchagrin|2026-10-23",
-      "fin": "2026-10-23T20:30:00",
-      "titre": "Les femmes s’en mêlent : ILE DE GARDE + REQUIN CHAGRIN",
-      "debut": "2026-10-23T20:30:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/0e/389c243d64733ec53876c619abb136.png?1783670680",
-      "url": "https://www.hydrophone.fr/Les-femmes-s-en-melent-ILE-DE-GARDE-REQUIN-CHAGRIN.html",
-      "source": "hydrophone"
-    },
     {
       "id": "echonova:bertrandbelinlouisepapier|2026-10-24",
       "fin": "2026-10-24T00:00:00",
@@ -155,19 +90,6 @@
       "source": "coota"
     },
     {
-      "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
-      "fin": "2026-10-31T00:00:00",
-      "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
-      "debut": "2026-10-31T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "global-bass, latin-club, reaggaeton",
-      "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
-      "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
       "fin": "2026-10-31T00:00:00",
       "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
@@ -191,6 +113,19 @@
       "description": "djing",
       "image": "https://lechonova.com/uploads/2026/07/lula.jpg",
       "url": "https://lechonova.com/evenement/labonumusique-avec-lula666/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "global-bass, latin-club, reaggaeton",
+      "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
+      "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
       "source": "echonova"
     },
     {
