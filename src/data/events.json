@@ -1,55 +1,16 @@
 {
-  "genere_le": "2026-10-24T09:17:27.005Z",
-  "total": 62,
+  "genere_le": "2026-10-25T09:34:08.987Z",
+  "total": 59,
   "par_secteur": {
-    "vannes": 40,
+    "vannes": 38,
     "auray": 0,
     "lorient": 18,
     "lorient-rade": 0,
-    "erdeven": 4,
+    "erdeven": 3,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "echonova:bertrandbelinlouisepapier|2026-10-24",
-      "fin": "2026-10-24T00:00:00",
-      "titre": "BERTRAND BELIN + LOUÏSE PAPIER",
-      "debut": "2026-10-24T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "chanson",
-      "image": "https://lechonova.com/uploads/2025/10/site-bertrand-belin-watt-photo.jpg",
-      "url": "https://lechonova.com/evenement/bertrand-belin-1ere-partie/",
-      "source": "echonova"
-    },
-    {
-      "id": "coota:karkara22h|2026-10-24",
-      "fin": "2026-10-24T00:00:00",
-      "titre": "KARKARA 22H",
-      "debut": "2026-10-24T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Rock Psychédélique",
-      "image": "https://lecoota.fr/images/thumb/1792402068.jpg",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
-    {
-      "id": "opendatasoft:alarmxsetsmashresidence13|2026-10-24",
-      "fin": "2026-10-24T20:00:00",
-      "titre": "ALARM x SET&SMASH - RÉSIDENCE 1/3",
-      "debut": "2026-10-24T20:00:00",
-      "ville": "Ploeren",
-      "lieu": "SET&SMASH",
-      "secteur": "vannes",
-      "description": "ALARM x SET&SMASH — RÉSIDENCE 1/3 Jusqu’à la fin de l’année, ALARM prend ses quartiers au SET & SMASH pour une résidence en trois dates. Trois dates. Trois line-ups. Une même direction : faire…",
-      "image": "https://img.openagenda.com/main/a09611d15290416ab35f269eca90c9ce.base.image.jpg",
-      "url": "https://openagenda.com/shotgun/events/alarm-x-setandsmash-residence-13",
-      "source": "opendatasoft"
-    },
     {
       "id": "echonova:afterworkrollerdanceparty|2026-10-29",
       "fin": "2026-10-29T00:00:00",
@@ -90,19 +51,6 @@
       "source": "coota"
     },
     {
-      "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
-      "fin": "2026-10-31T00:00:00",
-      "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
-      "debut": "2026-10-31T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "global-groove",
-      "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
-      "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:labonumusiqueaveclula666|2026-10-31",
       "fin": "2026-10-31T00:00:00",
       "titre": "LABONUMUSIQUE AVEC LULA666",
@@ -126,6 +74,19 @@
       "description": "global-bass, latin-club, reaggaeton",
       "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
       "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "global-groove",
+      "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
+      "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
       "source": "echonova"
     },
     {
@@ -558,19 +519,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:bambymachartleymalaureinsdjset|2026-12-04",
-      "fin": "2026-12-04T00:00:00",
-      "titre": "Bamby + Mac Hartley + Malaureins (dj set)",
-      "debut": "2026-12-04T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "bouyon, dancehall, shatta",
-      "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
-      "url": "https://lechonova.com/evenement/bamby-guests/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
       "fin": "2026-12-04T00:00:00",
       "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
@@ -581,6 +529,19 @@
       "description": "atelier",
       "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
       "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:bambymachartleymalaureinsdjset|2026-12-04",
+      "fin": "2026-12-04T00:00:00",
+      "titre": "Bamby + Mac Hartley + Malaureins (dj set)",
+      "debut": "2026-12-04T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "bouyon, dancehall, shatta",
+      "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
+      "url": "https://lechonova.com/evenement/bamby-guests/",
       "source": "echonova"
     },
     {
