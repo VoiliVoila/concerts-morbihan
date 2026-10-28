@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-10-27T10:11:55.853Z",
-  "total": 59,
+  "genere_le": "2026-10-28T10:57:51.213Z",
+  "total": 61,
   "par_secteur": {
-    "vannes": 38,
+    "vannes": 40,
     "auray": 0,
     "lorient": 18,
     "lorient-rade": 0,
@@ -51,19 +51,6 @@
       "source": "coota"
     },
     {
-      "id": "echonova:labonumusiqueaveclula666|2026-10-31",
-      "fin": "2026-10-31T00:00:00",
-      "titre": "LABONUMUSIQUE AVEC LULA666",
-      "debut": "2026-10-31T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "djing",
-      "image": "https://lechonova.com/uploads/2026/07/lula.jpg",
-      "url": "https://lechonova.com/evenement/labonumusique-avec-lula666/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
       "fin": "2026-10-31T00:00:00",
       "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
@@ -87,6 +74,19 @@
       "description": "global-groove",
       "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
       "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:labonumusiqueaveclula666|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "LABONUMUSIQUE AVEC LULA666",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "djing",
+      "image": "https://lechonova.com/uploads/2026/07/lula.jpg",
+      "url": "https://lechonova.com/evenement/labonumusique-avec-lula666/",
       "source": "echonova"
     },
     {
@@ -194,15 +194,15 @@
       "source": "hydrophone"
     },
     {
-      "id": "echonova:tourneedestrans|2026-11-07",
+      "id": "echonova:tourneedestransblasslilacinaejamnjoysoundsystem|2026-11-07",
       "fin": "2026-11-07T00:00:00",
-      "titre": "Tournée des Trans",
+      "titre": "Tournée des Trans : BLASSLILA + CINAE + JAM’N’JOY SOUNDSYSTEM",
       "debut": "2026-11-07T00:00:00",
       "ville": "Saint-Avé",
       "lieu": "L'Échonova",
       "secteur": "vannes",
       "description": "scene-locale",
-      "image": "https://lechonova.com/uploads/2026/07/tdt.jpg",
+      "image": "https://lechonova.com/uploads/2026/07/tdt-site.jpg",
       "url": "https://lechonova.com/evenement/tournee-des-trans/",
       "source": "echonova"
     },
@@ -519,19 +519,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
-      "fin": "2026-12-04T00:00:00",
-      "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
-      "debut": "2026-12-04T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "atelier",
-      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
-      "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:bambymachartleymalaureinsdjset|2026-12-04",
       "fin": "2026-12-04T00:00:00",
       "titre": "Bamby + Mac Hartley + Malaureins (dj set)",
@@ -542,6 +529,19 @@
       "description": "bouyon, dancehall, shatta",
       "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
       "url": "https://lechonova.com/evenement/bamby-guests/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
+      "fin": "2026-12-04T00:00:00",
+      "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
+      "debut": "2026-12-04T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "atelier",
+      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
+      "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
       "source": "echonova"
     },
     {
@@ -610,15 +610,15 @@
       "source": "echonova"
     },
     {
-      "id": "opendatasoft:lacollab4jacidorexaft6rknkt|2026-12-18",
+      "id": "opendatasoft:lacollab4jacidorexorder23knkt|2026-12-18",
       "fin": "2026-12-18T23:59:00",
-      "titre": "La Collab #4 : Jacidorex, AFT6R, KNKT",
+      "titre": "La Collab #4 : Jacidorex, ORDER23, KNKT",
       "debut": "2026-12-18T23:59:00",
       "ville": "Quéven",
       "lieu": "Quéven",
       "secteur": "lorient",
       "description": "🔗 La Collab #4 w/ JACIDOREX, Aft6r, KNKT 🔗 Le premier jour des vacances de Noël, direction le V-Club pour lancer les festivités comme il se doit. Préparez-vous à une nuit sous haute tension avec…",
-      "image": "https://img.openagenda.com/main/bce21fbc066c4daf828c7eadfda4648c.base.image.jpg",
+      "image": "https://img.openagenda.com/main/560e6d74ec0042c1a2e74b6265a16741.base.image.jpg",
       "url": "https://openagenda.com/shotgun/events/la-collab-4-jacidorex-aft6r-knkt",
       "source": "opendatasoft"
     },
@@ -633,6 +633,19 @@
       "description": "a-vous-de-jouer",
       "image": "https://lechonova.com/uploads/2025/06/477577698-1312028209903896-8190957387047402375-n.jpg",
       "url": "https://lechonova.com/evenement/vannes-all-star-16/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:burgerbangtumador|2027-01-23",
+      "fin": "2027-01-23T00:00:00",
+      "titre": "BURGER BANG + TU M’ADOR",
+      "debut": "2027-01-23T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "rock",
+      "image": "https://lechonova.com/uploads/2026/10/site-1.jpg",
+      "url": "https://lechonova.com/evenement/burger-bang-tu-mador/",
       "source": "echonova"
     },
     {
@@ -763,6 +776,19 @@
       "description": "pop",
       "image": "https://lechonova.com/uploads/2026/09/noe-site.jpg",
       "url": "https://lechonova.com/evenement/noepreszow/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:arianebonzinipremierepartie|2027-04-10",
+      "fin": "2027-04-10T00:00:00",
+      "titre": "ARIANE BONZINI + première partie",
+      "debut": "2027-04-10T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "pop",
+      "image": "https://lechonova.com/uploads/2026/10/site.jpg",
+      "url": "https://lechonova.com/evenement/ariane-bonzini-premiere-partie/",
       "source": "echonova"
     },
     {
