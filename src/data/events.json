@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-10-28T10:57:51.213Z",
-  "total": 61,
+  "genere_le": "2026-10-29T11:17:43.475Z",
+  "total": 62,
   "par_secteur": {
-    "vannes": 40,
+    "vannes": 41,
     "auray": 0,
     "lorient": 18,
     "lorient-rade": 0,
@@ -51,6 +51,19 @@
       "source": "coota"
     },
     {
+      "id": "echonova:labonumusiqueaveclula666|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "LABONUMUSIQUE AVEC LULA666",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "djing",
+      "image": "https://lechonova.com/uploads/2026/07/lula.jpg",
+      "url": "https://lechonova.com/evenement/labonumusique-avec-lula666/",
+      "source": "echonova"
+    },
+    {
       "id": "echonova:nochedelosmuertosdngdngdnglula666santamuerteperreo|2026-10-31",
       "fin": "2026-10-31T00:00:00",
       "titre": "NOCHE DE LOS MUERTOS : DNGDNGDNG + LULA666 + SANTA MUERTE PERREO",
@@ -74,19 +87,6 @@
       "description": "global-groove",
       "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
       "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
-      "source": "echonova"
-    },
-    {
-      "id": "echonova:labonumusiqueaveclula666|2026-10-31",
-      "fin": "2026-10-31T00:00:00",
-      "titre": "LABONUMUSIQUE AVEC LULA666",
-      "debut": "2026-10-31T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "djing",
-      "image": "https://lechonova.com/uploads/2026/07/lula.jpg",
-      "url": "https://lechonova.com/evenement/labonumusique-avec-lula666/",
       "source": "echonova"
     },
     {
@@ -519,19 +519,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:bambymachartleymalaureinsdjset|2026-12-04",
-      "fin": "2026-12-04T00:00:00",
-      "titre": "Bamby + Mac Hartley + Malaureins (dj set)",
-      "debut": "2026-12-04T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "bouyon, dancehall, shatta",
-      "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
-      "url": "https://lechonova.com/evenement/bamby-guests/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
       "fin": "2026-12-04T00:00:00",
       "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
@@ -542,6 +529,19 @@
       "description": "atelier",
       "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
       "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:bambymachartleymalaureinsdjset|2026-12-04",
+      "fin": "2026-12-04T00:00:00",
+      "titre": "Bamby + Mac Hartley + Malaureins (dj set)",
+      "debut": "2026-12-04T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "bouyon, dancehall, shatta",
+      "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
+      "url": "https://lechonova.com/evenement/bamby-guests/",
       "source": "echonova"
     },
     {
@@ -649,9 +649,22 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:leslouangesguests|2027-01-29",
+      "id": "echonova:bondimanchewinterstory|2027-01-24",
+      "fin": "2027-01-24T00:00:00",
+      "titre": "BON DIMANCHE ! : Winter Story",
+      "debut": "2027-01-24T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "en-famille",
+      "image": "https://lechonova.com/uploads/2026/10/site-2.jpg",
+      "url": "https://lechonova.com/evenement/bon-dimanche-winter-story/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:leslouangesbibiclub|2027-01-29",
       "fin": "2027-01-29T00:00:00",
-      "titre": "LES LOUANGES + GUESTS",
+      "titre": "LES LOUANGES + BIBI CLUB",
       "debut": "2027-01-29T00:00:00",
       "ville": "Saint-Avé",
       "lieu": "L'Échonova",
