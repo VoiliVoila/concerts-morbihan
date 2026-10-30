@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-10-29T11:17:43.475Z",
-  "total": 62,
+  "genere_le": "2026-10-30T11:10:26.832Z",
+  "total": 61,
   "par_secteur": {
-    "vannes": 41,
+    "vannes": 40,
     "auray": 0,
     "lorient": 18,
     "lorient-rade": 0,
@@ -11,19 +11,6 @@
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "echonova:afterworkrollerdanceparty|2026-10-29",
-      "fin": "2026-10-29T00:00:00",
-      "titre": "AFTERWORK : ROLLER DANCE PARTY",
-      "debut": "2026-10-29T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "roller",
-      "image": "https://lechonova.com/uploads/2026/07/afterwork-site2.jpg",
-      "url": "https://lechonova.com/evenement/afterwork-roller-dance-party-2/",
-      "source": "echonova"
-    },
     {
       "id": "echonova:bretonsemezi|2026-10-30",
       "fin": "2026-10-30T00:00:00",
@@ -51,6 +38,19 @@
       "source": "coota"
     },
     {
+      "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "global-groove",
+      "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
+      "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
+      "source": "echonova"
+    },
+    {
       "id": "echonova:labonumusiqueaveclula666|2026-10-31",
       "fin": "2026-10-31T00:00:00",
       "titre": "LABONUMUSIQUE AVEC LULA666",
@@ -74,19 +74,6 @@
       "description": "global-bass, latin-club, reaggaeton",
       "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
       "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
-      "source": "echonova"
-    },
-    {
-      "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
-      "fin": "2026-10-31T00:00:00",
-      "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
-      "debut": "2026-10-31T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "global-groove",
-      "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
-      "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
       "source": "echonova"
     },
     {
@@ -137,7 +124,7 @@
       "lieu": "L'Échonova",
       "secteur": "vannes",
       "description": "pop, surprise",
-      "image": "https://lechonova.com/uploads/2026/07/insomnia.jpg",
+      "image": "https://lechonova.com/uploads/2026/03/prism-bte01-bob1-apr4444-4500x2650-20260611-01-02-25-01-1.jpeg",
       "url": "https://lechonova.com/evenement/filage/",
       "source": "echonova"
     },
@@ -519,19 +506,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
-      "fin": "2026-12-04T00:00:00",
-      "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
-      "debut": "2026-12-04T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "atelier",
-      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
-      "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:bambymachartleymalaureinsdjset|2026-12-04",
       "fin": "2026-12-04T00:00:00",
       "titre": "Bamby + Mac Hartley + Malaureins (dj set)",
@@ -542,6 +516,19 @@
       "description": "bouyon, dancehall, shatta",
       "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
       "url": "https://lechonova.com/evenement/bamby-guests/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
+      "fin": "2026-12-04T00:00:00",
+      "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
+      "debut": "2026-12-04T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "atelier",
+      "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
+      "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
       "source": "echonova"
     },
     {
