@@ -1,55 +1,16 @@
 {
-  "genere_le": "2026-10-30T11:10:26.832Z",
-  "total": 61,
+  "genere_le": "2026-10-31T10:43:23.719Z",
+  "total": 59,
   "par_secteur": {
-    "vannes": 40,
+    "vannes": 39,
     "auray": 0,
     "lorient": 18,
     "lorient-rade": 0,
-    "erdeven": 3,
+    "erdeven": 2,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "echonova:bretonsemezi|2026-10-30",
-      "fin": "2026-10-30T00:00:00",
-      "titre": "B.R.E.T.O.N.S + Emezi",
-      "debut": "2026-10-30T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "trad-rock",
-      "image": "https://lechonova.com/uploads/2026/07/bretons.jpg",
-      "url": "https://lechonova.com/evenement/b-r-e-t-o-n-s-emezi/",
-      "source": "echonova"
-    },
-    {
-      "id": "coota:raavni22h|2026-10-30",
-      "fin": "2026-10-30T00:00:00",
-      "titre": "Raavni 22H",
-      "debut": "2026-10-30T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Techno House Trance",
-      "image": "https://lecoota.fr/images/thumb/1792086433.png",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
-    {
-      "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
-      "fin": "2026-10-31T00:00:00",
-      "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
-      "debut": "2026-10-31T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "global-groove",
-      "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
-      "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
-      "source": "echonova"
-    },
     {
       "id": "echonova:labonumusiqueaveclula666|2026-10-31",
       "fin": "2026-10-31T00:00:00",
@@ -74,6 +35,19 @@
       "description": "global-bass, latin-club, reaggaeton",
       "image": "https://lechonova.com/uploads/2026/07/dng.jpg",
       "url": "https://lechonova.com/evenement/noche-de-los-muertos-halloween/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:rideaubalcostumeaumuseedelacohue|2026-10-31",
+      "fin": "2026-10-31T00:00:00",
+      "titre": "RIDEAU ! Bal Costumé au Musée de la Cohue",
+      "debut": "2026-10-31T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "global-groove",
+      "image": "https://lechonova.com/uploads/2026/07/site-cohue.jpg",
+      "url": "https://lechonova.com/evenement/rideau-bal-costume-au-musee-de-la-cohue/",
       "source": "echonova"
     },
     {
@@ -285,9 +259,9 @@
       "source": "echonova"
     },
     {
-      "id": "hydrophone:marguerite|2026-11-14",
+      "id": "hydrophone:margueritecrenoka|2026-11-14",
       "fin": "2026-11-14T20:30:00",
-      "titre": "MARGUERITE",
+      "titre": "MARGUERITE + CRENOKA",
       "debut": "2026-11-14T20:30:00",
       "ville": "Lorient",
       "lieu": "Hydrophone",
