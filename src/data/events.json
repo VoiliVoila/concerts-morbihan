@@ -1,10 +1,10 @@
 {
-  "genere_le": "2026-11-02T13:04:32.545Z",
-  "total": 54,
+  "genere_le": "2026-11-03T12:36:34.908Z",
+  "total": 55,
   "par_secteur": {
     "vannes": 35,
     "auray": 0,
-    "lorient": 18,
+    "lorient": 19,
     "lorient-rade": 0,
     "erdeven": 1,
     "etel": 0,
@@ -166,6 +166,19 @@
       "image": "https://www.hydrophone.fr/local/cache-gd2/31/d08a000daf599864e64a35b62bddf1.png?1782895756",
       "url": "https://www.hydrophone.fr/Solann.html",
       "source": "hydrophone"
+    },
+    {
+      "id": "opendatasoft:bdeenergiexlasuite|2026-11-12",
+      "fin": "2026-11-12T22:00:00",
+      "titre": "BDE Energie x La Suite",
+      "debut": "2026-11-12T22:00:00",
+      "ville": "Lorient",
+      "lieu": "Lorient",
+      "secteur": "lorient",
+      "description": "Soirée techno BDE Energie X La Suite Jeudi 12 novembre 22h-01h",
+      "image": "https://img.openagenda.com/main/5fac596ff6bb430bbb2a04ea163a39a1.base.image.jpg",
+      "url": "https://openagenda.com/shotgun/events/bde-energie-x-la-suite",
+      "source": "opendatasoft"
     },
     {
       "id": "hydrophone:sebastientelliertheoperator|2026-11-13",
@@ -415,19 +428,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:bambymachartleymalaureinsdjset|2026-12-04",
-      "fin": "2026-12-04T00:00:00",
-      "titre": "Bamby + Mac Hartley + Malaureins (dj set)",
-      "debut": "2026-12-04T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "bouyon, dancehall, shatta",
-      "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
-      "url": "https://lechonova.com/evenement/bamby-guests/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
       "fin": "2026-12-04T00:00:00",
       "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
@@ -438,6 +438,19 @@
       "description": "atelier",
       "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
       "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:bambymachartleymalaureinsdjset|2026-12-04",
+      "fin": "2026-12-04T00:00:00",
+      "titre": "Bamby + Mac Hartley + Malaureins (dj set)",
+      "debut": "2026-12-04T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "bouyon, dancehall, shatta",
+      "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
+      "url": "https://lechonova.com/evenement/bamby-guests/",
       "source": "echonova"
     },
     {
