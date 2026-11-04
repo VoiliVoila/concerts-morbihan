@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-11-03T12:36:34.908Z",
-  "total": 55,
+  "genere_le": "2026-11-04T12:46:11.449Z",
+  "total": 58,
   "par_secteur": {
-    "vannes": 35,
+    "vannes": 38,
     "auray": 0,
     "lorient": 19,
     "lorient-rade": 0,
@@ -194,6 +194,19 @@
       "source": "hydrophone"
     },
     {
+      "id": "opendatasoft:prismrefraction1pianobargevannes|2026-11-13",
+      "fin": "2026-11-13T21:00:00",
+      "titre": "PRISM - Refraction 1 / Piano Barge Vannes",
+      "debut": "2026-11-13T21:00:00",
+      "ville": "Vannes",
+      "lieu": "PIANO BARGE",
+      "secteur": "vannes",
+      "description": "Prism présente - Réfraction ! Pour notre 5 ème soirée on à vu les choses en grand ! Une line-up 100% bretonne avec 4 DJ. Maen : Producteur et DJ émergent de la scène électronique française, Maen…",
+      "image": "https://img.openagenda.com/main/a936d067647943ca8a2de4ab13e3b3d8.base.image.jpg",
+      "url": "https://openagenda.com/shotgun/events/prism-refraction-1-piano-barge-vannes",
+      "source": "opendatasoft"
+    },
+    {
       "id": "echonova:firstlightinsomniabirthdayeskhaguests|2026-11-14",
       "fin": "2026-11-14T00:00:00",
       "titre": "First Light Insomnia Birthday : Eskha & Guests",
@@ -272,6 +285,19 @@
       "source": "coota"
     },
     {
+      "id": "opendatasoft:alarmxsetsmashresidence23|2026-11-20",
+      "fin": "2026-11-20T20:00:00",
+      "titre": "ALARM x SET&SMASH - RÉSIDENCE 2/3",
+      "debut": "2026-11-20T20:00:00",
+      "ville": "Ploeren",
+      "lieu": "SET&SMASH",
+      "secteur": "vannes",
+      "description": "ALARM x SET&SMASH — RÉSIDENCE 2/3 Jusqu’à la fin de l’année, ALARM prend ses quartiers au SET & SMASH pour une résidence en trois dates. Trois dates. Trois line-ups. Une même direction : faire…",
+      "image": "https://img.openagenda.com/main/e2a7711139c6476099269061c41d389e.base.image.jpg",
+      "url": "https://openagenda.com/shotgun/events/alarm-x-setandsmash-residence-23",
+      "source": "opendatasoft"
+    },
+    {
       "id": "echonova:mknkclubmanu|2026-11-21",
       "fin": "2026-11-21T00:00:00",
       "titre": "MKNK CLUB : MANU",
@@ -298,6 +324,19 @@
       "source": "opendatasoft"
     },
     {
+      "id": "echonova:rencontredepartementaleegalitedanslesmusiquesactuellesagirfaceauxdangersquipesentsur|2026-11-24",
+      "fin": "2026-11-24T00:00:00",
+      "titre": "Rencontre départementale : Égalité dans les musiques actuelles, agir face aux dangers qui pèsent sur",
+      "debut": "2026-11-24T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "rencontre-professionnelle",
+      "image": "https://lechonova.com/uploads/2026/11/56-couverture.png",
+      "url": "https://lechonova.com/evenement/rencontre-departementale-egalite-stourm/",
+      "source": "echonova"
+    },
+    {
       "id": "echonova:aperosonoretout|2026-11-26",
       "fin": "2026-11-26T00:00:00",
       "titre": "APÉRO SONORE : Tout",
@@ -306,7 +345,7 @@
       "lieu": "L'Échonova",
       "secteur": "vannes",
       "description": "pop, rock, soul",
-      "image": "https://lechonova.com/uploads/2026/07/clara.jpg",
+      "image": "https://lechonova.com/uploads/2026/07/site-1.jpg",
       "url": "https://lechonova.com/evenement/apero-sonore-tout-le-monde-sappelle-clara/",
       "source": "echonova"
     },
@@ -428,6 +467,19 @@
       "source": "echonova"
     },
     {
+      "id": "echonova:bambymachartleymalaureinsdjsetaftershow|2026-12-04",
+      "fin": "2026-12-04T00:00:00",
+      "titre": "Bamby + Mac Hartley + Malaureins (dj set aftershow)",
+      "debut": "2026-12-04T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "bouyon, dancehall, shatta",
+      "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
+      "url": "https://lechonova.com/evenement/bamby-guests/",
+      "source": "echonova"
+    },
+    {
       "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
       "fin": "2026-12-04T00:00:00",
       "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
@@ -438,19 +490,6 @@
       "description": "atelier",
       "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
       "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
-      "source": "echonova"
-    },
-    {
-      "id": "echonova:bambymachartleymalaureinsdjset|2026-12-04",
-      "fin": "2026-12-04T00:00:00",
-      "titre": "Bamby + Mac Hartley + Malaureins (dj set)",
-      "debut": "2026-12-04T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "bouyon, dancehall, shatta",
-      "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
-      "url": "https://lechonova.com/evenement/bamby-guests/",
       "source": "echonova"
     },
     {
