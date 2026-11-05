@@ -1,29 +1,16 @@
 {
-  "genere_le": "2026-11-04T12:46:11.449Z",
-  "total": 58,
+  "genere_le": "2026-11-05T12:55:39.192Z",
+  "total": 57,
   "par_secteur": {
     "vannes": 38,
     "auray": 0,
-    "lorient": 19,
+    "lorient": 18,
     "lorient-rade": 0,
     "erdeven": 1,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "hydrophone:girlsinhawaiichatonlaveur|2026-11-04",
-      "fin": "2026-11-04T20:30:00",
-      "titre": "GIRLS IN HAWAII + CHATON LAVEUR",
-      "debut": "2026-11-04T20:30:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/22/c2f9126cea91720616c8b9039936e2.png?1779134035",
-      "url": "https://www.hydrophone.fr/GIRLS-IN-HAWAII-CHATON-LAVEUR.html",
-      "source": "hydrophone"
-    },
     {
       "id": "echonova:filagerencontreavec|2026-11-05",
       "fin": "2026-11-05T00:00:00",
