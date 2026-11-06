@@ -1,42 +1,16 @@
 {
-  "genere_le": "2026-11-05T12:55:39.192Z",
-  "total": 57,
+  "genere_le": "2026-11-06T12:42:38.462Z",
+  "total": 56,
   "par_secteur": {
-    "vannes": 38,
-    "auray": 0,
-    "lorient": 18,
+    "vannes": 37,
+    "auray": 1,
+    "lorient": 17,
     "lorient-rade": 0,
     "erdeven": 1,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "echonova:filagerencontreavec|2026-11-05",
-      "fin": "2026-11-05T00:00:00",
-      "titre": "FILAGE & RENCONTRE AVEC",
-      "debut": "2026-11-05T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "pop, surprise",
-      "image": "https://lechonova.com/uploads/2026/03/prism-bte01-bob1-apr4444-4500x2650-20260611-01-02-25-01-1.jpeg",
-      "url": "https://lechonova.com/evenement/filage/",
-      "source": "echonova"
-    },
-    {
-      "id": "hydrophone:loltolhursttramhauseatgirls|2026-11-05",
-      "fin": "2026-11-05T20:00:00",
-      "titre": "LOL TOLHURST + TRAMHAUS + eat-girls",
-      "debut": "2026-11-05T20:00:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/04/2dd15f819ed972a3b069faf7c87904.jpg?1779134035",
-      "url": "https://www.hydrophone.fr/LOL-TOLHURST-TRAMHAUS-eat-girls.html",
-      "source": "hydrophone"
-    },
     {
       "id": "echonova:novamovesyamacdecloslacchesikersu|2026-11-06",
       "fin": "2026-11-06T00:00:00",
@@ -168,6 +142,19 @@
       "source": "opendatasoft"
     },
     {
+      "id": "opendatasoft:lesmessagersducheminaauray|2026-11-13",
+      "fin": "2026-11-13T20:00:00",
+      "titre": "Les Messagers du Chemin à AURAY",
+      "debut": "2026-11-13T20:00:00",
+      "ville": "Auray",
+      "lieu": "Chez François Bel",
+      "secteur": "auray",
+      "description": "Histoires de rencontres glanées sur les routes du monde, où des personnages inattendus deviennent les messagers d’une sagesse simple et profondément humaine.",
+      "image": "https://img.openagenda.com/main/76812598b1b24c03b0d8b3813238ed43.base.image.jpg",
+      "url": "https://openagenda.com/rncap/events/les-messagers-du-chemin-a-auray",
+      "source": "opendatasoft"
+    },
+    {
       "id": "hydrophone:sebastientelliertheoperator|2026-11-13",
       "fin": "2026-11-13T20:30:00",
       "titre": "SEBASTIEN TELLIER + THE OPERATOR",
@@ -216,7 +203,7 @@
       "secteur": "lorient",
       "description": "",
       "image": "https://www.hydrophone.fr/local/cache-gd2/39/5f98982a6c1e9e3d84c3df86ea125a.jpg?1779785719",
-      "url": "https://www.hydrophone.fr/MARGUERITE.html",
+      "url": "https://www.hydrophone.fr/MARGUERITE-CRENOKA.html",
       "source": "hydrophone"
     },
     {
@@ -454,19 +441,6 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:bambymachartleymalaureinsdjsetaftershow|2026-12-04",
-      "fin": "2026-12-04T00:00:00",
-      "titre": "Bamby + Mac Hartley + Malaureins (dj set aftershow)",
-      "debut": "2026-12-04T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "bouyon, dancehall, shatta",
-      "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
-      "url": "https://lechonova.com/evenement/bamby-guests/",
-      "source": "echonova"
-    },
-    {
       "id": "echonova:bienvenueauclubdessoundsystemsauxscenesglobalesquiracontelescaraibesaujourdhui|2026-12-04",
       "fin": "2026-12-04T00:00:00",
       "titre": "Bienvenue au club : des sound systems aux scènes globales, qui raconte les Caraïbes aujourd’hui ?",
@@ -477,6 +451,19 @@
       "description": "atelier",
       "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
       "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
+      "source": "echonova"
+    },
+    {
+      "id": "echonova:bambymachartleymalaureinsdjsetaftershow|2026-12-04",
+      "fin": "2026-12-04T00:00:00",
+      "titre": "Bamby + Mac Hartley + Malaureins (dj set aftershow)",
+      "debut": "2026-12-04T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "bouyon, dancehall, shatta",
+      "image": "https://lechonova.com/uploads/2026/06/bamby-shtogun-1920-1080.jpg",
+      "url": "https://lechonova.com/evenement/bamby-guests/",
       "source": "echonova"
     },
     {
