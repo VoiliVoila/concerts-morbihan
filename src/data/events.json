@@ -1,55 +1,16 @@
 {
-  "genere_le": "2026-11-07T11:30:03.816Z",
-  "total": 55,
+  "genere_le": "2026-11-08T11:41:18.675Z",
+  "total": 50,
   "par_secteur": {
-    "vannes": 36,
+    "vannes": 35,
     "auray": 1,
-    "lorient": 17,
+    "lorient": 13,
     "lorient-rade": 0,
     "erdeven": 1,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "echonova:tourneedestransblasslilacinaejamnjoysoundsystem|2026-11-07",
-      "fin": "2026-11-07T00:00:00",
-      "titre": "Tournée des Trans : BLASSLILA + CINAE + JAM’N’JOY SOUNDSYSTEM",
-      "debut": "2026-11-07T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "scene-locale",
-      "image": "https://lechonova.com/uploads/2026/07/tdt-site.jpg",
-      "url": "https://lechonova.com/evenement/tournee-des-trans/",
-      "source": "echonova"
-    },
-    {
-      "id": "hydrophone:conferencelamourlefootballetlamusique|2026-11-07",
-      "fin": "2026-11-07T15:00:00",
-      "titre": "Conférence : L’amour, le football et la musique",
-      "debut": "2026-11-07T15:00:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/0d/c43304b05c697d9ce08678a4b0ebec.jpg?1782895297",
-      "url": "https://www.hydrophone.fr/Conference-L-amour-le-football-et-la-musique.html",
-      "source": "hydrophone"
-    },
-    {
-      "id": "hydrophone:sydmattersoonaghhainesmichelebryteenagebed|2026-11-07",
-      "fin": "2026-11-07T20:30:00",
-      "titre": "SYD MATTERS + OONAGH HAINES + MICHELE BRY + TEENAGE BED",
-      "debut": "2026-11-07T20:30:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/e9/719ea520a0d1dc17b5a64bc157fdb4.png?1779134035",
-      "url": "https://www.hydrophone.fr/SYD-MATTERS-OONAGH-HAINES-MICHELE-BRY-TEENAGE-BED.html",
-      "source": "hydrophone"
-    },
     {
       "id": "hydrophone:projectionyoullneverwalkalone|2026-11-09",
       "fin": "2026-11-09T17:00:00",
@@ -699,32 +660,6 @@
       "image": "https://img.openagenda.com/main/854bddd2fcb3427d834e108274a3311e.base.image.jpg",
       "url": "https://openagenda.com/shotgun/events/ariane-bonzini-lechonova-saint-ave",
       "source": "opendatasoft"
-    },
-    {
-      "id": "hydrophone:katzpascale|2027-11-06",
-      "fin": "2027-11-06T17:30:00",
-      "titre": "KatzPascale",
-      "debut": "2027-11-06T17:30:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/0b/b06f99ab727be1dad58da5decd3061.png?1783670679",
-      "url": "https://www.hydrophone.fr/KatzPascale-577.html",
-      "source": "hydrophone"
-    },
-    {
-      "id": "hydrophone:merylstreekchestlibrarycard|2027-11-06",
-      "fin": "2027-11-06T20:30:00",
-      "titre": "MERYL STREEK + CHEST. + LIBRARY CARD",
-      "debut": "2027-11-06T20:30:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/2e/934edb76012781977434903a87bd79.jpg?1782894731",
-      "url": "https://www.hydrophone.fr/MERYL-STREEK-CHEST-LIBRARY-CARD.html",
-      "source": "hydrophone"
     }
   ]
 }
