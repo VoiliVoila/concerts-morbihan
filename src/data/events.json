@@ -1,10 +1,10 @@
 {
-  "genere_le": "2026-11-10T13:14:56.571Z",
-  "total": 50,
+  "genere_le": "2026-11-11T12:25:09.454Z",
+  "total": 49,
   "par_secteur": {
     "vannes": 35,
     "auray": 1,
-    "lorient": 13,
+    "lorient": 12,
     "lorient-rade": 0,
     "erdeven": 1,
     "etel": 0,
@@ -647,19 +647,6 @@
       "image": "https://img.openagenda.com/main/854bddd2fcb3427d834e108274a3311e.base.image.jpg",
       "url": "https://openagenda.com/shotgun/events/ariane-bonzini-lechonova-saint-ave",
       "source": "opendatasoft"
-    },
-    {
-      "id": "hydrophone:projectionyoullneverwalkalone|2027-11-09",
-      "fin": "2027-11-09T17:00:00",
-      "titre": "Projection : You’ll never walk alone",
-      "debut": "2027-11-09T17:00:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/40/7a0a64937513aef52251665537d8a3.png?1782895732",
-      "url": "https://www.hydrophone.fr/Projection-You-ll-never-walk-alone.html",
-      "source": "hydrophone"
     }
   ]
 }
