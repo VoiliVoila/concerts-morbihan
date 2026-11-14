@@ -1,55 +1,16 @@
 {
-  "genere_le": "2026-11-13T12:51:24.717Z",
-  "total": 48,
+  "genere_le": "2026-11-14T11:55:43.927Z",
+  "total": 45,
   "par_secteur": {
-    "vannes": 35,
-    "auray": 1,
-    "lorient": 11,
+    "vannes": 34,
+    "auray": 0,
+    "lorient": 10,
     "lorient-rade": 0,
     "erdeven": 1,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "opendatasoft:lesmessagersducheminaauray|2026-11-13",
-      "fin": "2026-11-13T20:00:00",
-      "titre": "Les Messagers du Chemin à AURAY",
-      "debut": "2026-11-13T20:00:00",
-      "ville": "Auray",
-      "lieu": "Chez François Bel",
-      "secteur": "auray",
-      "description": "Histoires de rencontres glanées sur les routes du monde, où des personnages inattendus deviennent les messagers d’une sagesse simple et profondément humaine.",
-      "image": "https://img.openagenda.com/main/76812598b1b24c03b0d8b3813238ed43.base.image.jpg",
-      "url": "https://openagenda.com/rncap/events/les-messagers-du-chemin-a-auray",
-      "source": "opendatasoft"
-    },
-    {
-      "id": "hydrophone:sebastientelliertheoperator|2026-11-13",
-      "fin": "2026-11-13T20:30:00",
-      "titre": "SEBASTIEN TELLIER + THE OPERATOR",
-      "debut": "2026-11-13T20:30:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/b2/00ebf01ec130b4f2c7c4f87f167df4.png?1779133504",
-      "url": "https://www.hydrophone.fr/SEBASTIEN-TELLIER-THE-OPERATOR.html",
-      "source": "hydrophone"
-    },
-    {
-      "id": "opendatasoft:prismrefraction1pianobargevannes|2026-11-13",
-      "fin": "2026-11-13T21:00:00",
-      "titre": "PRISM - Refraction 1 / Piano Barge Vannes",
-      "debut": "2026-11-13T21:00:00",
-      "ville": "Vannes",
-      "lieu": "PIANO BARGE",
-      "secteur": "vannes",
-      "description": "Prism présente - Réfraction ! Pour notre 5 ème soirée on à vu les choses en grand ! Une line-up 100% bretonne avec 4 DJ. Maen : Producteur et DJ émergent de la scène électronique française, Maen…",
-      "image": "https://img.openagenda.com/main/a936d067647943ca8a2de4ab13e3b3d8.base.image.jpg",
-      "url": "https://openagenda.com/shotgun/events/prism-refraction-1-piano-barge-vannes",
-      "source": "opendatasoft"
-    },
     {
       "id": "echonova:firstlightinsomniabirthdayeskhaguests|2026-11-14",
       "fin": "2026-11-14T00:00:00",
@@ -610,16 +571,16 @@
       "source": "opendatasoft"
     },
     {
-      "id": "hydrophone:solann|2027-11-12",
-      "fin": "2027-11-12T20:30:00",
-      "titre": "Solann",
-      "debut": "2027-11-12T20:30:00",
+      "id": "hydrophone:sebastientelliertheoperator|2027-11-13",
+      "fin": "2027-11-13T20:30:00",
+      "titre": "SEBASTIEN TELLIER + THE OPERATOR",
+      "debut": "2027-11-13T20:30:00",
       "ville": "Lorient",
       "lieu": "Hydrophone",
       "secteur": "lorient",
       "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/31/d08a000daf599864e64a35b62bddf1.png?1782895756",
-      "url": "https://www.hydrophone.fr/Solann.html",
+      "image": "https://www.hydrophone.fr/local/cache-gd2/b2/00ebf01ec130b4f2c7c4f87f167df4.png?1779133504",
+      "url": "https://www.hydrophone.fr/SEBASTIEN-TELLIER-THE-OPERATOR.html",
       "source": "hydrophone"
     },
     {
