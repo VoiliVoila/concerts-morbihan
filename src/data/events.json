@@ -1,55 +1,16 @@
 {
-  "genere_le": "2026-11-14T11:55:43.927Z",
-  "total": 45,
+  "genere_le": "2026-11-15T12:28:53.310Z",
+  "total": 41,
   "par_secteur": {
-    "vannes": 34,
+    "vannes": 32,
     "auray": 0,
-    "lorient": 10,
+    "lorient": 8,
     "lorient-rade": 0,
     "erdeven": 1,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "echonova:firstlightinsomniabirthdayeskhaguests|2026-11-14",
-      "fin": "2026-11-14T00:00:00",
-      "titre": "First Light Insomnia Birthday : Eskha & Guests",
-      "debut": "2026-11-14T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "techno",
-      "image": "https://lechonova.com/uploads/2026/07/format-banniere-1920x1080-uyn47a.jpg",
-      "url": "https://lechonova.com/evenement/first-light-insomnia-birthday-eskha-guests/",
-      "source": "echonova"
-    },
-    {
-      "id": "hydrophone:margueritecrenoka|2026-11-14",
-      "fin": "2026-11-14T20:30:00",
-      "titre": "MARGUERITE + CRENOKA",
-      "debut": "2026-11-14T20:30:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/39/5f98982a6c1e9e3d84c3df86ea125a.jpg?1779785719",
-      "url": "https://www.hydrophone.fr/MARGUERITE-CRENOKA.html",
-      "source": "hydrophone"
-    },
-    {
-      "id": "opendatasoft:firstlightinsomniabirthdayeskhamore|2026-11-14",
-      "fin": "2026-11-14T22:00:00",
-      "titre": "FIRST LIGHT - INSOMNIA BIRTHDAY : ESKHA & MORE",
-      "debut": "2026-11-14T22:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Echonova",
-      "secteur": "vannes",
-      "description": "🦋 FIRST LIGHT 14.11 - INSOMNIA BIRTHDAY : ESKHA & MORE 📆 SAMEDI 14 NOVEMBRE 🕙 22h - 04h 📍 L’Échonova - Vannes (56) 🎟️ Billetterie Shotgun - à partir de 12,99€ (lien en bio) First Light célèbre…",
-      "image": "https://img.openagenda.com/main/e518a131c29443039fb933016b44d3e7.base.image.jpg",
-      "url": "https://openagenda.com/shotgun/events/first-light-insomnia-birthday-eskha-and-more",
-      "source": "opendatasoft"
-    },
     {
       "id": "opendatasoft:festivalprojectiontansition|2026-11-17",
       "fin": "2026-11-17T19:30:00",
@@ -569,19 +530,6 @@
       "image": "https://img.openagenda.com/main/854bddd2fcb3427d834e108274a3311e.base.image.jpg",
       "url": "https://openagenda.com/shotgun/events/ariane-bonzini-lechonova-saint-ave",
       "source": "opendatasoft"
-    },
-    {
-      "id": "hydrophone:sebastientelliertheoperator|2027-11-13",
-      "fin": "2027-11-13T20:30:00",
-      "titre": "SEBASTIEN TELLIER + THE OPERATOR",
-      "debut": "2027-11-13T20:30:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/b2/00ebf01ec130b4f2c7c4f87f167df4.png?1779133504",
-      "url": "https://www.hydrophone.fr/SEBASTIEN-TELLIER-THE-OPERATOR.html",
-      "source": "hydrophone"
     },
     {
       "id": "opendatasoft:illusionvannes2027|2027-12-11",
