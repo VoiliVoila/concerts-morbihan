@@ -1,9 +1,9 @@
 {
-  "genere_le": "2026-11-15T12:28:53.310Z",
-  "total": 41,
+  "genere_le": "2026-11-16T13:20:49.438Z",
+  "total": 43,
   "par_secteur": {
-    "vannes": 32,
-    "auray": 0,
+    "vannes": 33,
+    "auray": 1,
     "lorient": 8,
     "lorient-rade": 0,
     "erdeven": 1,
@@ -454,6 +454,19 @@
       "source": "echonova"
     },
     {
+      "id": "echonova:chloe|2027-02-27",
+      "fin": "2027-02-27T00:00:00",
+      "titre": "CHLOÉ",
+      "debut": "2027-02-27T00:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Échonova",
+      "secteur": "vannes",
+      "description": "electro, live",
+      "image": "https://lechonova.com/uploads/2026/11/site.jpg",
+      "url": "https://lechonova.com/evenement/chloe/",
+      "source": "echonova"
+    },
+    {
       "id": "echonova:isaacdelusionpremierepartie|2027-03-13",
       "fin": "2027-03-13T00:00:00",
       "titre": "ISAAC DELUSION + PREMIÈRE PARTIE",
@@ -504,6 +517,19 @@
       "image": "https://lechonova.com/uploads/2026/09/noe-site.jpg",
       "url": "https://lechonova.com/evenement/noepreszow/",
       "source": "echonova"
+    },
+    {
+      "id": "opendatasoft:latetemipneumipunk|2027-04-06",
+      "fin": "2027-04-06T10:00:00",
+      "titre": "LA TÊTE MI-PNEU MI-PUNK",
+      "debut": "2027-04-06T10:00:00",
+      "ville": "Auray",
+      "lieu": "Centre Culturel Athéna",
+      "secteur": "auray",
+      "description": "Cie La Boîte à sel",
+      "image": "https://img.openagenda.com/main/cbd9c9b2d1064997b3081552c7490b16.base.image.jpg",
+      "url": "https://openagenda.com/morbihan-tourisme/events/la-tete-mi-pneu-mi-punk-5927171",
+      "source": "opendatasoft"
     },
     {
       "id": "echonova:arianebonzinipremierepartie|2027-04-10",
