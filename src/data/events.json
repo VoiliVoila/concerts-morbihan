@@ -1,42 +1,16 @@
 {
-  "genere_le": "2026-11-20T13:49:17.715Z",
-  "total": 41,
+  "genere_le": "2026-11-21T13:14:15.058Z",
+  "total": 39,
   "par_secteur": {
-    "vannes": 31,
+    "vannes": 30,
     "auray": 1,
     "lorient": 8,
     "lorient-rade": 0,
-    "erdeven": 1,
+    "erdeven": 0,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "coota:forronachuva22h|2026-11-20",
-      "fin": "2026-11-20T00:00:00",
-      "titre": "Forró na chuva 22H",
-      "debut": "2026-11-20T00:00:00",
-      "ville": "Erdeven",
-      "lieu": "Le Coota",
-      "secteur": "erdeven",
-      "description": "Forró",
-      "image": "https://lecoota.fr/images/thumb/1792085380.jpg",
-      "url": "https://lecoota.fr/concert",
-      "source": "coota"
-    },
-    {
-      "id": "opendatasoft:alarmxsetsmashresidence23|2026-11-20",
-      "fin": "2026-11-20T20:00:00",
-      "titre": "ALARM x SET&SMASH - RÉSIDENCE 2/3",
-      "debut": "2026-11-20T20:00:00",
-      "ville": "Ploeren",
-      "lieu": "SET&SMASH",
-      "secteur": "vannes",
-      "description": "ALARM x SET&SMASH — RÉSIDENCE 2/3 Jusqu’à la fin de l’année, ALARM prend ses quartiers au SET & SMASH pour une résidence en trois dates. Trois dates. Trois line-ups. Une même direction : faire…",
-      "image": "https://img.openagenda.com/main/e2a7711139c6476099269061c41d389e.base.image.jpg",
-      "url": "https://openagenda.com/shotgun/events/alarm-x-setandsmash-residence-23",
-      "source": "opendatasoft"
-    },
     {
       "id": "echonova:mknkclubmanu|2026-11-21",
       "fin": "2026-11-21T00:00:00",
