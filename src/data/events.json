@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-11-21T13:14:15.058Z",
-  "total": 39,
+  "genere_le": "2026-11-22T13:03:32.202Z",
+  "total": 37,
   "par_secteur": {
-    "vannes": 30,
+    "vannes": 28,
     "auray": 1,
     "lorient": 8,
     "lorient-rade": 0,
@@ -11,32 +11,6 @@
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "echonova:mknkclubmanu|2026-11-21",
-      "fin": "2026-11-21T00:00:00",
-      "titre": "MKNK CLUB : MANU",
-      "debut": "2026-11-21T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "hardcore, techno",
-      "image": "https://lechonova.com/uploads/2026/07/ban-site.jpg",
-      "url": "https://lechonova.com/evenement/mknk-manu-le-malin-somniac-one-rabbeat-midnight-totem/",
-      "source": "echonova"
-    },
-    {
-      "id": "opendatasoft:mknkclubmanulemalinsomniaconerabbeat|2026-11-21",
-      "fin": "2026-11-21T22:00:00",
-      "titre": "MKNK CLUB : Manu le Malin + Somniac One + RABBeAT + ...",
-      "debut": "2026-11-21T22:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Echonova",
-      "secteur": "vannes",
-      "description": "⏰ Soirée tardive : 22H - 04H Interdit aux mineurs Le label MKNK, curaté par Manu le Malin, emblème de la scène hardcore, à prévu d'investir L'Echonova. Au programme : MANU LE MALIN : Depuis plus de…",
-      "image": "https://img.openagenda.com/main/dbf8ad126b0246558bb00a2c7dc46d23.base.image.jpg",
-      "url": "https://openagenda.com/shotgun/events/mknk-club-manu-le-malin-somniac-one-rabbeat",
-      "source": "opendatasoft"
-    },
     {
       "id": "echonova:rencontredepartementaleegalitedanslesmusiquesactuellesagirfaceauxdangersquipesentsur|2026-11-24",
       "fin": "2026-11-24T00:00:00",
