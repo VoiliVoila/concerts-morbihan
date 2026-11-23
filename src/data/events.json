@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-11-22T13:03:32.202Z",
-  "total": 37,
+  "genere_le": "2026-11-23T15:40:25.803Z",
+  "total": 38,
   "par_secteur": {
-    "vannes": 28,
+    "vannes": 29,
     "auray": 1,
     "lorient": 8,
     "lorient-rade": 0,
@@ -142,9 +142,9 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:eiffelpremierepartie|2026-12-03",
+      "id": "echonova:eiffelcentdetresses|2026-12-03",
       "fin": "2026-12-03T00:00:00",
-      "titre": "EIFFEL + Première partie",
+      "titre": "EIFFEL + CENT DETRESSES",
       "debut": "2026-12-03T00:00:00",
       "ville": "Saint-Avé",
       "lieu": "L'Échonova",
@@ -153,6 +153,19 @@
       "image": "https://lechonova.com/uploads/2026/04/eiffel-site.jpg",
       "url": "https://lechonova.com/evenement/eiffel-premiere-partie/",
       "source": "echonova"
+    },
+    {
+      "id": "opendatasoft:eiffelpremierepartie|2026-12-03",
+      "fin": "2026-12-03T20:00:00",
+      "titre": "EIFFEL + première partie",
+      "debut": "2026-12-03T20:00:00",
+      "ville": "Saint-Avé",
+      "lieu": "L'Echonova",
+      "secteur": "vannes",
+      "description": "Organisé par BASE PRODUCTION 👯 Placement libre et debout 🌭🥤 Bar et Restauration sur place EIFFEL Chanteur-Auteur-Compositeur-Multi-instrumentiste et Réalisateur, Romain Humeau a enregistré 12…",
+      "image": "https://img.openagenda.com/main/72f3869f65814ec88045119b423d2611.base.image.jpg",
+      "url": "https://openagenda.com/shotgun/events/eiffel-premiere-partie",
+      "source": "opendatasoft"
     },
     {
       "id": "echonova:bambymachartleymalaureinsdjsetaftershow|2026-12-04",
@@ -389,9 +402,9 @@
       "source": "echonova"
     },
     {
-      "id": "echonova:isaacdelusionpremierepartie|2027-03-13",
+      "id": "echonova:isaacdelusionlafoudre|2027-03-13",
       "fin": "2027-03-13T00:00:00",
-      "titre": "ISAAC DELUSION + PREMIÈRE PARTIE",
+      "titre": "ISAAC DELUSION + LA FOUDRE",
       "debut": "2027-03-13T00:00:00",
       "ville": "Saint-Avé",
       "lieu": "L'Échonova",
