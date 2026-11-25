@@ -1,8 +1,8 @@
 {
-  "genere_le": "2026-11-24T15:30:32.776Z",
-  "total": 38,
+  "genere_le": "2026-11-25T15:17:22.153Z",
+  "total": 37,
   "par_secteur": {
-    "vannes": 29,
+    "vannes": 28,
     "auray": 1,
     "lorient": 8,
     "lorient-rade": 0,
@@ -11,19 +11,6 @@
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "echonova:rencontredepartementaleegalitedanslesmusiquesactuellesagirfaceauxdangersquipesentsur|2026-11-24",
-      "fin": "2026-11-24T00:00:00",
-      "titre": "Rencontre départementale : Égalité dans les musiques actuelles, agir face aux dangers qui pèsent sur",
-      "debut": "2026-11-24T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "rencontre-professionnelle",
-      "image": "https://lechonova.com/uploads/2026/11/56-couverture.png",
-      "url": "https://lechonova.com/evenement/rencontre-departementale-egalite-stourm/",
-      "source": "echonova"
-    },
     {
       "id": "echonova:aperosonoretout|2026-11-26",
       "fin": "2026-11-26T00:00:00",
