@@ -1,68 +1,16 @@
 {
-  "genere_le": "2026-11-27T14:41:26.473Z",
-  "total": 36,
+  "genere_le": "2026-11-28T13:52:43.213Z",
+  "total": 32,
   "par_secteur": {
-    "vannes": 27,
+    "vannes": 24,
     "auray": 1,
-    "lorient": 8,
+    "lorient": 7,
     "lorient-rade": 0,
     "erdeven": 0,
     "etel": 0,
     "quiberon": 0
   },
   "events": [
-    {
-      "id": "echonova:meryljahlysdjpablosca|2026-11-27",
-      "fin": "2026-11-27T00:00:00",
-      "titre": "MERYL + JAHLYS + DJ PABLOSCA",
-      "debut": "2026-11-27T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "rap",
-      "image": "https://lechonova.com/uploads/2025/12/site-3.jpg",
-      "url": "https://lechonova.com/evenement/meryl-premiere-partie/",
-      "source": "echonova"
-    },
-    {
-      "id": "hydrophone:alforelconcertdessine|2026-11-27",
-      "fin": "2026-11-27T15:15:00",
-      "titre": "Alf & Orel : CONCERT DESSINÉ",
-      "debut": "2026-11-27T15:15:00",
-      "ville": "Lorient",
-      "lieu": "Hydrophone",
-      "secteur": "lorient",
-      "description": "",
-      "image": "https://www.hydrophone.fr/local/cache-gd2/e7/b211a458ad013701f97d21450e5f33.png?1789464381",
-      "url": "https://www.hydrophone.fr/Alf-Orel-CONCERT-DESSINE-SCOLAIRE.html",
-      "source": "hydrophone"
-    },
-    {
-      "id": "opendatasoft:meryl|2026-11-27",
-      "fin": "2026-11-27T20:00:00",
-      "titre": "MERYL",
-      "debut": "2026-11-27T20:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Echonova",
-      "secteur": "vannes",
-      "description": "⏰ Ouverture des portes : 20H00 – Début des concerts : 20H30 🌭🍻 Bar et Restauration sur place 👯 PLACEMENT libre et debout MERYL : Figure incontournable de la scène française, Meryl, aux multiples…",
-      "image": "https://img.openagenda.com/main/ada65e40f88f4de08629ab2962c8fb3f.base.image.jpg",
-      "url": "https://openagenda.com/shotgun/events/meryl-1162847",
-      "source": "opendatasoft"
-    },
-    {
-      "id": "opendatasoft:rixxiek9|2026-11-27",
-      "fin": "2026-11-27T21:30:00",
-      "titre": "RIXXIE K9",
-      "debut": "2026-11-27T21:30:00",
-      "ville": "Lorient",
-      "lieu": "L'EMBARCADÈRE",
-      "secteur": "lorient",
-      "description": "dans le cadre du Festival Culture Bar-Bars",
-      "image": "https://img.openagenda.com/main/01ce9b07735f41bda1331f42187346ae.base.image.jpg",
-      "url": "https://openagenda.com/festival-culture-bar-bars/events/rixxie",
-      "source": "opendatasoft"
-    },
     {
       "id": "hydrophone:alforelconcertdessine|2026-11-28",
       "fin": "2026-11-28T10:30:00",
@@ -149,7 +97,7 @@
       "ville": "Saint-Avé",
       "lieu": "L'Échonova",
       "secteur": "vannes",
-      "description": "conference",
+      "description": "conference, pour-tous-tes",
       "image": "https://lechonova.com/uploads/2026/02/bac-1.jpg",
       "url": "https://lechonova.com/evenement/bienvenue-au-club-des-sound-systems-aux-scenes-globales-qui-raconte-les-caraibes-aujourdhui/",
       "source": "echonova"
@@ -441,19 +389,6 @@
       "source": "opendatasoft"
     },
     {
-      "id": "echonova:arianebonzinipremierepartie|2027-04-10",
-      "fin": "2027-04-10T00:00:00",
-      "titre": "ARIANE BONZINI + première partie",
-      "debut": "2027-04-10T00:00:00",
-      "ville": "Saint-Avé",
-      "lieu": "L'Échonova",
-      "secteur": "vannes",
-      "description": "pop",
-      "image": "https://lechonova.com/uploads/2026/10/site.jpg",
-      "url": "https://lechonova.com/evenement/ariane-bonzini-premiere-partie/",
-      "source": "echonova"
-    },
-    {
       "id": "opendatasoft:arianebonzinilechonovasaintave|2027-04-10",
       "fin": "2027-04-10T20:00:00",
       "titre": "ARIANE BONZINI - L'Echonova - Saint-Avé",
@@ -465,6 +400,19 @@
       "image": "https://img.openagenda.com/main/854bddd2fcb3427d834e108274a3311e.base.image.jpg",
       "url": "https://openagenda.com/shotgun/events/ariane-bonzini-lechonova-saint-ave",
       "source": "opendatasoft"
+    },
+    {
+      "id": "hydrophone:alforelconcertdessine|2027-11-27",
+      "fin": "2027-11-27T15:15:00",
+      "titre": "Alf & Orel : CONCERT DESSINÉ",
+      "debut": "2027-11-27T15:15:00",
+      "ville": "Lorient",
+      "lieu": "Hydrophone",
+      "secteur": "lorient",
+      "description": "",
+      "image": "https://www.hydrophone.fr/local/cache-gd2/e7/b211a458ad013701f97d21450e5f33.png?1789464381",
+      "url": "https://www.hydrophone.fr/Alf-Orel-CONCERT-DESSINE-SCOLAIRE.html",
+      "source": "hydrophone"
     },
     {
       "id": "opendatasoft:illusionvannes2027|2027-12-11",
